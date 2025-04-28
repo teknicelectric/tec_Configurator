@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+</script>
+
+
+<body>
+    
+    
+   <div class="option-group">
+                <button class="option-btn btn-common" onclick="latching30mmclipfetch()">Latching Ø 30mm</button>
+                <div class="nested-options latching30mmclip">  </div>
+               
+                    
+                
+
+
+
+                <script> 
+                    function latching30mmclipfetch() {
+                
+                        fetch('pushmashroom/mashroomplastichclip/latching30mmclip.html')
+                            .then(response => response.text())
+                            .then(data => {
+                                document.querySelector('.latching30mmclip').innerHTML = data;
+                                executeScriptlatching30mmclip(document.querySelector('.latching30mmclip')); // Execute scripts in loaded content
+                            })
+                            .catch(error => console.error('Error fetching content:', error));
+                    }
+                    
+              function executeScriptlatching30mmclip(element = document.getElementById('latching30mmclip')) {
+            if (!element) {
+                console.error("Element not found: secondc");
+                return;
+            }
+            
+            const scripts = element.getElementsByTagName('script');
+            
+            for (let i = 0; i < scripts.length; i++) {
+                const script = scripts[i];
+            
+                if (script.src) {
+                    // Check if script already exists to prevent duplication
+                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                        const newScript = document.createElement('script');
+                        newScript.src = script.src;
+                        document.body.appendChild(newScript);
+                    }
+                } else {
+                    // Remove previous inline scripts before appending new ones
+                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                    oldScripts.forEach(oldScript => oldScript.remove());
+            
+                    const newScript = document.createElement('script');
+                    newScript.text = script.innerHTML;
+                    newScript.setAttribute("data-dynamic", "true"); 
+                    document.body.appendChild(newScript);
+                }
+            }
+            }
+            
+            
+            
+                </script>
+                              
+
+                </div>
+          
+                
+                 
+   <div class="option-group">
+    <button class="option-btn btn-common" onclick="latching40mmclipfetch()">Latching Ø 40mm</button>
+    <div class="nested-options latching40mmclip">  </div>
+   
+        
+    
+
+
+
+    <script> 
+        function latching40mmclipfetch() {
+    
+            fetch('pushmashroom/mashroomplastichclip/latching40mmclip.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('.latching40mmclip').innerHTML = data;
+                    executeScriptlatching40mmclip(document.querySelector('.latching40mmclip')); // Execute scripts in loaded content
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        }
+        
+  function executeScriptlatching40mmclip(element = document.getElementById('latching40mmclip')) {
+if (!element) {
+    console.error("Element not found: secondc");
+    return;
+}
+
+const scripts = element.getElementsByTagName('script');
+
+for (let i = 0; i < scripts.length; i++) {
+    const script = scripts[i];
+
+    if (script.src) {
+        // Check if script already exists to prevent duplication
+        if (!document.querySelector(`script[src="${script.src}"]`)) {
+            const newScript = document.createElement('script');
+            newScript.src = script.src;
+            document.body.appendChild(newScript);
+        }
+    } else {
+        // Remove previous inline scripts before appending new ones
+        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+        oldScripts.forEach(oldScript => oldScript.remove());
+
+        const newScript = document.createElement('script');
+        newScript.text = script.innerHTML;
+        newScript.setAttribute("data-dynamic", "true"); 
+        document.body.appendChild(newScript);
+    }
+}
+}
+
+
+
+    </script>
+                  
+
+    </div>
+
+
+    <div class="option-group">
+        <button class="option-btn btn-common" onclick="latching60mmclipfetch()">Latching Ø 60mm</button>
+        <div class="nested-options latching60mmclip">  </div>
+       
+            
+        
+    
+    
+    
+        <script> 
+            function latching60mmclipfetch() {
+        
+                fetch('pushmashroom/mashroomplastichclip/latching60mmclip.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.latching60mmclip').innerHTML = data;
+                        executeScriptlatching60mmclip(document.querySelector('.latching60mmclip')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScriptlatching60mmclip(element = document.getElementById('latching60mmclip')) {
+    if (!element) {
+        console.error("Element not found: secondc");
+        return;
+    }
+    
+    const scripts = element.getElementsByTagName('script');
+    
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+    
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+    
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+    }
+    
+    
+    
+        </script>
+                      
+    
+        </div>
+                      
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="latchingtrigger40mmclipfetch()"> Latching Trigger Ø 40mm</button>
+            <div class="nested-options latchingtrigger40mmclip">  </div>
+           
+                
+            
+        
+        
+        
+            <script> 
+                function latchingtrigger40mmclipfetch() {
+            
+                    fetch('pushmashroom/mashroomplastichclip/latchingtrigger40mmclip.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.querySelector('.latchingtrigger40mmclip').innerHTML = data;
+                            executeScriptlatchingtrigger40mmclip(document.querySelector('.latchingtrigger40mmclip')); // Execute scripts in loaded content
+                        })
+                        .catch(error => console.error('Error fetching content:', error));
+                }
+                
+          function executeScriptlatchingtrigger40mmclip(element = document.getElementById('latchingtrigger40mmclip')) {
+        if (!element) {
+            console.error("Element not found: secondc");
+            return;
+        }
+        
+        const scripts = element.getElementsByTagName('script');
+        
+        for (let i = 0; i < scripts.length; i++) {
+            const script = scripts[i];
+        
+            if (script.src) {
+                // Check if script already exists to prevent duplication
+                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                    const newScript = document.createElement('script');
+                    newScript.src = script.src;
+                    document.body.appendChild(newScript);
+                }
+            } else {
+                // Remove previous inline scripts before appending new ones
+                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                oldScripts.forEach(oldScript => oldScript.remove());
+        
+                const newScript = document.createElement('script');
+                newScript.text = script.innerHTML;
+                newScript.setAttribute("data-dynamic", "true"); 
+                document.body.appendChild(newScript);
+            }
+        }
+        }
+        
+        
+        
+            </script>
+                          
+        
+            </div>
+  
+            <div class="option-group">
+                <button class="option-btn btn-common" onclick="latchingtriggerwithkey40mmclipfetch()">Latching Trigger with key Ø 40mm</button>
+                <div class="nested-options latchingtriggerwithkey40mmclip">  </div>
+               
+                    
+                
+            
+            
+            
+                <script> 
+                    function latchingtriggerwithkey40mmclipfetch() {
+                
+                        fetch('pushmashroom/mashroomplastichclip/latchingtriggerwithkey40mmclip.html')
+                            .then(response => response.text())
+                            .then(data => {
+                                document.querySelector('.latchingtriggerwithkey40mmclip').innerHTML = data;
+                                executeScriptlatchingtriggerwithkey40mmclip(document.querySelector('.latchingtriggerwithkey40mmclip')); // Execute scripts in loaded content
+                            })
+                            .catch(error => console.error('Error fetching content:', error));
+                    }
+                    
+              function executeScriptlatchingtriggerwithkey40mmclip(element = document.getElementById('latchingtriggerwithkey40mmclip')) {
+            if (!element) {
+                console.error("Element not found: secondc");
+                return;
+            }
+            
+            const scripts = element.getElementsByTagName('script');
+            
+            for (let i = 0; i < scripts.length; i++) {
+                const script = scripts[i];
+            
+                if (script.src) {
+                    // Check if script already exists to prevent duplication
+                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                        const newScript = document.createElement('script');
+                        newScript.src = script.src;
+                        document.body.appendChild(newScript);
+                    }
+                } else {
+                    // Remove previous inline scripts before appending new ones
+                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                    oldScripts.forEach(oldScript => oldScript.remove());
+            
+                    const newScript = document.createElement('script');
+                    newScript.text = script.innerHTML;
+                    newScript.setAttribute("data-dynamic", "true"); 
+                    document.body.appendChild(newScript);
+                }
+            }
+            }
+            
+            
+            
+                </script>
+                              
+            
+                </div>      
+
+                <div class="option-group">
+                    <button class="option-btn btn-common" onclick="latchingwithKey40mmclipfetch()">Latching with Key Ø 40mm</button>
+                    <div class="nested-options latchingwithKey40mmclip">  </div>
+                   
+                        
+                    
+                
+                
+                
+                    <script> 
+                        function latchingwithKey40mmclipfetch() {
+                    
+                            fetch('pushmashroom/mashroomplastichclip/latchingwithKey40mmclip.html')
+                                .then(response => response.text())
+                                .then(data => {
+                                    document.querySelector('.latchingwithKey40mmclip').innerHTML = data;
+                                    executeScriptlatchingwithKey40mmclip(document.querySelector('.latchingwithKey40mmclip')); // Execute scripts in loaded content
+                                })
+                                .catch(error => console.error('Error fetching content:', error));
+                        }
+                        
+                  function executeScriptlatchingwithKey40mmclip(element = document.getElementById('latchingwithKey40mmclip')) {
+                if (!element) {
+                    console.error("Element not found: secondc");
+                    return;
+                }
+                
+                const scripts = element.getElementsByTagName('script');
+                
+                for (let i = 0; i < scripts.length; i++) {
+                    const script = scripts[i];
+                
+                    if (script.src) {
+                        // Check if script already exists to prevent duplication
+                        if (!document.querySelector(`script[src="${script.src}"]`)) {
+                            const newScript = document.createElement('script');
+                            newScript.src = script.src;
+                            document.body.appendChild(newScript);
+                        }
+                    } else {
+                        // Remove previous inline scripts before appending new ones
+                        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                        oldScripts.forEach(oldScript => oldScript.remove());
+                
+                        const newScript = document.createElement('script');
+                        newScript.text = script.innerHTML;
+                        newScript.setAttribute("data-dynamic", "true"); 
+                        document.body.appendChild(newScript);
+                    }
+                }
+                }
+                
+                
+                
+                    </script>
+                                  
+                
+                    </div>
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common" onclick="momentary40mmclipfetch()">Momentary Ø 40mm </button>
+                        <div class="nested-options momentary40mmclip">  </div>
+                       
+                            
+                        
+                    
+                    
+                    
+                        <script> 
+                            function momentary40mmclipfetch() {
+                        
+                                fetch('pushmashroom/mashroomplastichclip/momentary40mmclip.html')
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        document.querySelector('.momentary40mmclip').innerHTML = data;
+                                        executeScriptmomentary40mmclip(document.querySelector('.momentary40mmclip')); // Execute scripts in loaded content
+                                    })
+                                    .catch(error => console.error('Error fetching content:', error));
+                            }
+                            
+                      function executeScriptmomentary40mmclip(element = document.getElementById('momentary40mmclip')) {
+                    if (!element) {
+                        console.error("Element not found: secondc");
+                        return;
+                    }
+                    
+                    const scripts = element.getElementsByTagName('script');
+                    
+                    for (let i = 0; i < scripts.length; i++) {
+                        const script = scripts[i];
+                    
+                        if (script.src) {
+                            // Check if script already exists to prevent duplication
+                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                const newScript = document.createElement('script');
+                                newScript.src = script.src;
+                                document.body.appendChild(newScript);
+                            }
+                        } else {
+                            // Remove previous inline scripts before appending new ones
+                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                            oldScripts.forEach(oldScript => oldScript.remove());
+                    
+                            const newScript = document.createElement('script');
+                            newScript.text = script.innerHTML;
+                            newScript.setAttribute("data-dynamic", "true"); 
+                            document.body.appendChild(newScript);
+                        }
+                    }
+                    }
+                    
+                    
+                    
+                        </script>
+                                      
+                    
+                        </div>
+
+
+                        <div class="option-group">
+                            <button class="option-btn btn-common" onclick="momentary60mmclipfetch()">Momentary Ø 60mm</button>
+                            <div class="nested-options momentary60mmclip">  </div>
+                           
+                                
+                            
+                        
+                        
+                        
+                            <script> 
+                                function momentary60mmclipfetch() {
+                            
+                                    fetch('pushmashroom/mashroomplastichclip/momentary60mmclip.html')
+                                        .then(response => response.text())
+                                        .then(data => {
+                                            document.querySelector('.momentary60mmclip').innerHTML = data;
+                                            executeScriptmomentary60mmclip(document.querySelector('.momentary60mmclip')); // Execute scripts in loaded content
+                                        })
+                                        .catch(error => console.error('Error fetching content:', error));
+                                }
+                                
+                          function executeScriptmomentary60mmclip(element = document.getElementById('momentary60mmclip')) {
+                        if (!element) {
+                            console.error("Element not found: secondc");
+                            return;
+                        }
+                        
+                        const scripts = element.getElementsByTagName('script');
+                        
+                        for (let i = 0; i < scripts.length; i++) {
+                            const script = scripts[i];
+                        
+                            if (script.src) {
+                                // Check if script already exists to prevent duplication
+                                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                    const newScript = document.createElement('script');
+                                    newScript.src = script.src;
+                                    document.body.appendChild(newScript);
+                                }
+                            } else {
+                                // Remove previous inline scripts before appending new ones
+                                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                oldScripts.forEach(oldScript => oldScript.remove());
+                        
+                                const newScript = document.createElement('script');
+                                newScript.text = script.innerHTML;
+                                newScript.setAttribute("data-dynamic", "true"); 
+                                document.body.appendChild(newScript);
+                            }
+                        }
+                        }
+                        
+                        
+                        
+                            </script>
+                                          
+                        
+                            </div>
+
+                            <div class="option-group">    
+                                <button class="option-btn btn-common" onclick="pushpull40mmclipfetch()"> Push-Pull Ø 40mm</button>
+                                <div class="nested-options pushpull40mmclip">  </div>
+                               
+                                    
+                                
+                            
+                            
+                            
+                                <script> 
+                                    function pushpull40mmclipfetch() {
+                                
+                                        fetch('pushmashroom/mashroomplastichclip/pushpull40mmclip.html')
+                                            .then(response => response.text())
+                                            .then(data => {
+                                                document.querySelector('.pushpull40mmclip').innerHTML = data;
+                                                executeScriptpushpull40mmclip(document.querySelector('.pushpull40mmclip')); // Execute scripts in loaded content
+                                            })
+                                            .catch(error => console.error('Error fetching content:', error));
+                                    }
+                                    
+                              function executeScriptpushpull40mmclip(element = document.getElementById('pushpull40mmclip')) {
+                            if (!element) {
+                                console.error("Element not found: secondc");
+                                return;
+                            }
+                            
+                            const scripts = element.getElementsByTagName('script');
+                            
+                            for (let i = 0; i < scripts.length; i++) {
+                                const script = scripts[i];
+                            
+                                if (script.src) {
+                                    // Check if script already exists to prevent duplication
+                                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                        const newScript = document.createElement('script');
+                                        newScript.src = script.src;
+                                        document.body.appendChild(newScript);
+                                    }
+                                } else {
+                                    // Remove previous inline scripts before appending new ones
+                                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                    oldScripts.forEach(oldScript => oldScript.remove());
+                            
+                                    const newScript = document.createElement('script');
+                                    newScript.text = script.innerHTML;
+                                    newScript.setAttribute("data-dynamic", "true"); 
+                                    document.body.appendChild(newScript);
+                                }
+                            }
+                            }
+                            
+                            
+                            
+                                </script>
+                                              
+                            
+                                </div>
+
+
+                                <div class="option-group">    
+                                    <button class="option-btn btn-common" onclick="pushpull60mmclipfetch()"> Push-Pull Ø 60mm</button>
+                                    <div class="nested-options pushpull60mmclip">  </div>
+                                   
+                                        
+                                    
+                                
+                                
+                                
+                                    <script> 
+                                        function pushpull60mmclipfetch() {
+                                    
+                                            fetch('pushmashroom/mashroomplastichclip/pushpull60mmclip.html')
+                                                .then(response => response.text())
+                                                .then(data => {
+                                                    document.querySelector('.pushpull60mmclip').innerHTML = data;
+                                                    executeScriptpushpull60mmclip(document.querySelector('.pushpull60mmclip')); // Execute scripts in loaded content
+                                                })
+                                                .catch(error => console.error('Error fetching content:', error));
+                                        }
+                                        
+                                  function executeScriptpushpull60mmclip(element = document.getElementById('pushpull60mmclip')) {
+                                if (!element) {
+                                    console.error("Element not found: secondc");
+                                    return;
+                                }
+                                
+                                const scripts = element.getElementsByTagName('script');
+                                
+                                for (let i = 0; i < scripts.length; i++) {
+                                    const script = scripts[i];
+                                
+                                    if (script.src) {
+                                        // Check if script already exists to prevent duplication
+                                        if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                            const newScript = document.createElement('script');
+                                            newScript.src = script.src;
+                                            document.body.appendChild(newScript);
+                                        }
+                                    } else {
+                                        // Remove previous inline scripts before appending new ones
+                                        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                        oldScripts.forEach(oldScript => oldScript.remove());
+                                
+                                        const newScript = document.createElement('script');
+                                        newScript.text = script.innerHTML;
+                                        newScript.setAttribute("data-dynamic", "true"); 
+                                        document.body.appendChild(newScript);
+                                    }
+                                }
+                                }
+                                
+                                
+                                
+                                    </script>
+                                                  
+                                
+                                    </div>
+
+
+                                
+
+
+                                  
+
+                                                       
+</body>
+</html>

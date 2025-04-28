@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.momentory60mm').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+        const flushForms = document.querySelectorAll('.flushform');
+        flushForms.forEach(form => form.reset());
+
+        // Hide elements
+        // document.getElementById('momentory60mmresult').classList.add('hidden');
+        document.getElementById('descriptionmomentory60mmscrow').classList.add('hidden');
+        document.getElementById('momentory60mmnoimageContainer').classList.add('hidden');
+        document.getElementById('momentory60mmncimageContainer').classList.add('hidden');
+        document.getElementById('Emomentory60mmnoimageContainer').classList.add('hidden');
+        document.getElementById('Emomentory60mmncimageContainer').classList.add('hidden');
+        document.getElementById('momentory60mmblackimageContainer').classList.add('hidden');
+        document.getElementById('momentory60mmgreenimageContainer').classList.add('hidden');
+        document.getElementById('momentory60mmredimageContainer').classList.add('hidden');
+        document.getElementById('momentory60mmblueimageContainer').classList.add('hidden');
+        document.getElementById('momentory60mmyellowimageContainer').classList.add('hidden');
+
+        // Hide plus buttons
+        document.getElementById('momentory60mmplus1').style.display = 'none';
+        document.getElementById('momentory60mmplus2').style.display = 'none';
+        document.getElementById('Emomentory60mmplus2').style.display = 'none';
+
+    });
+});
+ 
+
+</script>
+
+
+<body>
+    
+    <div class="outputflex">
+
+        <div class="momentory60mmclipop">
+            
+                
+                    
+                          <!-- 2 colour -->
+                    <div class="option-group">
+                        <button class="option-btn btn-common momentory60mm"><div class="black-btn"></div>(P2AMJ2)</button>
+                        
+                                
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmsecondnbtnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmsecondinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmsecondnbtnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmsecondinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmsecondnbtnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmsecondinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmsecondnbtnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmsecondinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                   
+                            
+                                </div>
+                            </div>
+                            
+                        
+                    <div class="option-group">
+                        <button class="option-btn btn-common momentory60mm"><div class="green-btn"></div>(P2AMJ3)</button>
+                        
+                                
+
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmthirdnbtnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmthirdinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmthirdnbtnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmthirdinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmthirdnbtnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmthirdinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmthirdnbtnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmthirdinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--  Button -->
+                                    
+                                </div>
+                            </div>
+                                   
+                             
+                          
+                        
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common momentory60mm"><div class="red-btn"></div>(P2AMJ4)</button>
+                      
+
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmfourthnbtnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmfourthinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmfourthnbtnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmfourthinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmfourthnbtnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmfourthinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmfourthnbtnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmfourthinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--  Button -->
+                                  
+                                </div>
+                                
+                        </div>
+                          
+                      
+
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common momentory60mm"><div class="blue-btn"></div>(P2AMJ6)</button>
+                       
+                                
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmfivenbtnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmfiveinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmfivenbtnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmfiveinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmfivenbtnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmfiveinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmfivenbtnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmfiveinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--  Button -->
+                                    
+                                </div>
+                                
+                        </div>
+
+                          
+
+
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common momentory60mm"><div class="yellow-btn"></div>(P2AMJ8)</button>
+                        
+
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmsixsnbtnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmsixsinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="momentory60mmsixsnbtnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="momentory60mmsixsinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common momentory60mm">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmsixsnbtnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmsixsinputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Emomentory60mmsixsnbtnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Emomentory60mmsixsinputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--  Button -->
+                                    
+                                </div>
+
+                            </div>
+                            
+                
+       </div>
+  
+                        <script>
+                           
+                            // for momentory60mmsecond
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('momentory60mmsecondnbtnno').addEventListener('click', function () {
+                                document.getElementById('momentory60mmsecondinputno').classList.remove('hidden');
+                                document.getElementById('momentory60mmsecondinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('momentory60mmsecondnbtnnc').addEventListener('click', function () {
+                                document.getElementById('momentory60mmsecondinputnc').classList.remove('hidden');
+                                document.getElementById('momentory60mmsecondinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+
+                            if (typeof Smomentory60mmpositiveNumberOnly === 'undefined') {
+    const Smomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('momentory60mmsecondinputno').addEventListener('input', Smomentory60mmpositiveNumberOnly);
+    document.getElementById('momentory60mmsecondinputnc').addEventListener('input', Smomentory60mmpositiveNumberOnly);
+}
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function Smomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('momentory60mmsecondinputno').value;
+                                const ncValue = document.getElementById('momentory60mmsecondinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmblackimageContainer = document.getElementById('momentory60mmblackimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('momentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('momentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('momentory60mmplus2');
+                            
+                                // Ensure black image is always visible
+                                momentory60mmblackimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none'; // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P2PSMJ211",
+                                        "12": "P2PSMJ212",
+                                        "10": "P2PSMJ210",
+                                        "01": "P2PSMJ201",
+                                        "21": "P2PSMJ221",
+                                        "23": "P2PSMJ223",
+                                        "22": "P2PSMJ222",
+                                        "33": "P2PSMJ233",
+                                        "32": "P2PSMJ232",
+                                        "13": "P2PSMJ213",
+                                        "14": "P2PSMJ214",
+                                        "15": "P2PSMJ215",
+                                        "24": "P2PSMJ224",
+                                        "31": "P2PSMJ231",
+                                        "41": "P2PSMJ241",
+                                        "42": "P2PSMJ242",
+                                        "51": "P2PSMJ251",
+                                        "00": "P2PSMJ200",
+                                        "20": "P2PSMJ220",
+                                        "30": "P2PSMJ230",
+                                        "40": "P2PSMJ240",
+                                        "50": "P2PSMJ250",
+                                        "60": "P2PSMJ260",
+                                        "02": "P2PSMJ202",
+                                        "03": "P2PSMJ203",
+                                        "04": "P2PSMJ204",
+                                        "05": "P2PSMJ205",
+                                        "06": "P2PSMJ206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('momentory60mmsecondinputno').addEventListener('input', Smomentory60mmgenerateCode);
+                            document.getElementById('momentory60mmsecondinputnc').addEventListener('input', Smomentory60mmgenerateCode);
+                            
+                            // economy
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Emomentory60mmsecondnbtnno').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmsecondinputno').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmsecondinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Emomentory60mmsecondnbtnnc').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmsecondinputnc').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmsecondinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof ESmomentory60mmpositiveNumberOnly === 'undefined') {
+    const ESmomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Emomentory60mmsecondinputno').addEventListener('input', ESmomentory60mmpositiveNumberOnly);
+                            document.getElementById('Emomentory60mmsecondinputnc').addEventListener('input', ESmomentory60mmpositiveNumberOnly);
+}
+
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function ESmomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('Emomentory60mmsecondinputno').value;
+                                const ncValue = document.getElementById('Emomentory60mmsecondinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmblackimageContainer = document.getElementById('momentory60mmblackimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('Emomentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('Emomentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('Emomentory60mmplus2');
+                            
+                                // Ensure black image is always visible
+                                momentory60mmblackimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none'; // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP2PSMJ211",
+                                        "12": "EP2PSMJ212",
+                                        "10": "EP2PSMJ210",
+                                        "01": "EP2PSMJ201",
+                                        "21": "EP2PSMJ221",
+                                        "23": "EP2PSMJ223",
+                                        "22": "EP2PSMJ222",
+                                        "33": "EP2PSMJ233",
+                                        "32": "EP2PSMJ232",
+                                        "13": "EP2PSMJ213",
+                                        "14": "EP2PSMJ214",
+                                        "15": "EP2PSMJ215",
+                                        "24": "EP2PSMJ224",
+                                        "31": "EP2PSMJ231",
+                                        "41": "EP2PSMJ241",
+                                        "42": "EP2PSMJ242",
+                                        "51": "EP2PSMJ251",
+                                        "00": "EP2PSMJ200",
+                                        "20": "EP2PSMJ220",
+                                        "30": "EP2PSMJ230",
+                                        "40": "EP2PSMJ240",
+                                        "50": "EP2PSMJ250",
+                                        "60": "EP2PSMJ260",
+                                        "02": "EP2PSMJ202",
+                                        "03": "EP2PSMJ203",
+                                        "04": "EP2PSMJ204",
+                                        "05": "EP2PSMJ205",
+                                        "06": "EP2PSMJ206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Emomentory60mmsecondinputno').addEventListener('input', ESmomentory60mmgenerateCode);
+                            document.getElementById('Emomentory60mmsecondinputnc').addEventListener('input', ESmomentory60mmgenerateCode);
+                            
+                            // momentory60mmthird 
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('momentory60mmthirdnbtnno').addEventListener('click', function () {
+                                document.getElementById('momentory60mmthirdinputno').classList.remove('hidden');
+                                document.getElementById('momentory60mmthirdinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('momentory60mmthirdnbtnnc').addEventListener('click', function () {
+                                document.getElementById('momentory60mmthirdinputnc').classList.remove('hidden');
+                                document.getElementById('momentory60mmthirdinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof tmomentory60mmpositiveNumberOnly === 'undefined') {
+    const tmomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('momentory60mmthirdinputno').addEventListener('input', tmomentory60mmpositiveNumberOnly);
+    document.getElementById('momentory60mmthirdinputnc').addEventListener('input', tmomentory60mmpositiveNumberOnly);
+}
+                            
+                         
+                            // Function to generate the code, show images, and add plus symbols dynamically
+                            function gmomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('momentory60mmthirdinputno').value;
+                                const ncValue = document.getElementById('momentory60mmthirdinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmwhiteimageContainer = document.getElementById('momentory60mmgreenimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('momentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('momentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('momentory60mmplus2');
+                            
+                                // Ensure the white image is always visible
+                                momentory60mmwhiteimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none'; // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P2PSMJ311",
+                                        "12": "P2PSMJ312",
+                                        "10": "P2PSMJ310",
+                                        "01": "P2PSMJ301",
+                                        "21": "P2PSMJ321",
+                                        "23": "P2PSMJ323",
+                                        "22": "P2PSMJ322",
+                                        "33": "P2PSMJ333",
+                                        "32": "P2PSMJ332",
+                                        "13": "P2PSMJ313",
+                                        "14": "P2PSMJ314",
+                                        "15": "P2PSMJ315",
+                                        "24": "P2PSMJ324",
+                                        "31": "P2PSMJ331",
+                                        "41": "P2PSMJ341",
+                                        "42": "P2PSMJ342",
+                                        "51": "P2PSMJ351",
+                                        "00": "P2PSMJ300",
+                                        "20": "P2PSMJ320",
+                                        "30": "P2PSMJ330",
+                                        "40": "P2PSMJ340",
+                                        "50": "P2PSMJ350",
+                                        "60": "P2PSMJ360",
+                                        "02": "P2PSMJ302",
+                                        "03": "P2PSMJ303",
+                                        "04": "P2PSMJ304",
+                                        "05": "P2PSMJ305",
+                                        "06": "P2PSMJ306"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('momentory60mmthirdinputno').addEventListener('input', gmomentory60mmgenerateCode);
+                            document.getElementById('momentory60mmthirdinputnc').addEventListener('input', gmomentory60mmgenerateCode);
+                            
+                         
+                            // ECONOMY
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Emomentory60mmthirdnbtnno').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmthirdinputno').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmthirdinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Emomentory60mmthirdnbtnnc').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmthirdinputnc').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmthirdinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof Etmomentory60mmpositiveNumberOnly === 'undefined') {
+    const Etmomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+   // Add event listeners to enforce positive number restriction
+   document.getElementById('Emomentory60mmthirdinputno').addEventListener('input', Etmomentory60mmpositiveNumberOnly);
+                            document.getElementById('Emomentory60mmthirdinputnc').addEventListener('input', Etmomentory60mmpositiveNumberOnly);
+}
+
+                         
+                            
+                            // Function to generate the code, show images, and add plus symbols dynamically
+                            function Egmomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('Emomentory60mmthirdinputno').value;
+                                const ncValue = document.getElementById('Emomentory60mmthirdinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmwhiteimageContainer = document.getElementById('momentory60mmgreenimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('Emomentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('Emomentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('Emomentory60mmplus2');
+                            
+                                // Ensure the white image is always visible
+                                momentory60mmwhiteimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none'; // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP2PSMJ311",
+                                        "12": "EP2PSMJ312",
+                                        "10": "EP2PSMJ310",
+                                        "01": "EP2PSMJ301",
+                                        "21": "EP2PSMJ321",
+                                        "23": "EP2PSMJ323",
+                                        "22": "EP2PSMJ322",
+                                        "33": "EP2PSMJ333",
+                                        "32": "EP2PSMJ332",
+                                        "13": "EP2PSMJ313",
+                                        "14": "EP2PSMJ314",
+                                        "15": "EP2PSMJ315",
+                                        "24": "EP2PSMJ324",
+                                        "31": "EP2PSMJ331",
+                                        "41": "EP2PSMJ341",
+                                        "42": "EP2PSMJ342",
+                                        "51": "EP2PSMJ351",
+                                        "00": "EP2PSMJ300",
+                                        "20": "EP2PSMJ320",
+                                        "30": "EP2PSMJ330",
+                                        "40": "EP2PSMJ340",
+                                        "50": "EP2PSMJ350",
+                                        "60": "EP2PSMJ360",
+                                        "02": "EP2PSMJ302",
+                                        "03": "EP2PSMJ303",
+                                        "04": "EP2PSMJ304",
+                                        "05": "EP2PSMJ305",
+                                        "06": "EP2PSMJ306"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Emomentory60mmthirdinputno').addEventListener('input', Egmomentory60mmgenerateCode);
+                            document.getElementById('Emomentory60mmthirdinputnc').addEventListener('input', Egmomentory60mmgenerateCode);
+                            
+                            
+                            
+                            // momentory60mmfourth
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('momentory60mmfourthnbtnno').addEventListener('click', function () {
+                                document.getElementById('momentory60mmfourthinputno').classList.remove('hidden');
+                                document.getElementById('momentory60mmfourthinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('momentory60mmfourthnbtnnc').addEventListener('click', function () {
+                                document.getElementById('momentory60mmfourthinputnc').classList.remove('hidden');
+                                document.getElementById('momentory60mmfourthinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                             
+                            if (typeof redgreenmomentory60mmpositiveNumberOnly === 'undefined') {
+    const redgreenmomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+          // Add event listeners to enforce positive number restriction
+          document.getElementById('momentory60mmfourthinputno').addEventListener('input', redgreenmomentory60mmpositiveNumberOnly);
+                            document.getElementById('momentory60mmfourthinputnc').addEventListener('input', redgreenmomentory60mmpositiveNumberOnly);
+ 
+}
+             
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function redgreenmomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('momentory60mmfourthinputno').value;
+                                const ncValue = document.getElementById('momentory60mmfourthinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmredimageContainer = document.getElementById('momentory60mmredimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('momentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('momentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('momentory60mmplus2');
+                            
+                                // Ensure red image is always visible
+                                momentory60mmredimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none'; // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P2PSMJ411",
+                                        "12": "P2PSMJ412",
+                                        "10": "P2PSMJ410",
+                                        "01": "P2PSMJ401",
+                                        "21": "P2PSMJ421",
+                                        "23": "P2PSMJ423",
+                                        "22": "P2PSMJ422",
+                                        "33": "P2PSMJ433",
+                                        "32": "P2PSMJ432",
+                                        "13": "P2PSMJ413",
+                                        "14": "P2PSMJ414",
+                                        "15": "P2PSMJ415",
+                                        "24": "P2PSMJ424",
+                                        "31": "P2PSMJ431",
+                                        "41": "P2PSMJ441",
+                                        "42": "P2PSMJ442",
+                                        "51": "P2PSMJ451",
+                                        "00": "P2PSMJ400",
+                                        "20": "P2PSMJ420",
+                                        "30": "P2PSMJ430",
+                                        "40": "P2PSMJ440",
+                                        "50": "P2PSMJ450",
+                                        "60": "P2PSMJ460",
+                                        "02": "P2PSMJ402",
+                                        "03": "P2PSMJ403",
+                                        "04": "P2PSMJ404",
+                                        "05": "P2PSMJ405",
+                                        "06": "P2PSMJ406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('momentory60mmfourthinputno').addEventListener('input', redgreenmomentory60mmgenerateCode);
+                            document.getElementById('momentory60mmfourthinputnc').addEventListener('input', redgreenmomentory60mmgenerateCode);
+                            
+                           
+                            
+                            // economay
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Emomentory60mmfourthnbtnno').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmfourthinputno').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmfourthinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Emomentory60mmfourthnbtnnc').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmfourthinputnc').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmfourthinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof Eredgreenmomentory60mmpositiveNumberOnly === 'undefined') {
+    const Eredgreenmomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+         // Add event listeners to enforce positive number restriction
+         document.getElementById('Emomentory60mmfourthinputno').addEventListener('input', Eredgreenmomentory60mmpositiveNumberOnly);
+                            document.getElementById('Emomentory60mmfourthinputnc').addEventListener('input', Eredgreenmomentory60mmpositiveNumberOnly);
+                             
+}
+             
+                            
+                          
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function Eredgreenmomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('Emomentory60mmfourthinputno').value;
+                                const ncValue = document.getElementById('Emomentory60mmfourthinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmredimageContainer = document.getElementById('momentory60mmredimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('Emomentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('Emomentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('Emomentory60mmplus2');
+                            
+                                // Ensure red image is always visible
+                                momentory60mmredimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none'; // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP2PSMJ411",
+                                        "12": "EP2PSMJ412",
+                                        "10": "EP2PSMJ410",
+                                        "01": "EP2PSMJ401",
+                                        "21": "EP2PSMJ421",
+                                        "23": "EP2PSMJ423",
+                                        "22": "EP2PSMJ422",
+                                        "33": "EP2PSMJ433",
+                                        "32": "EP2PSMJ432",
+                                        "13": "EP2PSMJ413",
+                                        "14": "EP2PSMJ414",
+                                        "15": "EP2PSMJ415",
+                                        "24": "EP2PSMJ424",
+                                        "31": "EP2PSMJ431",
+                                        "41": "EP2PSMJ441",
+                                        "42": "EP2PSMJ442",
+                                        "51": "EP2PSMJ451",
+                                        "00": "EP2PSMJ400",
+                                        "20": "EP2PSMJ420",
+                                        "30": "EP2PSMJ430",
+                                        "40": "EP2PSMJ440",
+                                        "50": "EP2PSMJ450",
+                                        "60": "EP2PSMJ460",
+                                        "02": "EP2PSMJ402",
+                                        "03": "EP2PSMJ403",
+                                        "04": "EP2PSMJ404",
+                                        "05": "EP2PSMJ405",
+                                        "06": "EP2PSMJ406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Emomentory60mmfourthinputno').addEventListener('input', Eredgreenmomentory60mmgenerateCode);
+                            document.getElementById('Emomentory60mmfourthinputnc').addEventListener('input', Eredgreenmomentory60mmgenerateCode);
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            // momentory60mmfive
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('momentory60mmfivenbtnno').addEventListener('click', function () {
+                                document.getElementById('momentory60mmfiveinputno').classList.remove('hidden');
+                                document.getElementById('momentory60mmfiveinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('momentory60mmfivenbtnnc').addEventListener('click', function () {
+                                document.getElementById('momentory60mmfiveinputnc').classList.remove('hidden');
+                                document.getElementById('momentory60mmfiveinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof ymomentory60mmpositiveNumberOnly === 'undefined') {
+    const ymomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+        
+                // Add event listeners to enforce positive number restriction
+                document.getElementById('momentory60mmfiveinputno').addEventListener('input', ymomentory60mmpositiveNumberOnly);
+                            document.getElementById('momentory60mmfiveinputnc').addEventListener('input', ymomentory60mmpositiveNumberOnly);                    
+}
+                        
+                     
+                            
+                            // Function to generate the code, show images, and add plus symbols dynamically
+                            function bluegreenmomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('momentory60mmfiveinputno').value;
+                                const ncValue = document.getElementById('momentory60mmfiveinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmblueimageContainer = document.getElementById('momentory60mmblueimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('momentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('momentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('momentory60mmplus2');
+                            
+                                // Ensure blue image is always visible
+                                momentory60mmblueimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none';  // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P2PSMJ611",
+                                        "12": "P2PSMJ612",
+                                        "10": "P2PSMJ610",
+                                        "01": "P2PSMJ601",
+                                        "21": "P2PSMJ621",
+                                        "23": "P2PSMJ623",
+                                        "22": "P2PSMJ622",
+                                        "33": "P2PSMJ633",
+                                        "32": "P2PSMJ632",
+                                        "13": "P2PSMJ613",
+                                        "14": "P2PSMJ614",
+                                        "15": "P2PSMJ615",
+                                        "24": "P2PSMJ624",
+                                        "31": "P2PSMJ631",
+                                        "41": "P2PSMJ641",
+                                        "42": "P2PSMJ642",
+                                        "51": "P2PSMJ651",
+                                        "00": "P2PSMJ600",
+                                        "20": "P2PSMJ620",
+                                        "30": "P2PSMJ630",
+                                        "40": "P2PSMJ640",
+                                        "50": "P2PSMJ650",
+                                        "60": "P2PSMJ660",
+                                        "02": "P2PSMJ602",
+                                        "03": "P2PSMJ603",
+                                        "04": "P2PSMJ604",
+                                        "05": "P2PSMJ605",
+                                        "06": "P2PSMJ606"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('momentory60mmfiveinputno').addEventListener('input', bluegreenmomentory60mmgenerateCode);
+                            document.getElementById('momentory60mmfiveinputnc').addEventListener('input', bluegreenmomentory60mmgenerateCode);
+                            
+                            
+                            
+                            // economy
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Emomentory60mmfivenbtnno').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmfiveinputno').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmfiveinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Emomentory60mmfivenbtnnc').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmfiveinputnc').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmfiveinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                           
+                            if (typeof Eymomentory60mmpositiveNumberOnly === 'undefined') {
+    const Eymomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+        
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Emomentory60mmfiveinputno').addEventListener('input', Eymomentory60mmpositiveNumberOnly);
+                            document.getElementById('Emomentory60mmfiveinputnc').addEventListener('input', Eymomentory60mmpositiveNumberOnly);                 
+}
+                        
+                     
+
+                     
+                           
+                            
+                            // Function to generate the code, show images, and add plus symbols dynamically
+                            function Ebluegreenmomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('Emomentory60mmfiveinputno').value;
+                                const ncValue = document.getElementById('Emomentory60mmfiveinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmblueimageContainer = document.getElementById('momentory60mmblueimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('Emomentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('Emomentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('Emomentory60mmplus2');
+                            
+                                // Ensure blue image is always visible
+                                momentory60mmblueimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none';  // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP2PSMJ611",
+                                        "12": "EP2PSMJ612",
+                                        "10": "EP2PSMJ610",
+                                        "01": "EP2PSMJ601",
+                                        "21": "EP2PSMJ621",
+                                        "23": "EP2PSMJ623",
+                                        "22": "EP2PSMJ622",
+                                        "33": "EP2PSMJ633",
+                                        "32": "EP2PSMJ632",
+                                        "13": "EP2PSMJ613",
+                                        "14": "EP2PSMJ614",
+                                        "15": "EP2PSMJ615",
+                                        "24": "EP2PSMJ624",
+                                        "31": "EP2PSMJ631",
+                                        "41": "EP2PSMJ641",
+                                        "42": "EP2PSMJ642",
+                                        "51": "EP2PSMJ651",
+                                        "00": "EP2PSMJ600",
+                                        "20": "EP2PSMJ620",
+                                        "30": "EP2PSMJ630",
+                                        "40": "EP2PSMJ640",
+                                        "50": "EP2PSMJ650",
+                                        "60": "EP2PSMJ660",
+                                        "02": "EP2PSMJ602",
+                                        "03": "EP2PSMJ603",
+                                        "04": "EP2PSMJ604",
+                                        "05": "EP2PSMJ605",
+                                        "06": "EP2PSMJ606"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Emomentory60mmfiveinputno').addEventListener('input', Ebluegreenmomentory60mmgenerateCode);
+                            document.getElementById('Emomentory60mmfiveinputnc').addEventListener('input', Ebluegreenmomentory60mmgenerateCode);
+                            
+                            
+                            // momentory60mmsixs
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('momentory60mmsixsnbtnno').addEventListener('click', function () {
+                                document.getElementById('momentory60mmsixsinputno').classList.remove('hidden');
+                                document.getElementById('momentory60mmsixsinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('momentory60mmsixsnbtnnc').addEventListener('click', function () {
+                                document.getElementById('momentory60mmsixsinputnc').classList.remove('hidden');
+                                document.getElementById('momentory60mmsixsinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof yellowmomentory60mmpositiveNumberOnly === 'undefined') {
+    const yellowmomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+        
+    // Add event listeners to enforce positive number restriction
+      // Add event listeners to enforce positive number restriction
+      document.getElementById('momentory60mmsixsinputno').addEventListener('input', yellowmomentory60mmpositiveNumberOnly);
+                            document.getElementById('momentory60mmsixsinputnc').addEventListener('input', yellowmomentory60mmpositiveNumberOnly);            
+}
+                        
+           
+                          
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function yellowmomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('momentory60mmsixsinputno').value;
+                                const ncValue = document.getElementById('momentory60mmsixsinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmwhiteimageContainer = document.getElementById('momentory60mmyellowimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('momentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('momentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('momentory60mmplus2');
+                            
+                                // Ensure the yellow image is always visible
+                                momentory60mmwhiteimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none';  // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P2PSMJ811",
+                                        "12": "P2PSMJ812",
+                                        "10": "P2PSMJ810",
+                                        "01": "P2PSMJ801",
+                                        "21": "P2PSMJ821",
+                                        "23": "P2PSMJ823",
+                                        "22": "P2PSMJ822",
+                                        "33": "P2PSMJ833",
+                                        "32": "P2PSMJ832",
+                                        "13": "P2PSMJ813",
+                                        "14": "P2PSMJ814",
+                                        "15": "P2PSMJ815",
+                                        "24": "P2PSMJ824",
+                                        "31": "P2PSMJ831",
+                                        "41": "P2PSMJ841",
+                                        "42": "P2PSMJ842",
+                                        "51": "P2PSMJ851",
+                                        "00": "P2PSMJ800",
+                                        "20": "P2PSMJ820",
+                                        "30": "P2PSMJ830",
+                                        "40": "P2PSMJ840",
+                                        "50": "P2PSMJ850",
+                                        "60": "P2PSMJ860",
+                                        "02": "P2PSMJ802",
+                                        "03": "P2PSMJ803",
+                                        "04": "P2PSMJ804",
+                                        "05": "P2PSMJ805",
+                                        "06": "P2PSMJ806"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('momentory60mmsixsinputno').addEventListener('input', yellowmomentory60mmgenerateCode);
+                            document.getElementById('momentory60mmsixsinputnc').addEventListener('input', yellowmomentory60mmgenerateCode);
+                            
+                           
+                            
+                            // ECONOMY
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Emomentory60mmsixsnbtnno').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmsixsinputno').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmsixsinputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Emomentory60mmsixsnbtnnc').addEventListener('click', function () {
+                                document.getElementById('Emomentory60mmsixsinputnc').classList.remove('hidden');
+                                document.getElementById('Emomentory60mmsixsinputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+
+                            if (typeof Eyellowmomentory60mmpositiveNumberOnly === 'undefined') {
+    const Eyellowmomentory60mmpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+        
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Emomentory60mmsixsinputno').addEventListener('input', Eyellowmomentory60mmpositiveNumberOnly);
+                            document.getElementById('Emomentory60mmsixsinputnc').addEventListener('input', Eyellowmomentory60mmpositiveNumberOnly);           
+}
+   
+                            
+                            
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function Eyellowmomentory60mmgenerateCode() {
+                                const noValue = document.getElementById('Emomentory60mmsixsinputno').value;
+                                const ncValue = document.getElementById('Emomentory60mmsixsinputnc').value;
+                            
+                                const resultContainer = document.getElementById('momentory60mmresult');
+                                const descriptionContainer = document.getElementById('descriptionmomentory60mmscrow');
+                                const generatedCodeElement = document.getElementById('momentory60mmgenerated-code');
+                            
+                                // Image containers
+                                const momentory60mmwhiteimageContainer = document.getElementById('momentory60mmyellowimageContainer');
+                                const momentory60mmnoimageContainer = document.getElementById('Emomentory60mmnoimageContainer');
+                                const momentory60mmncimageContainer = document.getElementById('Emomentory60mmncimageContainer');
+                            
+                                // Plus symbols
+                                const momentory60mmplus1 = document.getElementById('momentory60mmplus1');
+                                const momentory60mmplus2 = document.getElementById('Emomentory60mmplus2');
+                            
+                                // Ensure the yellow image is always visible
+                                momentory60mmwhiteimageContainer.classList.remove('hidden');
+                                momentory60mmplus1.style.display = 'none';  // Hide symbols initially
+                                momentory60mmplus2.style.display = 'none';
+                            
+                                const noImageName = momentory60mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = momentory60mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    momentory60mmnoimageContainer.querySelector('img').src = `push/metalscrew/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    momentory60mmnoimageContainer.classList.remove('hidden');
+                                    momentory60mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    momentory60mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    momentory60mmncimageContainer.querySelector('img').src = `push/metalscrew/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    momentory60mmncimageContainer.classList.remove('hidden');
+                                    momentory60mmplus2.style.display = 'block'; // Show the momentory60mmsecond plus symbol
+                                } else {
+                                    momentory60mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP2PSMJ811",
+                                        "12": "EP2PSMJ812",
+                                        "10": "EP2PSMJ810",
+                                        "01": "EP2PSMJ801",
+                                        "21": "EP2PSMJ821",
+                                        "23": "EP2PSMJ823",
+                                        "22": "EP2PSMJ822",
+                                        "33": "EP2PSMJ833",
+                                        "32": "EP2PSMJ832",
+                                        "13": "EP2PSMJ813",
+                                        "14": "EP2PSMJ814",
+                                        "15": "EP2PSMJ815",
+                                        "24": "EP2PSMJ824",
+                                        "31": "EP2PSMJ831",
+                                        "41": "EP2PSMJ841",
+                                        "42": "EP2PSMJ842",
+                                        "51": "EP2PSMJ851",
+                                        "00": "EP2PSMJ800",
+                                        "20": "EP2PSMJ820",
+                                        "30": "EP2PSMJ830",
+                                        "40": "EP2PSMJ840",
+                                        "50": "EP2PSMJ850",
+                                        "60": "EP2PSMJ860",
+                                        "02": "EP2PSMJ802",
+                                        "03": "EP2PSMJ803",
+                                        "04": "EP2PSMJ804",
+                                        "05": "EP2PSMJ805",
+                                        "06": "EP2PSMJ806"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        momentory60mmnoimageContainer.classList.add('hidden');
+                                        momentory60mmncimageContainer.classList.add('hidden');
+                                        momentory60mmplus1.style.display = 'none';
+                                        momentory60mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Emomentory60mmsixsinputno').addEventListener('input', Eyellowmomentory60mmgenerateCode);
+                            document.getElementById('Emomentory60mmsixsinputnc').addEventListener('input', Eyellowmomentory60mmgenerateCode);
+                            
+                            
+      
+                            </script>
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="momentory60mmresult" class="result hidden">
+  
+     <p id="momentory60mmgenerated-code"></p>
+     <div id="descriptionmomentory60mmscrow" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ <!-- flush images -->
+ <div class="flushimg">
+ 
+    <div class="image-container hidden" id="momentory60mmblackimageContainer">
+        <img src="pushmashroom/Mashroom Screw Plastic/Mashroom Screw Plastic/Momentary 60mm Black.png" alt="Product Image" class="product-image">
+        <div class="image-name">P2AMJ2</div>
+    </div>
+    <div class="image-container hidden" id="momentory60mmgreenimageContainer">
+        <img src="pushmashroom/Mashroom Screw Plastic/Mashroom Screw Plastic/Momentary 60mm Green.png" alt="Product Image" class="product-image">
+        <div class="image-name">P2AMJ3</div>
+    </div>
+    <div class="image-container hidden" id="momentory60mmredimageContainer">
+        <img src="pushmashroom/Mashroom Screw Plastic/Momentary 60mm Black,Green,Blue,Yellow.png" alt="Product Image" class="product-image">
+        <div class="image-name">P2AMJ4</div>
+    </div>
+    <div class="image-container hidden" id="momentory60mmblueimageContainer">
+        <img src="pushmashroom/Mashroom Screw Plastic/Mashroom Screw Plastic/Momentary 60mm Blue.png" alt="Product Image" class="product-image">
+        <div class="image-name">P2AMJ6</div>
+    </div>
+    <div class="image-container hidden" id="momentory60mmyellowimageContainer">
+        <img src="pushmashroom/Mashroom Screw Plastic/Mashroom Screw Plastic/Momentary 60mm Yellow.png" alt="Product Image" class="product-image">
+        <div class="image-name">P2AMJ8</div>
+    </div>
+    
+    <div id="momentory60mmplus1" class="plus-symbol" style="display: none;">+</div>
+
+    <div class="image-container hidden" id="momentory60mmnoimageContainer">
+    <img src="push/metalscrew/images/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="momentory60mmplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="momentory60mmncimageContainer">
+    <img src="push/metalscrew/images/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>
+</div>
+
+<div class="image-container hidden" id="Emomentory60mmnoimageContainer">
+    <img src="push/metalscrew/Eimages/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="Emomentory60mmplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="Emomentory60mmncimageContainer">
+    <img src="push/metalscrew/Eimages/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>    
+</div>
+    
+</div>
+
+ </div>
+
+</div>
+
+</body>
+</html>
