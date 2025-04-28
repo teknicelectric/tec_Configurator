@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+ 
+  </script>
+<style>
+     .outputflex{
+        display: flex;
+    }
+    .output{
+        margin-top: -100px;
+        margin-left: 500px;
+        gap: 50PX;
+    }
+    .imagecon {
+        position: relative;
+
+        
+    }
+#resultcq{
+    margin-bottom: 30PX;
+}
+   
+     .output img{
+        width: 150px;
+     }
+</style>
+<body>
+    <div class="outputflex">
+
+        <div class="clipop">
+            <div class="option-group">
+                <button class="option-btn btn-common flush whitebtn secondthoptioneoneq">Selector Pushbutton 2 Position</button>
+                <div class="nested-options">
+                 
+                          <!-- 2 colour -->
+                    <div class="option-group">
+                        <button class="option-btn btn-common whitebtn secondthoptioneoneq"><div class="black-btn"></div>3PSS2-2P</button>
+                        
+                                
+                        <div class="nested-options">
+                            <!-- Silver Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptioneoneq" gdata-colorcaq="blackceaq" code-coloraq="Monoblock Plastic 22.5 Selector Pushbutton 2 Position Black  colour with 1NO Contact" noimga="1" gdata-codecaq="3PSS210-2P">1NO</button>
+                                
+                            </div>
+                            <!-- Gold Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptioneoneq" gdata-colorcaq="blackceaq" code-coloraq="Monoblock Plastic 22.5 Selector Pushbutton 2 Position Black  colour with 1NC Contact" noimga="1" gdata-codecaq="3PSS201-2P">1NC</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptioneoneq" gdata-colorcaq="blackceaq" code-coloraq="Monoblock Plastic 22.5 Selector Pushbutton 2 Position Black  colour with 1NC+1NC Contact" noimga="1" code-color2aq="nc-1a" gdata-codecaq="3PSS211-2P">1NO+1NC</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common secondthoptioneoneq" gdata-colorcaq="blackceaq" code-coloraq="Monoblock Plastic 22.5 Selector Pushbutton 2 Position Black  colour with 2NO Contact" noimga="2" gdata-codecaq="3PSS220-2P">2NO</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common secondthoptioneoneq" gdata-colorcaq="blackceaq" code-coloraq="Monoblock Plastic 22.5 Selector Pushbutton 2 Position Black  colour with 2NC Contact" noimga="2" gdata-codecaq="3PSS202-2P">2NC</button> 
+                          
+                            </div>
+                        </div>
+                            </div>
+                            
+                        
+            
+                            
+                        </div>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common flush whitebtn secondthoptionetwo ">Selector Pushbutton 3 Position</button>
+                <div class="nested-options">
+                 
+                          <!-- 2 colour -->
+                    <div class="option-group">
+                        <button class="option-btn btn-common whitebtn secondthoptionetwo"><div class="black-btn"></div>3PSS2-3P</button>
+                        
+                                
+                        <div class="nested-options">
+                       
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptionetwo" gdata-colorcaqw="blackceaqw" code-coloraqw="Monoblock Plastic 22.5 Selector Pushbutton 3 Position Black  colour with 1NC+1NC Contact" noimgaw="1" code-color2aqw="nc-1aw" gdata-codecaqw="3PSS211-3P">1NO+1NC</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common secondthoptionetwo" gdata-colorcaqw="blackceaqw" code-coloraqw="Monoblock Plastic 22.5 Selector Pushbutton 3 Position Black  colour with 2NO Contact" noimgaw="2" gdata-codecaqw="3PSS220-3P">2NO</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common secondthoptionetwo" gdata-colorcaqw="blackceaqw" code-coloraqw="Monoblock Plastic 22.5 Selector Pushbutton 3 Position Black  colour with 2NC Contact" noimgaw="2" gdata-codecaqw="3PSS202-3P">2NC</button> 
+                          
+                            </div>
+                        </div>
+                            </div>
+                            
+                        
+            
+                            
+                        </div>
+            </div>
+
+            </div>
+        
+
+        <div class="output">
+
+            <!-- Result display section -->
+         <!-- Result display section -->
+         <div id="resultcq" class="result hidden">
+          
+             <p id="generated-codecq"></p>
+             <div id="description" class="description hidden">
+                 <p id="description-titleq"></p>
+             </div>
+         </div>
+    
+
+    <div class="sevenhimgaq">
+
+       
+        <img src="monoblock/Monoblock Selector Pushbutton.png" id="blackceaq" class="hidden" alt="Black">
+       
+        
+    </div>
+   
+
+
+<script>
+    document.querySelectorAll('.secondthoptioneoneq').forEach(button => {
+   button.addEventListener('click', function () {
+       const color = this.getAttribute('gdata-colorcaq');
+       const codeclr = this.getAttribute('code-coloraq');
+       const codeclr2 = this.getAttribute('code-color2aq');
+       const productCode = this.getAttribute('gdata-codecaq');
+  
+
+       // Hide all images initially
+       document.querySelectorAll('.sevenhimgaq img, .sevencodeaq img').forEach(img => img.classList.add('hidden'));
+      
+
+       // Show the primary color image
+       const selectedImage = document.getElementById(color);
+       if (selectedImage) {
+           selectedImage.classList.remove('hidden');
+       }
+
+       
+       // Display the product code
+       const productInfo = document.getElementById('generated-codecq');
+      productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+       const productDIS = document.getElementById('description-titleq');
+        productDIS.innerHTML = `<span class='label'>Description: </span>` + codeclr;
+       document.getElementById("resultcq").classList.remove("hidden"); // Make result visible
+   });
+});
+
+           </script>
+
+
+
+    <div class="sevenhimgawq">
+
+        
+        <img src="monoblock/Monoblock Selector Pushbutton.png" id="blackceaqw" class="hidden" alt="Black">
+        
+        
+    </div>
+    
+
+
+<script>
+    document.querySelectorAll('.secondthoptionetwo').forEach(button => {
+   button.addEventListener('click', function () {
+       const color = this.getAttribute('gdata-colorcaqw');
+       const codeclr = this.getAttribute('code-coloraqw');
+       const codeclr2 = this.getAttribute('code-color2aqw');
+       const productCode = this.getAttribute('gdata-codecaqw');
+       
+
+       // Hide all images initially
+       document.querySelectorAll('.sevenhimgawq img, .sevencodeawq img').forEach(img => img.classList.add('hidden'));
+       
+
+       // Show the primary color image
+       const selectedImage = document.getElementById(color);
+       if (selectedImage) {
+           selectedImage.classList.remove('hidden');
+       }
+
+       // Display the product code
+       const productInfo = document.getElementById('generated-codecq');
+      productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+       const productDIS = document.getElementById('description-titleq');
+        productDIS.innerHTML = `<span class='label'>Description: </span>` + codeclr;
+       document.getElementById("resultcq").classList.remove("hidden"); // Make result visible
+   });
+});
+
+           </script>
+
+
+
+
+         </div>
+         
+        </div>
+        
+</body>
+</html>

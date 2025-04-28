@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header {
+    background: blue;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+.container {
+    padding: 20px;
+}
+.dropdown-container, .tabs-container {
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.grid-item ,.option-btn{
+    background: lightblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+.tab-buttons button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.tab-content {
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+.active { display: block; }
+
+
+/* .grid-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+} */
+.hidden {
+    display: none;
+}
+
+.nested-options {
+    margin-left: 20px;
+    display: none;
+}
+
+
+.option-group {
+    margin-left: 20px;
+    padding: 12px;
+    background-color: #f9f9f9;
+}
+.option-group button {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    padding: 15px;  /* Increased padding */
+    font-size: 18px;  /* Increased text size */
+    border: none;
+    background-color: rgb(139, 210, 234);
+    color: black;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded edges */
+    transition: background-color 0.3s ease;
+}
+.option-group button:hover {
+    background-color: rgb(64, 201, 255);
+}
+
+.btn-common .white-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: white;
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+.btn-common .black-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(0, 0, 0);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+
+.btn-common .amber-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color:#FFBF00;
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+
+.btn-common .clear-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color:#F4FAFC;
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+
+
+.btn-common .green-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(0, 221, 4);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+.btn-common .blue-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(0, 64, 255);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+.btn-common .red-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(255, 0, 0);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+.btn-common .yellow-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(251, 255, 0);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+
+input[type="number"] {
+    padding: 12px;
+    margin-top: 12px;
+    width: 130px;
+    font-size: 18px;  /* Increased font size */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.result {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 25px;  /* Increased padding */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+    width: 50%;  /* Increased width */
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.result h2 {
+    margin: 0;
+    font-size: 20px;  /* Increased text size */
+}
+.active{
+    display: none;
+}
+
+.result p {
+    margin: 15px 0 0;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.result.hidden {
+    display: none;
+}
+
+/* CSS for Image Container */
+.image-container {
+    /* text-align: center; */
+    margin-top: 0; /* Removed space between result and image */
+    
+}
+
+.product-image {
+    width: 100%; /* Set width to 100% of the parent container */
+    max-width: 150px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+    margin-left: 20px;
+    margin-top: 10px;
+  
+}
+.flushimg, .arrow , .pro, .frra, .boot{
+    width: 100%;
+    display: flex;
+}
+.plus-symbol {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000; /* Color for plus sign */
+    display: block;
+    align-self: center; /* Centers plus signs vertically */
+}
+.image-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000; /* Black text */
+    text-align: center;
+}
+
+.description {
+    display: block;
+    /* Add your styling here */
+}
+.options-container{
+    display: flex;
+    border: 2px solid #000;  
+    border-radius: 10px;  
+}
+.output img{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+   
+}
+
+.pushbtn{
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+  </script>
+<style>
+    .outputflex{
+        display: flex;
+    }
+    .output{
+        margin-top: -100px;
+        margin-left: 500px;
+        gap: 50PX;
+    }
+    .imagecon {
+        position: relative;
+
+        
+    }
+#resultcer{
+    margin-bottom: 30PX;
+}
+   
+     .output img{
+        width: 150px;
+     }
+</style>
+<body>
+    <div class="outputflex">
+
+        <div class="clipop">
+            <div class="option-group">
+                <button class="option-btn btn-common flush whitebtn fourththoptionereder">Mushroom Latching 40mm</button>
+                <div class="nested-options">
+             
+
+                            
+                                   
+                             
+                          
+                        
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common whitebtn fourththoptionereder"><div class="red-btn"></div>3PSML4</button>
+                      
+
+                        <div class="nested-options">
+                            <!-- Silver Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn fourththoptionereder" gdata-colorcabcr="redceabcr" code-colorabcr="Monoblock Plastic 22.5 Mushroom Latching 40mm  Pushbutton Red colour with 1NO Contact" noimgabc="1" gdata-codecabcr="3PSML410">1NO</button>
+                                
+                            </div>
+                            <!-- Gold Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn fourththoptionereder" gdata-colorcabcr="redceabcr" code-colorabcr="Monoblock Plastic 22.5 Mushroom Latching 40mm  Pushbutton Red colour with 1NC Contact" noimgabc="1" gdata-codecabcr="3PSML401">1NC</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn fourththoptionereder" gdata-colorcabcr="redceabcr" code-colorabcr="Monoblock Plastic 22.5 Mushroom Latching 40mm  Pushbutton Red colour with 1NC+1NC Contact" noimgabc="1" code-color2abcr="nc-1abc" gdata-codecabcr="3PSML411">1NO+1NC</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common fourththoptionereder" gdata-colorcabcr="redceabcr" code-colorabcr="Monoblock Plastic 22.5 Mushroom Latching 40mm  Pushbutton Red colour with 2NO Contact" noimgabc="2" gdata-codecabcr="3PSML420">2NO</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common fourththoptionereder" gdata-colorcabcr="redceabcr" code-colorabcr="Monoblock Plastic 22.5 Mushroom Latching 40mm  Pushbutton Red colour with 2NC Contact" noimgabc="2" gdata-codecabcr="3PSML402">2NC</button> 
+                          
+                            </div>
+                        </div>
+                        </div>
+                          
+                      
+
+
+                    
+                            
+                        </div>
+            </div>
+         
+
+            </div>
+        
+
+        <div class="output">
+
+            <!-- Result display section -->
+         <!-- Result display section -->
+         <div id="resultcer" class="result hidden">
+          
+             <p id="generated-codecer"></p>
+             <div id="description" class="description hidden">
+                 <p id="description-titler"></p>
+             </div>
+         </div>
+  
+
+    <div class="sevenhimgabcr">
+
+       
+        <img src="monoblock/Monoblock Mushrrom Latching Pushbutton.png" id="redceabcr" class="hidden" alt="Red">
+       
+        
+    </div>
+    
+
+
+<script>
+    document.querySelectorAll('.fourththoptionereder').forEach(button => {
+   button.addEventListener('click', function () {
+       const color = this.getAttribute('gdata-colorcabcr');
+       const codeclr = this.getAttribute('code-colorabcr');
+       const codeclr2 = this.getAttribute('code-color2abcr');
+       const productCode = this.getAttribute('gdata-codecabcr');
+       
+
+       // Hide all images initially
+       document.querySelectorAll('.sevenhimgabcr img, .sevencodeabcr img').forEach(img => img.classList.add('hidden'));
+      
+
+       // Show the primary color image
+       const selectedImage = document.getElementById(color);
+       if (selectedImage) {
+           selectedImage.classList.remove('hidden');
+       }
+
+
+       // Display the product code
+       const productInfo = document.getElementById('generated-codecer');
+      productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+       const productDIS = document.getElementById('description-titler');
+        productDIS.innerHTML = `<span class='label'>Description: </span>` + codeclr;
+       document.getElementById("resultcer").classList.remove("hidden"); // Make result visible
+   });
+});
+
+           </script>
+
+
+
+
+
+         </div>
+         
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+</script>
+
+
+<body>
+    
+    
+   <div class="option-group">
+                <button class="option-btn btn-common" onclick="positionstayputbothfetch()">2 Position STAYPUT both side</button>
+                <div class="nested-options positionstayputboth">  </div>
+               
+                    
+                
+
+
+
+                <script> 
+                    function positionstayputbothfetch() {
+                
+                        fetch('keyselectoractuators/keyselectorplasticscrow/positionstayputboth.html')
+                            .then(response => response.text())
+                            .then(data => {
+                                document.querySelector('.positionstayputboth').innerHTML = data;
+                                executeScriptpositionstayputboth(document.querySelector('.positionstayputboth')); // Execute scripts in loaded content
+                            })
+                            .catch(error => console.error('Error fetching content:', error));
+                    }
+                    
+              function executeScriptpositionstayputboth(element = document.getElementById('positionstayputboth')) {
+            if (!element) {
+                console.error("Element not found: secondc");
+                return;
+            }
+            
+            const scripts = element.getElementsByTagName('script');
+            
+            for (let i = 0; i < scripts.length; i++) {
+                const script = scripts[i];
+            
+                if (script.src) {
+                    // Check if script already exists to prevent duplication
+                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                        const newScript = document.createElement('script');
+                        newScript.src = script.src;
+                        document.body.appendChild(newScript);
+                    }
+                } else {
+                    // Remove previous inline scripts before appending new ones
+                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                    oldScripts.forEach(oldScript => oldScript.remove());
+            
+                    const newScript = document.createElement('script');
+                    newScript.text = script.innerHTML;
+                    newScript.setAttribute("data-dynamic", "true"); 
+                    document.body.appendChild(newScript);
+                }
+            }
+            }
+            
+            
+            
+                </script>
+                              
+
+                </div>
+          
+                
+                 
+   <div class="option-group">
+    <button class="option-btn btn-common" onclick="postionstayputonrightfetch()">2 Position STAYPUT on right</button>
+    <div class="nested-options postionstayputonright">  </div>
+   
+        
+    
+
+
+
+    <script> 
+        function postionstayputonrightfetch() {
+    
+            fetch('keyselectoractuators/keyselectorplasticscrow/postionstayputonright.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('.postionstayputonright').innerHTML = data;
+                    executeScriptpostionstayputonright(document.querySelector('.postionstayputonright')); // Execute scripts in loaded content
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        }
+        
+  function executeScriptpostionstayputonright(element = document.getElementById('postionstayputonright')) {
+if (!element) {
+    console.error("Element not found: secondc");
+    return;
+}
+
+const scripts = element.getElementsByTagName('script');
+
+for (let i = 0; i < scripts.length; i++) {
+    const script = scripts[i];
+
+    if (script.src) {
+        // Check if script already exists to prevent duplication
+        if (!document.querySelector(`script[src="${script.src}"]`)) {
+            const newScript = document.createElement('script');
+            newScript.src = script.src;
+            document.body.appendChild(newScript);
+        }
+    } else {
+        // Remove previous inline scripts before appending new ones
+        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+        oldScripts.forEach(oldScript => oldScript.remove());
+
+        const newScript = document.createElement('script');
+        newScript.text = script.innerHTML;
+        newScript.setAttribute("data-dynamic", "true"); 
+        document.body.appendChild(newScript);
+    }
+}
+}
+
+
+
+    </script>
+                  
+
+    </div>
+
+
+    <div class="option-group">
+        <button class="option-btn btn-common" onclick="postionstayputonleftfetch()">2 Position STAYPUT on left</button>
+        <div class="nested-options postionstayputonleft">  </div>
+       
+            
+        
+    
+    
+    
+        <script> 
+            function postionstayputonleftfetch() {
+        
+                fetch('keyselectoractuators/keyselectorplasticscrow/postionstayputonleft.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.postionstayputonleft').innerHTML = data;
+                        executeScriptpostionstayputonleft(document.querySelector('.postionstayputonleft')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScriptpostionstayputonleft(element = document.getElementById('postionstayputonleft')) {
+    if (!element) {
+        console.error("Element not found: secondc");
+        return;
+    }
+    
+    const scripts = element.getElementsByTagName('script');
+    
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+    
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+    
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+    }
+    
+    
+    
+        </script>
+                      
+    
+        </div>
+                      
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="positionspringreturn2fetch()"> 2 Position Spring Return</button>
+            <div class="nested-options positionspringreturn2">  </div>
+           
+                
+            
+        
+        
+        
+            <script> 
+                function positionspringreturn2fetch() {
+            
+                    fetch('keyselectoractuators/keyselectorplasticscrow/positionspringreturn2.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.querySelector('.positionspringreturn2').innerHTML = data;
+                            executeScriptpositionspringreturn2(document.querySelector('.positionspringreturn2')); // Execute scripts in loaded content
+                        })
+                        .catch(error => console.error('Error fetching content:', error));
+                }
+                
+          function executeScriptpositionspringreturn2(element = document.getElementById('positionspringreturn2')) {
+        if (!element) {
+            console.error("Element not found: secondc");
+            return;
+        }
+        
+        const scripts = element.getElementsByTagName('script');
+        
+        for (let i = 0; i < scripts.length; i++) {
+            const script = scripts[i];
+        
+            if (script.src) {
+                // Check if script already exists to prevent duplication
+                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                    const newScript = document.createElement('script');
+                    newScript.src = script.src;
+                    document.body.appendChild(newScript);
+                }
+            } else {
+                // Remove previous inline scripts before appending new ones
+                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                oldScripts.forEach(oldScript => oldScript.remove());
+        
+                const newScript = document.createElement('script');
+                newScript.text = script.innerHTML;
+                newScript.setAttribute("data-dynamic", "true"); 
+                document.body.appendChild(newScript);
+            }
+        }
+        }
+        
+        
+        
+            </script>
+                          
+        
+            </div>
+  
+            <div class="option-group">
+                <button class="option-btn btn-common" onclick="positionstayputallside3fetch()">3 Position STAYPUT all side</button>
+                <div class="nested-options positionstayputallside3">  </div>
+               
+                    
+                
+            
+            
+            
+                <script> 
+                    function positionstayputallside3fetch() {
+                
+                        fetch('keyselectoractuators/keyselectorplasticscrow/positionstayputallside3.html')
+                            .then(response => response.text())
+                            .then(data => {
+                                document.querySelector('.positionstayputallside3').innerHTML = data;
+                                executeScriptpositionstayputallside3(document.querySelector('.positionstayputallside3')); // Execute scripts in loaded content
+                            })
+                            .catch(error => console.error('Error fetching content:', error));
+                    }
+                    
+              function executeScriptpositionstayputallside3(element = document.getElementById('positionstayputallside3')) {
+            if (!element) {
+                console.error("Element not found: secondc");
+                return;
+            }
+            
+            const scripts = element.getElementsByTagName('script');
+            
+            for (let i = 0; i < scripts.length; i++) {
+                const script = scripts[i];
+            
+                if (script.src) {
+                    // Check if script already exists to prevent duplication
+                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                        const newScript = document.createElement('script');
+                        newScript.src = script.src;
+                        document.body.appendChild(newScript);
+                    }
+                } else {
+                    // Remove previous inline scripts before appending new ones
+                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                    oldScripts.forEach(oldScript => oldScript.remove());
+            
+                    const newScript = document.createElement('script');
+                    newScript.text = script.innerHTML;
+                    newScript.setAttribute("data-dynamic", "true"); 
+                    document.body.appendChild(newScript);
+                }
+            }
+            }
+            
+            
+            
+                </script>
+                              
+            
+                </div>      
+
+                <div class="option-group">
+                    <button class="option-btn btn-common" onclick="positionstayputonright3fetch()">3 Position STAYPUT on right</button>
+                    <div class="nested-options positionstayputonright3">  </div>
+                   
+                        
+                    
+                
+                
+                
+                    <script> 
+                        function positionstayputonright3fetch() {
+                    
+                            fetch('keyselectoractuators/keyselectorplasticscrow/positionstayputonright3.html')
+                                .then(response => response.text())
+                                .then(data => {
+                                    document.querySelector('.positionstayputonright3').innerHTML = data;
+                                    executeScriptpositionstayputonright3(document.querySelector('.positionstayputonright3')); // Execute scripts in loaded content
+                                })
+                                .catch(error => console.error('Error fetching content:', error));
+                        }
+                        
+                  function executeScriptpositionstayputonright3(element = document.getElementById('positionstayputonright3')) {
+                if (!element) {
+                    console.error("Element not found: secondc");
+                    return;
+                }
+                
+                const scripts = element.getElementsByTagName('script');
+                
+                for (let i = 0; i < scripts.length; i++) {
+                    const script = scripts[i];
+                
+                    if (script.src) {
+                        // Check if script already exists to prevent duplication
+                        if (!document.querySelector(`script[src="${script.src}"]`)) {
+                            const newScript = document.createElement('script');
+                            newScript.src = script.src;
+                            document.body.appendChild(newScript);
+                        }
+                    } else {
+                        // Remove previous inline scripts before appending new ones
+                        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                        oldScripts.forEach(oldScript => oldScript.remove());
+                
+                        const newScript = document.createElement('script');
+                        newScript.text = script.innerHTML;
+                        newScript.setAttribute("data-dynamic", "true"); 
+                        document.body.appendChild(newScript);
+                    }
+                }
+                }
+                
+                
+                
+                    </script>
+                                  
+                
+                    </div>
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common" onclick="positionstayputonleft3fetch()">3 Position STAYPUT on left</button>
+                        <div class="nested-options positionstayputonleft3">  </div>
+                       
+                            
+                        
+                    
+                    
+                    
+                        <script> 
+                            function positionstayputonleft3fetch() {
+                        
+                                fetch('keyselectoractuators/keyselectorplasticscrow/positionstayputonleft3.html')
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        document.querySelector('.positionstayputonleft3').innerHTML = data;
+                                        executeScriptpositionstayputonleft3(document.querySelector('.positionstayputonleft3')); // Execute scripts in loaded content
+                                    })
+                                    .catch(error => console.error('Error fetching content:', error));
+                            }
+                            
+                      function executeScriptpositionstayputonleft3(element = document.getElementById('positionstayputonleft3')) {
+                    if (!element) {
+                        console.error("Element not found: secondc");
+                        return;
+                    }
+                    
+                    const scripts = element.getElementsByTagName('script');
+                    
+                    for (let i = 0; i < scripts.length; i++) {
+                        const script = scripts[i];
+                    
+                        if (script.src) {
+                            // Check if script already exists to prevent duplication
+                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                const newScript = document.createElement('script');
+                                newScript.src = script.src;
+                                document.body.appendChild(newScript);
+                            }
+                        } else {
+                            // Remove previous inline scripts before appending new ones
+                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                            oldScripts.forEach(oldScript => oldScript.remove());
+                    
+                            const newScript = document.createElement('script');
+                            newScript.text = script.innerHTML;
+                            newScript.setAttribute("data-dynamic", "true"); 
+                            document.body.appendChild(newScript);
+                        }
+                    }
+                    }
+                    
+                    
+                    
+                        </script>
+                                      
+                    
+                        </div>
+
+
+                        <div class="option-group"> 
+                            <button class="option-btn btn-common" onclick="positionstayputonmiddle3fetch()">3 Position STAYPUT on middle</button>
+                            <div class="nested-options positionstayputonmiddle3">  </div>
+                           
+                                
+                            
+                        
+                        
+                        
+                            <script> 
+                                function positionstayputonmiddle3fetch() {
+                            
+                                    fetch('keyselectoractuators/keyselectorplasticscrow/positionstayputonmiddle3.html')
+                                        .then(response => response.text())
+                                        .then(data => {
+                                            document.querySelector('.positionstayputonmiddle3').innerHTML = data;
+                                            executeScriptpositionstayputonmiddle3(document.querySelector('.positionstayputonmiddle3')); // Execute scripts in loaded content
+                                        })
+                                        .catch(error => console.error('Error fetching content:', error));
+                                }
+                                
+                          function executeScriptpositionstayputonmiddle3(element = document.getElementById('positionstayputonmiddle3')) {
+                        if (!element) {
+                            console.error("Element not found: secondc");
+                            return;
+                        }
+                        
+                        const scripts = element.getElementsByTagName('script');
+                        
+                        for (let i = 0; i < scripts.length; i++) {
+                            const script = scripts[i];
+                        
+                            if (script.src) {
+                                // Check if script already exists to prevent duplication
+                                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                    const newScript = document.createElement('script');
+                                    newScript.src = script.src;
+                                    document.body.appendChild(newScript);
+                                }
+                            } else {
+                                // Remove previous inline scripts before appending new ones
+                                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                oldScripts.forEach(oldScript => oldScript.remove());
+                        
+                                const newScript = document.createElement('script');
+                                newScript.text = script.innerHTML;
+                                newScript.setAttribute("data-dynamic", "true"); 
+                                document.body.appendChild(newScript);
+                            }
+                        }
+                        }
+                        
+                        
+                        
+                            </script>
+                                          
+                        
+                            </div>
+
+                            <div class="option-group">   
+                                <button class="option-btn btn-common" onclick="positionspringreturn3fetch()">3 Position Spring Return</button>
+                                <div class="nested-options positionspringreturn3">  </div>
+                               
+                                    
+                                
+                            
+                            
+                            
+                                <script> 
+                                    function positionspringreturn3fetch() {
+                                
+                                        fetch('keyselectoractuators/keyselectorplasticscrow/positionspringreturn3.html')
+                                            .then(response => response.text())
+                                            .then(data => {
+                                                document.querySelector('.positionspringreturn3').innerHTML = data;
+                                                executeScriptpositionspringreturn3(document.querySelector('.positionspringreturn3')); // Execute scripts in loaded content
+                                            })
+                                            .catch(error => console.error('Error fetching content:', error));
+                                    }
+                                    
+                              function executeScriptpositionspringreturn3(element = document.getElementById('positionspringreturn3')) {
+                            if (!element) {
+                                console.error("Element not found: secondc");
+                                return;
+                            }
+                            
+                            const scripts = element.getElementsByTagName('script');
+                            
+                            for (let i = 0; i < scripts.length; i++) {
+                                const script = scripts[i];
+                            
+                                if (script.src) {
+                                    // Check if script already exists to prevent duplication
+                                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                        const newScript = document.createElement('script');
+                                        newScript.src = script.src;
+                                        document.body.appendChild(newScript);
+                                    }
+                                } else {
+                                    // Remove previous inline scripts before appending new ones
+                                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                    oldScripts.forEach(oldScript => oldScript.remove());
+                            
+                                    const newScript = document.createElement('script');
+                                    newScript.text = script.innerHTML;
+                                    newScript.setAttribute("data-dynamic", "true"); 
+                                    document.body.appendChild(newScript);
+                                }
+                            }
+                            }
+                            
+                            
+                            
+                                </script>
+                                              
+                            
+                                </div>
+
+
+                                <div class="option-group">   
+                                    <button class="option-btn btn-common" onclick="positionspringreturnright3fetch()">3 Position Spring Return right to centre</button>
+                                    <div class="nested-options positionspringreturnright3">  </div>
+                                   
+                                        
+                                    
+                                
+                                
+                                
+                                    <script> 
+                                        function positionspringreturnright3fetch() {
+                                    
+                                            fetch('keyselectoractuators/keyselectorplasticscrow/positionspringreturnright3.html')
+                                                .then(response => response.text())
+                                                .then(data => {
+                                                    document.querySelector('.positionspringreturnright3').innerHTML = data;
+                                                    executeScriptpositionspringreturnright3(document.querySelector('.positionspringreturnright3')); // Execute scripts in loaded content
+                                                })
+                                                .catch(error => console.error('Error fetching content:', error));
+                                        }
+                                        
+                                  function executeScriptpositionspringreturnright3(element = document.getElementById('positionspringreturnright3')) {
+                                if (!element) {
+                                    console.error("Element not found: secondc");
+                                    return;
+                                }
+                                
+                                const scripts = element.getElementsByTagName('script');
+                                
+                                for (let i = 0; i < scripts.length; i++) {
+                                    const script = scripts[i];
+                                
+                                    if (script.src) {
+                                        // Check if script already exists to prevent duplication
+                                        if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                            const newScript = document.createElement('script');
+                                            newScript.src = script.src;
+                                            document.body.appendChild(newScript);
+                                        }
+                                    } else {
+                                        // Remove previous inline scripts before appending new ones
+                                        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                        oldScripts.forEach(oldScript => oldScript.remove());
+                                
+                                        const newScript = document.createElement('script');
+                                        newScript.text = script.innerHTML;
+                                        newScript.setAttribute("data-dynamic", "true"); 
+                                        document.body.appendChild(newScript);
+                                    }
+                                }
+                                }
+                                
+                                
+                                
+                                    </script>
+                                                  
+                                
+                                    </div>
+
+
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common" onclick="positionspringlefttocentre3fetch()">3 Position Spring Return left to centre</button>
+                                        <div class="nested-options positionspringlefttocentre3">  </div>
+                                       
+                                            
+                                        
+                                    
+                                    
+                                    
+                                        <script> 
+                                            function positionspringlefttocentre3fetch() {
+                                        
+                                                fetch('keyselectoractuators/keyselectorplasticscrow/positionspringlefttocentre3.html')
+                                                    .then(response => response.text())
+                                                    .then(data => {
+                                                        document.querySelector('.positionspringlefttocentre3').innerHTML = data;
+                                                        executeScriptpositionspringlefttocentre3(document.querySelector('.positionspringlefttocentre3')); // Execute scripts in loaded content
+                                                    })
+                                                    .catch(error => console.error('Error fetching content:', error));
+                                            }
+                                            
+                                      function executeScriptpositionspringlefttocentre3(element = document.getElementById('positionspringlefttocentre3')) {
+                                    if (!element) {
+                                        console.error("Element not found: secondc");
+                                        return;
+                                    }
+                                    
+                                    const scripts = element.getElementsByTagName('script');
+                                    
+                                    for (let i = 0; i < scripts.length; i++) {
+                                        const script = scripts[i];
+                                    
+                                        if (script.src) {
+                                            // Check if script already exists to prevent duplication
+                                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                                const newScript = document.createElement('script');
+                                                newScript.src = script.src;
+                                                document.body.appendChild(newScript);
+                                            }
+                                        } else {
+                                            // Remove previous inline scripts before appending new ones
+                                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                            oldScripts.forEach(oldScript => oldScript.remove());
+                                    
+                                            const newScript = document.createElement('script');
+                                            newScript.text = script.innerHTML;
+                                            newScript.setAttribute("data-dynamic", "true"); 
+                                            document.body.appendChild(newScript);
+                                        }
+                                    }
+                                    }
+                                    
+                                    
+                                    
+                                        </script>
+                                                      
+                                    
+                                        </div>
+
+
+                                        
+
+                                  
+
+                                                       
+</body>
+</html>

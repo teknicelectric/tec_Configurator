@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+</script>
+
+
+<body>
+    
+    
+   <div class="option-group">
+                <button class="option-btn btn-common" onclick="metalclippositionstayputbothfetch()">2 Position STAYPUT both side</button>
+                <div class="nested-options metalclippositionstayputboth">  </div>
+               
+                    
+                
+
+
+
+                <script> 
+                    function metalclippositionstayputbothfetch() {
+                
+                        fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippositionstayputboth.html')
+                            .then(response => response.text())
+                            .then(data => {
+                                document.querySelector('.metalclippositionstayputboth').innerHTML = data;
+                                executeScriptmetalclippositionstayputboth(document.querySelector('.metalclippositionstayputboth')); // Execute scripts in loaded content
+                            })
+                            .catch(error => console.error('Error fetching content:', error));
+                    }
+                    
+              function executeScriptmetalclippositionstayputboth(element = document.getElementById('metalclippositionstayputboth')) {
+            if (!element) {
+                console.error("Element not found: secondc");
+                return;
+            }
+            
+            const scripts = element.getElementsByTagName('script');
+            
+            for (let i = 0; i < scripts.length; i++) {
+                const script = scripts[i];
+            
+                if (script.src) {
+                    // Check if script already exists to prevent duplication
+                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                        const newScript = document.createElement('script');
+                        newScript.src = script.src;
+                        document.body.appendChild(newScript);
+                    }
+                } else {
+                    // Remove previous inline scripts before appending new ones
+                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                    oldScripts.forEach(oldScript => oldScript.remove());
+            
+                    const newScript = document.createElement('script');
+                    newScript.text = script.innerHTML;
+                    newScript.setAttribute("data-dynamic", "true"); 
+                    document.body.appendChild(newScript);
+                }
+            }
+            }
+            
+            
+            
+                </script>
+                              
+
+                </div>
+          
+                
+                 
+   <div class="option-group">
+    <button class="option-btn btn-common" onclick="metalclippostionstayputonrightfetch()">2 Position STAYPUT on right</button>
+    <div class="nested-options metalclippostionstayputonright">  </div>
+   
+        
+    
+
+
+
+    <script> 
+        function metalclippostionstayputonrightfetch() {
+    
+            fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippostionstayputonright.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('.metalclippostionstayputonright').innerHTML = data;
+                    executeScriptmetalclippostionstayputonright(document.querySelector('.metalclippostionstayputonright')); // Execute scripts in loaded content
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        }
+        
+  function executeScriptmetalclippostionstayputonright(element = document.getElementById('metalclippostionstayputonright')) {
+if (!element) {
+    console.error("Element not found: secondc");
+    return;
+}
+
+const scripts = element.getElementsByTagName('script');
+
+for (let i = 0; i < scripts.length; i++) {
+    const script = scripts[i];
+
+    if (script.src) {
+        // Check if script already exists to prevent duplication
+        if (!document.querySelector(`script[src="${script.src}"]`)) {
+            const newScript = document.createElement('script');
+            newScript.src = script.src;
+            document.body.appendChild(newScript);
+        }
+    } else {
+        // Remove previous inline scripts before appending new ones
+        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+        oldScripts.forEach(oldScript => oldScript.remove());
+
+        const newScript = document.createElement('script');
+        newScript.text = script.innerHTML;
+        newScript.setAttribute("data-dynamic", "true"); 
+        document.body.appendChild(newScript);
+    }
+}
+}
+
+
+
+    </script>
+                  
+
+    </div>
+
+
+    <div class="option-group">
+        <button class="option-btn btn-common" onclick="metalclippostionstayputonleftfetch()">2 Position STAYPUT on left</button>
+        <div class="nested-options metalclippostionstayputonleft">  </div>
+       
+            
+        
+    
+    
+    
+        <script> 
+            function metalclippostionstayputonleftfetch() {
+        
+                fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippostionstayputonleft.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.metalclippostionstayputonleft').innerHTML = data;
+                        executeScriptmetalclippostionstayputonleft(document.querySelector('.metalclippostionstayputonleft')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScriptmetalclippostionstayputonleft(element = document.getElementById('metalclippostionstayputonleft')) {
+    if (!element) {
+        console.error("Element not found: secondc");
+        return;
+    }
+    
+    const scripts = element.getElementsByTagName('script');
+    
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+    
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+    
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+    }
+    
+    
+    
+        </script>
+                      
+    
+        </div>
+                      
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="metalclippositionspringreturn2fetch()"> 2 Position Spring Return</button>
+            <div class="nested-options metalclippositionspringreturn2">  </div>
+           
+                
+            
+        
+        
+        
+            <script> 
+                function metalclippositionspringreturn2fetch() {
+            
+                    fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippositionspringreturn2.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.querySelector('.metalclippositionspringreturn2').innerHTML = data;
+                            executeScriptmetalclippositionspringreturn2(document.querySelector('.metalclippositionspringreturn2')); // Execute scripts in loaded content
+                        })
+                        .catch(error => console.error('Error fetching content:', error));
+                }
+                
+          function executeScriptmetalclippositionspringreturn2(element = document.getElementById('metalclippositionspringreturn2')) {
+        if (!element) {
+            console.error("Element not found: secondc");
+            return;
+        }
+        
+        const scripts = element.getElementsByTagName('script');
+        
+        for (let i = 0; i < scripts.length; i++) {
+            const script = scripts[i];
+        
+            if (script.src) {
+                // Check if script already exists to prevent duplication
+                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                    const newScript = document.createElement('script');
+                    newScript.src = script.src;
+                    document.body.appendChild(newScript);
+                }
+            } else {
+                // Remove previous inline scripts before appending new ones
+                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                oldScripts.forEach(oldScript => oldScript.remove());
+        
+                const newScript = document.createElement('script');
+                newScript.text = script.innerHTML;
+                newScript.setAttribute("data-dynamic", "true"); 
+                document.body.appendChild(newScript);
+            }
+        }
+        }
+        
+        
+        
+            </script>
+                          
+        
+            </div>
+  
+            <div class="option-group">
+                <button class="option-btn btn-common" onclick="metalclippositionstayputallside3fetch()">3 Position STAYPUT all side</button>
+                <div class="nested-options metalclippositionstayputallside3">  </div>
+               
+                    
+                
+            
+            
+            
+                <script> 
+                    function metalclippositionstayputallside3fetch() {
+                
+                        fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippositionstayputallside3.html')
+                            .then(response => response.text())
+                            .then(data => {
+                                document.querySelector('.metalclippositionstayputallside3').innerHTML = data;
+                                executeScriptmetalclippositionstayputallside3(document.querySelector('.metalclippositionstayputallside3')); // Execute scripts in loaded content
+                            })
+                            .catch(error => console.error('Error fetching content:', error));
+                    }
+                    
+              function executeScriptmetalclippositionstayputallside3(element = document.getElementById('metalclippositionstayputallside3')) {
+            if (!element) {
+                console.error("Element not found: secondc");
+                return;
+            }
+            
+            const scripts = element.getElementsByTagName('script');
+            
+            for (let i = 0; i < scripts.length; i++) {
+                const script = scripts[i];
+            
+                if (script.src) {
+                    // Check if script already exists to prevent duplication
+                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                        const newScript = document.createElement('script');
+                        newScript.src = script.src;
+                        document.body.appendChild(newScript);
+                    }
+                } else {
+                    // Remove previous inline scripts before appending new ones
+                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                    oldScripts.forEach(oldScript => oldScript.remove());
+            
+                    const newScript = document.createElement('script');
+                    newScript.text = script.innerHTML;
+                    newScript.setAttribute("data-dynamic", "true"); 
+                    document.body.appendChild(newScript);
+                }
+            }
+            }
+            
+            
+            
+                </script>
+                              
+            
+                </div>      
+
+                <div class="option-group">
+                    <button class="option-btn btn-common" onclick="metalclippositionstayputonright3fetch()">3 Position STAYPUT on right</button>
+                    <div class="nested-options metalclippositionstayputonright3">  </div>
+                   
+                        
+                    
+                
+                
+                
+                    <script> 
+                        function metalclippositionstayputonright3fetch() {
+                    
+                            fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippositionstayputonright3.html')
+                                .then(response => response.text())
+                                .then(data => {
+                                    document.querySelector('.metalclippositionstayputonright3').innerHTML = data;
+                                    executeScriptmetalclippositionstayputonright3(document.querySelector('.metalclippositionstayputonright3')); // Execute scripts in loaded content
+                                })
+                                .catch(error => console.error('Error fetching content:', error));
+                        }
+                        
+                  function executeScriptmetalclippositionstayputonright3(element = document.getElementById('metalclippositionstayputonright3')) {
+                if (!element) {
+                    console.error("Element not found: secondc");
+                    return;
+                }
+                
+                const scripts = element.getElementsByTagName('script');
+                
+                for (let i = 0; i < scripts.length; i++) {
+                    const script = scripts[i];
+                
+                    if (script.src) {
+                        // Check if script already exists to prevent duplication
+                        if (!document.querySelector(`script[src="${script.src}"]`)) {
+                            const newScript = document.createElement('script');
+                            newScript.src = script.src;
+                            document.body.appendChild(newScript);
+                        }
+                    } else {
+                        // Remove previous inline scripts before appending new ones
+                        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                        oldScripts.forEach(oldScript => oldScript.remove());
+                
+                        const newScript = document.createElement('script');
+                        newScript.text = script.innerHTML;
+                        newScript.setAttribute("data-dynamic", "true"); 
+                        document.body.appendChild(newScript);
+                    }
+                }
+                }
+                
+                
+                
+                    </script>
+                                  
+                
+                    </div>
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common" onclick="metalclippositionstayputonleft3fetch()">3 Position STAYPUT on left</button>
+                        <div class="nested-options metalclippositionstayputonleft3">  </div>
+                       
+                            
+                        
+                    
+                    
+                    
+                        <script> 
+                            function metalclippositionstayputonleft3fetch() {
+                        
+                                fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippositionstayputonleft3.html')
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        document.querySelector('.metalclippositionstayputonleft3').innerHTML = data;
+                                        executeScriptmetalclippositionstayputonleft3(document.querySelector('.metalclippositionstayputonleft3')); // Execute scripts in loaded content
+                                    })
+                                    .catch(error => console.error('Error fetching content:', error));
+                            }
+                            
+                      function executeScriptmetalclippositionstayputonleft3(element = document.getElementById('metalclippositionstayputonleft3')) {
+                    if (!element) {
+                        console.error("Element not found: secondc");
+                        return;
+                    }
+                    
+                    const scripts = element.getElementsByTagName('script');
+                    
+                    for (let i = 0; i < scripts.length; i++) {
+                        const script = scripts[i];
+                    
+                        if (script.src) {
+                            // Check if script already exists to prevent duplication
+                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                const newScript = document.createElement('script');
+                                newScript.src = script.src;
+                                document.body.appendChild(newScript);
+                            }
+                        } else {
+                            // Remove previous inline scripts before appending new ones
+                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                            oldScripts.forEach(oldScript => oldScript.remove());
+                    
+                            const newScript = document.createElement('script');
+                            newScript.text = script.innerHTML;
+                            newScript.setAttribute("data-dynamic", "true"); 
+                            document.body.appendChild(newScript);
+                        }
+                    }
+                    }
+                    
+                    
+                    
+                        </script>
+                                      
+                    
+                        </div>
+
+
+                        <div class="option-group"> 
+                            <button class="option-btn btn-common" onclick="metalclippositionstayputonmiddle3fetch()">3 Position STAYPUT on middle</button>
+                            <div class="nested-options metalclippositionstayputonmiddle3">  </div>
+                           
+                                
+                            
+                        
+                        
+                        
+                            <script> 
+                                function metalclippositionstayputonmiddle3fetch() {
+                            
+                                    fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippositionstayputonmiddle3.html')
+                                        .then(response => response.text())
+                                        .then(data => {
+                                            document.querySelector('.metalclippositionstayputonmiddle3').innerHTML = data;
+                                            executeScriptmetalclippositionstayputonmiddle3(document.querySelector('.metalclippositionstayputonmiddle3')); // Execute scripts in loaded content
+                                        })
+                                        .catch(error => console.error('Error fetching content:', error));
+                                }
+                                
+                          function executeScriptmetalclippositionstayputonmiddle3(element = document.getElementById('metalclippositionstayputonmiddle3')) {
+                        if (!element) {
+                            console.error("Element not found: secondc");
+                            return;
+                        }
+                        
+                        const scripts = element.getElementsByTagName('script');
+                        
+                        for (let i = 0; i < scripts.length; i++) {
+                            const script = scripts[i];
+                        
+                            if (script.src) {
+                                // Check if script already exists to prevent duplication
+                                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                    const newScript = document.createElement('script');
+                                    newScript.src = script.src;
+                                    document.body.appendChild(newScript);
+                                }
+                            } else {
+                                // Remove previous inline scripts before appending new ones
+                                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                oldScripts.forEach(oldScript => oldScript.remove());
+                        
+                                const newScript = document.createElement('script');
+                                newScript.text = script.innerHTML;
+                                newScript.setAttribute("data-dynamic", "true"); 
+                                document.body.appendChild(newScript);
+                            }
+                        }
+                        }
+                        
+                        
+                        
+                            </script>
+                                          
+                        
+                            </div>
+
+                            <div class="option-group">   
+                                <button class="option-btn btn-common" onclick="metalclippositionspringreturn3fetch()">3 Position Spring Return</button>
+                                <div class="nested-options metalclippositionspringreturn3">  </div>
+                               
+                                    
+                                
+                            
+                            
+                            
+                                <script> 
+                                    function metalclippositionspringreturn3fetch() {
+                                
+                                        fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclipmetalpositionspringreturn3.html')
+                                            .then(response => response.text())
+                                            .then(data => {
+                                                document.querySelector('.metalclippositionspringreturn3').innerHTML = data;
+                                                executeScriptmetalclippositionspringreturn3(document.querySelector('.metalclippositionspringreturn3')); // Execute scripts in loaded content
+                                            })
+                                            .catch(error => console.error('Error fetching content:', error));
+                                    }
+                                    
+                              function executeScriptmetalclippositionspringreturn3(element = document.getElementById('metalclippositionspringreturn3')) {
+                            if (!element) {
+                                console.error("Element not found: secondc");
+                                return;
+                            }
+                            
+                            const scripts = element.getElementsByTagName('script');
+                            
+                            for (let i = 0; i < scripts.length; i++) {
+                                const script = scripts[i];
+                            
+                                if (script.src) {
+                                    // Check if script already exists to prevent duplication
+                                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                        const newScript = document.createElement('script');
+                                        newScript.src = script.src;
+                                        document.body.appendChild(newScript);
+                                    }
+                                } else {
+                                    // Remove previous inline scripts before appending new ones
+                                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                    oldScripts.forEach(oldScript => oldScript.remove());
+                            
+                                    const newScript = document.createElement('script');
+                                    newScript.text = script.innerHTML;
+                                    newScript.setAttribute("data-dynamic", "true"); 
+                                    document.body.appendChild(newScript);
+                                }
+                            }
+                            }
+                            
+                            
+                            
+                                </script>
+                                              
+                            
+                                </div>
+
+
+                                <div class="option-group">   
+                                    <button class="option-btn btn-common" onclick="metalclippositionspringreturnright3fetch()">3 Position Spring Return right to centre</button>
+                                    <div class="nested-options metalclippositionspringreturnright3">  </div>
+                                   
+                                        
+                                    
+                                
+                                
+                                
+                                    <script> 
+                                        function metalclippositionspringreturnright3fetch() {
+                                    
+                                            fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippositionspringreturnright3.html')
+                                                .then(response => response.text())
+                                                .then(data => {
+                                                    document.querySelector('.metalclippositionspringreturnright3').innerHTML = data;
+                                                    executeScriptmetalclippositionspringreturnright3(document.querySelector('.metalclippositionspringreturnright3')); // Execute scripts in loaded content
+                                                })
+                                                .catch(error => console.error('Error fetching content:', error));
+                                        }
+                                        
+                                  function executeScriptmetalclippositionspringreturnright3(element = document.getElementById('metalclippositionspringreturnright3')) {
+                                if (!element) {
+                                    console.error("Element not found: secondc");
+                                    return;
+                                }
+                                
+                                const scripts = element.getElementsByTagName('script');
+                                
+                                for (let i = 0; i < scripts.length; i++) {
+                                    const script = scripts[i];
+                                
+                                    if (script.src) {
+                                        // Check if script already exists to prevent duplication
+                                        if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                            const newScript = document.createElement('script');
+                                            newScript.src = script.src;
+                                            document.body.appendChild(newScript);
+                                        }
+                                    } else {
+                                        // Remove previous inline scripts before appending new ones
+                                        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                        oldScripts.forEach(oldScript => oldScript.remove());
+                                
+                                        const newScript = document.createElement('script');
+                                        newScript.text = script.innerHTML;
+                                        newScript.setAttribute("data-dynamic", "true"); 
+                                        document.body.appendChild(newScript);
+                                    }
+                                }
+                                }
+                                
+                                
+                                
+                                    </script>
+                                                  
+                                
+                                    </div>
+
+
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common" onclick="metalclippositionspringlefttocentre3fetch()">3 Position Spring Return left to centre</button>
+                                        <div class="nested-options metalclippositionspringlefttocentre3">  </div>
+                                       
+                                            
+                                        
+                                    
+                                    
+                                    
+                                        <script> 
+                                            function metalclippositionspringlefttocentre3fetch() {
+                                        
+                                                fetch('keyselectoractuators/metalkeyselectorplasticclip/metalclippositionspringlefttocentre3.html')
+                                                    .then(response => response.text())
+                                                    .then(data => {
+                                                        document.querySelector('.metalclippositionspringlefttocentre3').innerHTML = data;
+                                                        executeScriptmetalclippositionspringlefttocentre3(document.querySelector('.metalclippositionspringlefttocentre3')); // Execute scripts in loaded content
+                                                    })
+                                                    .catch(error => console.error('Error fetching content:', error));
+                                            }
+                                            
+                                      function executeScriptmetalclippositionspringlefttocentre3(element = document.getElementById('metalclippositionspringlefttocentre3')) {
+                                    if (!element) {
+                                        console.error("Element not found: secondc");
+                                        return;
+                                    }
+                                    
+                                    const scripts = element.getElementsByTagName('script');
+                                    
+                                    for (let i = 0; i < scripts.length; i++) {
+                                        const script = scripts[i];
+                                    
+                                        if (script.src) {
+                                            // Check if script already exists to prevent duplication
+                                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                                const newScript = document.createElement('script');
+                                                newScript.src = script.src;
+                                                document.body.appendChild(newScript);
+                                            }
+                                        } else {
+                                            // Remove previous inline scripts before appending new ones
+                                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                            oldScripts.forEach(oldScript => oldScript.remove());
+                                    
+                                            const newScript = document.createElement('script');
+                                            newScript.text = script.innerHTML;
+                                            newScript.setAttribute("data-dynamic", "true"); 
+                                            document.body.appendChild(newScript);
+                                        }
+                                    }
+                                    }
+                                    
+                                    
+                                    
+                                        </script>
+                                                      
+                                    
+                                        </div>
+
+
+                                        
+
+                                  
+
+                                                       
+</body>
+</html>

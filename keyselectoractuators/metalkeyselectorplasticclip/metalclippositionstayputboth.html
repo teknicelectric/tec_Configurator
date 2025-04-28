@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.metalclipkeypostionstayputbothbtn').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+        const flushForms = document.querySelectorAll('.flushform');
+        flushForms.forEach(form => form.reset());
+
+        // Hide elements
+        // document.getElementById('resultmetalclipkeypostionstayputboth').classList.add('hidden');
+        document.getElementById('descriptionmetalclipkeypostionstayputboth').classList.add('hidden');
+        document.getElementById('metalclipkeypostionstayputbothnoimageContainer').classList.add('hidden');
+        document.getElementById('metalclipkeypostionstayputbothncimageContainer').classList.add('hidden');
+        document.getElementById('EmetalclipkeypostionstayputbothnoimageContainer').classList.add('hidden');
+        document.getElementById('EmetalclipkeypostionstayputbothncimageContainer').classList.add('hidden');
+      
+        document.getElementById('metalclipkeypostionstayputbothblackimageContainer').classList.add('hidden');
+       
+     
+
+        // Hide plus buttons
+        document.getElementById('metalclipkeypostionstayputbothplus1').style.display = 'none';
+        document.getElementById('metalclipkeypostionstayputbothplus2').style.display = 'none';
+        document.getElementById('Emetalclipkeypostionstayputbothplus2').style.display = 'none';
+
+    });
+});
+    
+  
+</script>
+
+
+<body>
+    
+    <div class="outputflex">
+
+        <div class="metalclipkeypostionstayputboth">
+    
+                    <div class="option-group">
+                        <button class="option-btn btn-common metalclipkeypostionstayputbothbtn"><div class="black-btn"></div>(4AK2-2PB)</button>
+                        
+                                
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metalclipkeypostionstayputbothbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetalclipkeypostionstayputbothbtnnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetalclipkeypostionstayputbothbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetalclipkeypostionstayputbothbtnnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetalclipkeypostionstayputbothbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metalclipkeypostionstayputbothbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetalclipkeypostionstayputbothbtnnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetalclipkeypostionstayputbothbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetalclipkeypostionstayputbothbtnnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetalclipkeypostionstayputbothbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                   
+                            
+                                </div>
+                            </div>
+              
+
+                  
+                                    
+                                </div>
+
+                         
+            
+  
+                        <script>
+                        
+                            
+                            // for metalsecond
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('secondmetalclipkeypostionstayputbothbtnnno').addEventListener('click', function () {
+                                document.getElementById('secondinputmetalclipkeypostionstayputbothbtnno').classList.remove('hidden');
+                                document.getElementById('secondinputmetalclipkeypostionstayputbothbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('secondmetalclipkeypostionstayputbothbtnnnc').addEventListener('click', function () {
+                                document.getElementById('secondinputmetalclipkeypostionstayputbothbtnnc').classList.remove('hidden');
+                                document.getElementById('secondinputmetalclipkeypostionstayputbothbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+
+                            if (typeof SmetalpositiveNumberOnly === 'undefined') {
+    const SmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('secondinputmetalclipkeypostionstayputbothbtnno').addEventListener('input', SmetalpositiveNumberOnly);
+    document.getElementById('secondinputmetalclipkeypostionstayputbothbtnnc').addEventListener('input', SmetalpositiveNumberOnly);
+}
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function SmetalgenerateCode() {
+                                const noValue = document.getElementById('secondinputmetalclipkeypostionstayputbothbtnno').value;
+                                const ncValue = document.getElementById('secondinputmetalclipkeypostionstayputbothbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetalclipkeypostionstayputboth');
+                                const descriptionContainer = document.getElementById('descriptionmetalclipkeypostionstayputboth');
+                                const generatedCodeElement = document.getElementById('generated-codemetalclipkeypostionstayputboth');
+                            
+                                // Image containers
+                                const metalclipkeypostionstayputbothblackimageContainer = document.getElementById('metalclipkeypostionstayputbothblackimageContainer');
+                                const metalclipkeypostionstayputbothnoimageContainer = document.getElementById('metalclipkeypostionstayputbothnoimageContainer');
+                                const metalclipkeypostionstayputbothncimageContainer = document.getElementById('metalclipkeypostionstayputbothncimageContainer');
+                            
+                                // Plus symbols
+                                const metalclipkeypostionstayputbothplus1 = document.getElementById('metalclipkeypostionstayputbothplus1');
+                                const metalclipkeypostionstayputbothplus2 = document.getElementById('metalclipkeypostionstayputbothplus2');
+                            
+                                // Ensure black image is always visible
+                                metalclipkeypostionstayputbothblackimageContainer.classList.remove('hidden');
+                                metalclipkeypostionstayputbothplus1.style.display = 'none'; // Hide symbols initially
+                                metalclipkeypostionstayputbothplus2.style.display = 'none';
+                            
+                                const noImageName = metalclipkeypostionstayputbothnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metalclipkeypostionstayputbothncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metalclipkeypostionstayputbothnoimageContainer.querySelector('img').src = `pushbtn/clipon/no-${noValue}.png`;
+                                    noImageName.textContent = `C1*${noValue}`;
+                                    metalclipkeypostionstayputbothnoimageContainer.classList.remove('hidden');
+                                    metalclipkeypostionstayputbothplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metalclipkeypostionstayputbothnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metalclipkeypostionstayputbothncimageContainer.querySelector('img').src = `pushbtn/clipon/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `C2*${ncValue}`;
+                                    metalclipkeypostionstayputbothncimageContainer.classList.remove('hidden');
+                                    metalclipkeypostionstayputbothplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metalclipkeypostionstayputbothncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "4PSK211-2PB",
+                                        "12": "4PSK212-2PB",
+                                        "10": "4PSK210-2PB",
+                                        "01": "4PSK201-2PB",
+                                        "21": "4PSK221-2PB",
+                                        "23": "4PSK223-2PB",
+                                        "22": "4PSK222-2PB",
+                                        "33": "4PSK233-2PB",
+                                        "32": "4PSK232-2PB",
+                                        "13": "4PSK213-2PB",
+                                        "14": "4PSK214-2PB",
+                                        "15": "4PSK215-2PB",
+                                        "24": "4PSK224-2PB",
+                                        "31": "4PSK231-2PB",
+                                        "41": "4PSK241-2PB",
+                                        "42": "4PSK242-2PB",
+                                        "51": "4PSK251-2PB",
+                                        "00": "4PSK200-2PB",
+                                        "20": "4PSK220-2PB",
+                                        "30": "4PSK230-2PB",
+                                        "40": "4PSK240-2PB",
+                                        "50": "4PSK250-2PB",
+                                        "60": "4PSK260-2PB",
+                                        "02": "4PSK202-2PB",
+                                        "03": "4PSK203-2PB",
+                                        "04": "4PSK204-2PB",
+                                        "05": "4PSK205-2PB",
+                                        "06": "4PSK206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metalclipkeypostionstayputbothnoimageContainer.classList.add('hidden');
+                                        metalclipkeypostionstayputbothncimageContainer.classList.add('hidden');
+                                        metalclipkeypostionstayputbothplus1.style.display = 'none';
+                                        metalclipkeypostionstayputbothplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('secondinputmetalclipkeypostionstayputbothbtnno').addEventListener('input', SmetalgenerateCode);
+                            document.getElementById('secondinputmetalclipkeypostionstayputbothbtnnc').addEventListener('input', SmetalgenerateCode);
+                            
+                            // economy
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Esecondmetalclipkeypostionstayputbothbtnnno').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnno').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Esecondmetalclipkeypostionstayputbothbtnnnc').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnnc').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof ESmetalpositiveNumberOnly === 'undefined') {
+    const ESmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnno').addEventListener('input', ESmetalpositiveNumberOnly);
+                            document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnnc').addEventListener('input', ESmetalpositiveNumberOnly);
+}
+
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function ESmetalgenerateCode() {
+                                const noValue = document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnno').value;
+                                const ncValue = document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetalclipkeypostionstayputboth');
+                                const descriptionContainer = document.getElementById('descriptionmetalclipkeypostionstayputboth');
+                                const generatedCodeElement = document.getElementById('generated-codemetalclipkeypostionstayputboth');
+                            
+                                // Image containers
+                                const metalclipkeypostionstayputbothblackimageContainer = document.getElementById('metalclipkeypostionstayputbothblackimageContainer');
+                                const metalclipkeypostionstayputbothnoimageContainer = document.getElementById('EmetalclipkeypostionstayputbothnoimageContainer');
+                                const metalclipkeypostionstayputbothncimageContainer = document.getElementById('EmetalclipkeypostionstayputbothncimageContainer');
+                            
+                                // Plus symbols
+                                const metalclipkeypostionstayputbothplus1 = document.getElementById('metalclipkeypostionstayputbothplus1');
+                                const metalclipkeypostionstayputbothplus2 = document.getElementById('Emetalclipkeypostionstayputbothplus2');
+                            
+                                // Ensure black image is always visible
+                                metalclipkeypostionstayputbothblackimageContainer.classList.remove('hidden');
+                                metalclipkeypostionstayputbothplus1.style.display = 'none'; // Hide symbols initially
+                                metalclipkeypostionstayputbothplus2.style.display = 'none';
+                            
+                                const noImageName = metalclipkeypostionstayputbothnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metalclipkeypostionstayputbothncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metalclipkeypostionstayputbothnoimageContainer.querySelector('img').src = `pushbtn/clipone/no-${noValue}.png`;
+                                    noImageName.textContent = `C1*${noValue}`;
+                                    metalclipkeypostionstayputbothnoimageContainer.classList.remove('hidden');
+                                    metalclipkeypostionstayputbothplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metalclipkeypostionstayputbothnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metalclipkeypostionstayputbothncimageContainer.querySelector('img').src = `pushbtn/clipone/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `C2*${ncValue}`;
+                                    metalclipkeypostionstayputbothncimageContainer.classList.remove('hidden');
+                                    metalclipkeypostionstayputbothplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metalclipkeypostionstayputbothncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "E4PSK211-2PB",
+                                        "12": "E4PSK212-2PB",
+                                        "10": "E4PSK210-2PB",
+                                        "01": "E4PSK201-2PB",
+                                        "21": "E4PSK221-2PB",
+                                        "23": "E4PSK223-2PB",
+                                        "22": "E4PSK222-2PB",
+                                        "33": "E4PSK233-2PB",
+                                        "32": "E4PSK232-2PB",
+                                        "13": "E4PSK213-2PB",
+                                        "14": "E4PSK214-2PB",
+                                        "15": "E4PSK215-2PB",
+                                        "24": "E4PSK224-2PB",
+                                        "31": "E4PSK231-2PB",
+                                        "41": "E4PSK241-2PB",
+                                        "42": "E4PSK242-2PB",
+                                        "51": "E4PSK251-2PB",
+                                        "00": "E4PSK200-2PB",
+                                        "20": "E4PSK220-2PB",
+                                        "30": "E4PSK230-2PB",
+                                        "40": "E4PSK240-2PB",
+                                        "50": "E4PSK250-2PB",
+                                        "60": "E4PSK260-2PB",
+                                        "02": "E4PSK202-2PB",
+                                        "03": "E4PSK203-2PB",
+                                        "04": "E4PSK204-2PB",
+                                        "05": "E4PSK205-2PB",
+                                        "06": "E4PSK206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metalclipkeypostionstayputbothnoimageContainer.classList.add('hidden');
+                                        metalclipkeypostionstayputbothncimageContainer.classList.add('hidden');
+                                        metalclipkeypostionstayputbothplus1.style.display = 'none';
+                                        metalclipkeypostionstayputbothplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnno').addEventListener('input', ESmetalgenerateCode);
+                            document.getElementById('Esecondinputmetalclipkeypostionstayputbothbtnnc').addEventListener('input', ESmetalgenerateCode);
+                            
+                          
+                            </script>
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultmetalclipkeypostionstayputboth" class="result hidden">
+  
+     <p id="generated-codemetalclipkeypostionstayputboth"></p>
+     <div id="descriptionmetalclipkeypostionstayputboth" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ <!-- flush images -->
+ <div class="flushimg">
+   
+    <div class="image-container hidden" id="metalclipkeypostionstayputbothblackimageContainer">
+        <img src="keyselectoractuators/Key Selector/Key Selector Clip on Metal (1).png" alt="Product Image" class="product-image">
+        <div class="image-name">4AK2-2PB</div>
+    </div>
+
+    <div id="metalclipkeypostionstayputbothplus1" class="plus-symbol" style="display: none;">+</div>
+
+    <div class="image-container hidden" id="metalclipkeypostionstayputbothnoimageContainer">
+    <img src="pushbtn/clipon/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="metalclipkeypostionstayputbothplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="metalclipkeypostionstayputbothncimageContainer">
+    <img src="pushbtn/clipon/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>
+</div>
+
+<div class="image-container hidden" id="EmetalclipkeypostionstayputbothnoimageContainer">
+    <img src="pushbtn/clipone/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="Emetalclipkeypostionstayputbothplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="EmetalclipkeypostionstayputbothncimageContainer">
+    <img src="pushbtn/clipone/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>    
+</div>
+    
+</div>
+
+
+ </div>
+
+</div>
+
+</body>
+</html>
