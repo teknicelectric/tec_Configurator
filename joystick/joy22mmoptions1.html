@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.whitebtn').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+
+
+        
+       
+        document.getElementById('whitece').classList.add('hidden');
+        document.getElementById('blackce').classList.add('hidden');
+        // document.getElementById('greence').classList.add('hidden');
+        document.getElementById('plusSymbol').classList.add('hidden');
+        document.getElementById('plusSymbol2').classList.add('hidden');
+        document.getElementById('no-1').classList.add('hidden');
+        document.getElementById('nc-1').classList.add('hidden');
+
+        
+
+     
+
+    });
+});
+  </script>
+<style>
+    .outputflex{
+        display: flex;
+    }
+    .output{
+        margin-top: -100px;
+        margin-left: 500px;
+    }
+    .imagecon {
+        position: relative;
+    
+        
+    }
+    #resultc{
+    margin-bottom: 30PX;
+}
+    
+     .imagecon img{
+        width: 150px;
+     }
+</style>
+<body>
+    <div class="outputflex">
+
+        <div class="clipop">
+            <div class="option-group">
+               
+                    
+                          <!-- 2 colour -->
+                    <div class="option-group">
+                        <button class="option-btn btn-common whitebtn secondthoption"><div class="black-btn"></div>Black</button>
+                        
+                                
+                        <div class="nested-options">
+                            <!-- Silver Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoption" gdata-colorca="blackcea" code-colora="22.5 Metal 2 Position stayput 1NO Contact"  gdata-codeca="2PSJS2210-2P">1NO</button>
+                                
+                            </div>
+                            <!-- Gold Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoption" gdata-colorca="blackcea" code-colora="22.5 Metal 2 Position stayput 2NO Contact"  gdata-codeca="2PSJS2220-2P">2NO</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoption" gdata-colorca="blackcea" code-colora="22.5 Metal 2 Position stayput 3NO Contact"   gdata-codeca="2PSJS2230-2P">3NO</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common secondthoption" gdata-colorca="blackcea" code-colora="22.5 Metal 2 Position stayput 4NO Contact"  gdata-codeca="2PSJS2240-2P">4NO</button> 
+                          
+                            </div>
+                           
+                        </div>
+                            </div>
+                            
+     
+           
+         
+
+            </div>
+        </div>
+
+        <div class="output">
+
+            <!-- Result display section -->
+         <!-- Result display section -->
+         <div id="resultc" class="result hidden">
+          
+             <p id="generated-codec"></p>
+             <div id="description" class="description hidden">
+                 <p id="description-title"></p>
+             </div>
+         </div>
+      
+
+<div class="imagecon sevenhimgaa">
+    
+
+        <img src="joystick/2image.jpg" id="blackcea" class="hidden" alt="Black">
+
+        
+
+    
+    </div>
+
+
+<script>
+    document.querySelectorAll('.secondthoption').forEach(button => {
+   button.addEventListener('click', function () {
+       const color = this.getAttribute('gdata-colorca');
+       const codeclr = this.getAttribute('code-colora');
+       const productCode = this.getAttribute('gdata-codeca');
+
+
+       // Hide all images initially
+       document.querySelectorAll('.sevenhimgaa img, .sevencodeaa img').forEach(img => img.classList.add('hidden'));
+     
+
+      
+       // Show the primary color image
+       const selectedImage = document.getElementById(color);
+       if (selectedImage) {
+           selectedImage.classList.remove('hidden');
+       }
+
+
+       // Display the product code
+       const productInfo = document.getElementById('generated-codec');
+      productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+       const productdis = document.getElementById('description-title');
+      productdis.innerHTML = `<span class='label'>Description: </span>` + codeclr;
+       document.getElementById("resultc").classList.remove("hidden"); 
+   });
+});
+
+           </script>
+
+
+
+
+         </div>
+         
+        </div>
+        
+</body>
+</html>

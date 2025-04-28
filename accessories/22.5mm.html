@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+
+  </script>
+<style>
+    .outputflex{
+        display: flex;
+    }
+   
+ 
+
+   
+    
+</style>
+<body>
+    <div class="outputflex">
+
+        <div class="clipop">
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="PADLOCK">Padlock</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="Shroud">Shroud </button></div>
+            <div class="option-group">
+                <button class="option-btn btn-common">Lens</button>
+                <div class="nested-options">
+                    <div class="option-group">
+                        <button class="option-btn btn-common seventhoption" data-img="Lens1">For Pilot light with Filament Bulb / LED</button>
+                    </div>
+                    <div class="option-group">
+                        <button class="option-btn btn-common seventhoption" data-img="Lens2">For Illuminated Actuator with Filament Bulb/LED</button>
+                    </div>
+
+                </div> 
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common">Legend plate</button>
+                <div class="nested-options">
+                    <div class="option-group">
+                        <button class="option-btn btn-common seventhoption" data-img="position1">1 Position</button>
+                    </div>
+                    <div class="option-group">
+                        <button class="option-btn btn-common seventhoption" data-img="position2">2 Position</button>
+                    </div>
+                    <div class="option-group">
+                        <button class="option-btn btn-common seventhoption" data-img="position3">3 Position</button>
+                    </div>
+
+                </div> 
+            </div>
+
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="legendplatee">Legend plate E-Stop (plastic) </button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="blankingplug">Blanking Plug</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="spanner">Spanner</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="adaptor">Adaptor</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="pushpush">Push Push Mechanism</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="flange">Fixing Flange</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="boots">Boots</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="filamentbulp">Filament Bulb</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="ledbulp">LED Bulb</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="mounting">Flush Mounting Adaptor</button></div>
+            <div class="option-group"><button class="option-btn btn-common seventhoption" data-img="sparekey">Spare Key</button></div>
+
+
+
+    </div>
+
+
+        <div class="output">
+
+        
+      
+        <div class="sevenhimg">
+
+            <img src="accessories/accesimg/Padlock 1.png" id="PADLOCK" class="hidden" alt="White">
+            <img src="accessories/accesimg/Shroud 1.png" id="Shroud" class="hidden" alt="White">
+            <img src="accessories/accesimg/Lens 1.png" id="Lens1" class="hidden" alt="White">
+            <img src="accessories/accesimg/Lens 2.png" id="Lens2" class="hidden" alt="White">
+            <img src="accessories/accesimg/Legend Plate Position1.png" id="position1" class="hidden" alt="White">
+            <img src="accessories/accesimg/Legend Plate Position 2.png" id="position2" class="hidden" alt="White">
+            <img src="accessories/accesimg/Legend Plate Position 3.png" id="position3" class="hidden" alt="White">
+            <img src="accessories/accesimg/Legend Plate E-Stop.png" id="legendplatee" class="hidden" alt="White">
+            <img src="accessories/accesimg/Blanking Plug 1.png" id="blankingplug" class="hidden" alt="White">
+            <img src="accessories/accesimg/Spanner 1.png" id="spanner" class="hidden" alt="White">
+            <img src="accessories/accesimg/Adaptor 1.png" id="adaptor" class="hidden" alt="White">
+            <img src="accessories/accesimg/Push Push Mechanism.png" id="pushpush" class="hidden" alt="White">
+            <img src="accessories/accesimg/Fixing Flange.png" id="flange" class="hidden" alt="White">
+            <img src="accessories/accesimg/Boots.png" id="boots" class="hidden" alt="White">
+            <img src="accessories/accesimg/Filament Bulb 1.png" id="filamentbulp" class="hidden" alt="White">
+            <img src="accessories/accesimg/LED Bulb 1.png" id="ledbulp" class="hidden" alt="White">
+            <img src="accessories/accesimg/Flush Mounting Adaptor 1.png" id="mounting" class="hidden" alt="White">
+            <img src="accessories/accesimg/Spare Key.png" id="sparekey" class="hidden" alt="White">
+
+
+
+
+
+
+
+          
+           
+        </div>
+            <script>
+    document.querySelectorAll('.seventhoption').forEach(button => {
+    button.addEventListener('click', function () {
+        const dataimg = this.getAttribute('data-img');
+        const selectedImage = document.getElementById(dataimg);
+
+      
+        if (selectedImage.classList.contains('hidden')) { 
+            document.querySelectorAll('.sevenhimg img').forEach(img => img.classList.add('hidden'));
+            selectedImage.classList.remove('hidden');
+        } else {
+         selectedImage.classList.add('hidden');
+        }
+    });
+});
+
+
+            </script>
+
+
+  
+
+         </div>
+         
+        </div>
+        
+</body>
+</html>

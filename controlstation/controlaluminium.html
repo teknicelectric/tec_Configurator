@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+</script>
+<style>
+    .controlsecalu{
+        display: flex;
+    }
+
+    .controlsecalu img{
+        width: 300px;
+    }
+    
+    .product-codec{
+margin-top: 50px;
+    }
+
+    .controlaluimg {
+       display: block;
+    
+        
+    }
+    #resultcontrolsalu{
+    margin-bottom: 30PX;
+}
+    
+     .controlaluimg img{
+        width: 150px;
+     }
+ 
+</style>
+<body>
+    <div class="controlsecalu">
+   <div class="controlcolor">
+                    <div class="option-group">
+                        <button class="option-btn btn-common whitebtn controlalumi">1 Way</button>
+                        <div class="nested-options">
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn controlalumi" >80mm*90mm*52mm</button>
+                                <div class="nested-options">
+                                    <!-- 1st colour -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming1" data-codealu="2005A13" data-discsalu="Aluminium Housing 1 Way Cutoff Dia 80mm*90mm*52mm with Grey Cover/Black Housing">
+                                            <div class="gray-btn"></div> Grey Cover / Black Housing
+                                        </button>                                                                           
+                                    </div>
+                                  
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluminy1" data-codealu="2005A10" data-discsalu="Aluminium Housing 1 Way Cutoff Dia 80mm*90mm*52mm with Yellow Cover / Black Housing">
+                                            <div class="yellow-btn"></div>Yellow Cover / Black Housing
+                                        </button>
+                                    </div>
+                          
+                            </div>
+                            </div>
+                        
+                            <div class="option-group">
+                                <button class="option-btn btn-common  controlalumi">80mm*90mm*70mm</button>
+                                <div class="nested-options">
+                                     <!-- 1st colour -->
+                                     <div class="option-group">
+                                        <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming1" data-codealu="7001A13" data-discsalu="Aluminium Housing 1 Way Cutoff Dia 80mm*90mm*70mm with Grey Cover/Black Housing">
+                                            <div class="gray-btn"></div> Grey Cover / Black Housing
+                                        </button>                                                                           
+                                    </div>
+                                  
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluminy1" data-codealu="7001A10" data-discsalu="Aluminium Housing 1 Way Cutoff Dia 80mm*90mm*70mm with Yellow Cover/Black Housing">
+                                            <div class="yellow-btn"></div>Yellow Cover / Black Housing
+                                        </button>
+                                    </div>
+                        
+                                
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="option-group">
+                            <button class="option-btn btn-common whitebtn controlalumi">2 Way</button>
+                            <div class="nested-options">
+                                <div class="option-group">
+                                    <button class="option-btn btn-common whitebtn controlalumi" >80mm*90mm*52mm</button>
+                                    <div class="nested-options">
+                                        <!-- 1st colour -->
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming2" data-codealu="2006C13" data-discsalu="Aluminium Housing 2 way Cutoff Dia 80mm*90mm*52mm with Grey Cover/Black Housing">
+                                                <div class="gray-btn"></div> Grey Cover / Black Housing
+                                            </button>                                                                           
+                                        </div>
+                                      
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluminy2" data-codealu="2017C10" data-discsalu="Aluminium Housing 2 way Cutoff Dia 80mm*90mm*52mm with Yellow Cover / Black Housing">
+                                                <div class="yellow-btn"></div>Yellow Cover / Black Housing
+                                            </button>
+                                        </div>
+                              
+                                </div>
+                                </div>
+                            
+                                <div class="option-group">
+                                    <button class="option-btn btn-common  controlalumi">80mm*90mm*70mm</button>
+                                    <div class="nested-options">
+                                         <!-- 1st colour -->
+                                         <div class="option-group">
+                                            <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming2" data-codealu="7001C13" data-discsalu="Aluminium Housing 2 way Cutoff Dia 80mm*90mm*70mm with Grey Cover/Black Housing">
+                                                <div class="gray-btn"></div> Grey Cover / Black Housing
+                                            </button>                                                                           
+                                        </div>
+                                      
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluminy2" data-codealu="7001C10" data-discsalu="Aluminium Housing 2 way Cutoff Dia 80mm*90mm*70mm with Yellow Cover/Black Housing">
+                                                <div class="yellow-btn"></div>Yellow Cover / Black Housing
+                                            </button>
+                                        </div>
+                            
+                                    
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn controlalumi">3 Way</button>
+                                <div class="nested-options">
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common whitebtn controlalumi" >80mm*90mm*52mm</button>
+                                        <div class="nested-options">
+                                            <!-- 1st colour -->
+                                            <div class="option-group">
+                                                <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming3" data-codealu="2007E13" data-discsalu="Aluminium Housing 3 Way Cutoff Dia 80mm*90mm*52mm with Grey Cover/Black Housing">
+                                                    <div class="gray-btn"></div> Grey Cover / Black Housing
+                                                </button>                                                                           
+                                            </div>
+                                          
+                                            <div class="option-group">
+                                                <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluminy3" data-codealu="2014E10" data-discsalu="Aluminium Housing 3 Way Cutoff Dia 80mm*90mm*52mm with Yellow Cover / Black Housing">
+                                                    <div class="yellow-btn"></div>Yellow Cover / Black Housing
+                                                </button>
+                                            </div>
+                                  
+                                    </div>
+                                    </div>
+                                
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common  controlalumi">80mm*90mm*70mm</button>
+                                        <div class="nested-options">
+                                             <!-- 1st colour -->
+                                             <div class="option-group">
+                                                <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming3" data-codealu="7001E13" data-discsalu="Aluminium Housing 3 Way Cutoff Dia 80mm*90mm*70mm with Grey Cover/Black Housing">
+                                                    <div class="gray-btn"></div> Grey Cover / Black Housing
+                                                </button>                                                                           
+                                            </div>
+                                          
+                                            <div class="option-group">
+                                                <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluminy3" data-codealu="7002E10" data-discsalu="Aluminium Housing 3 Way Cutoff Dia 80mm*90mm*70mm with Yellow Cover/Black Housing">
+                                                    <div class="yellow-btn"></div>Yellow Cover / Black Housing
+                                                </button>
+                                            </div>
+                                
+                                        
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="option-group">
+                                    <button class="option-btn btn-common whitebtn controlalumi">4 Way</button>
+                                    <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common whitebtn controlalumi" >80mm*90mm*52mm</button>
+                                            <div class="nested-options">
+                                                <!-- 1st colour -->
+                                                <div class="option-group">
+                                                    <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming4" data-codealu="2010G13" data-discsalu="Aluminium Housing 4 Way Cutoff Dia 80mm*90mm*52mm with Grey Cover/Black Housing">
+                                                        <div class="gray-btn"></div> Grey Cover / Black Housing
+                                                    </button>                                                                           
+                                                </div>
+                                              
+                                                <div class="option-group">
+                                                    <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluminy4" data-codealu="2011G10" data-discsalu="Aluminium Housing 4 Way Cutoff Dia 80mm*90mm*52mm with Yellow Cover / Black Housing">
+                                                        <div class="yellow-btn"></div>Yellow Cover / Black Housing
+                                                    </button>
+                                                </div>
+                                      
+                                        </div>
+                                        </div>
+                                    
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common  controlalumi">80mm*90mm*70mm</button>
+                                            <div class="nested-options">
+                                                 <!-- 1st colour -->
+                                                 <div class="option-group">
+                                                    <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming4" data-codealu="7001G13" data-discsalu="Aluminium Housing 4 Way Cutoff Dia 80mm*90mm*70mm with Grey Cover/Black Housing">
+                                                        <div class="gray-btn"></div> Grey Cover / Black Housing
+                                                    </button>                                                                           
+                                                </div>
+                                              
+                                                <div class="option-group">
+                                                    <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluminy4" data-codealu="7001G10" data-discsalu="Aluminium Housing 4 Way Cutoff Dia 80mm*90mm*70mm with Yellow Cover/Black Housing">
+                                                        <div class="yellow-btn"></div>Yellow Cover / Black Housing
+                                                    </button>
+                                                </div>
+                                    
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common whitebtn controlalumi">6 Way</button>
+                                        <div class="nested-options">
+                                            <div class="option-group">
+                                                <button class="option-btn btn-common whitebtn controlalumi" >180mm x 180mm x 101 m</button>
+                                                <div class="nested-options">
+                                                    <!-- 1st colour -->
+                                                    <div class="option-group">
+                                                        <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming6" data-codealu="2010J14" data-discsalu="Aluminium Housing 6 Way Cutoff Dia 180mm*180mm*101mm with Grey Cover/Grey Housing">
+                                                            <div class="gray-btn"></div> Grey Cover / Black Housing
+                                                        </button>                                                                           
+                                                    </div>
+                                                  
+                                                  
+                                          
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common whitebtn controlalumi">9 Way</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn btn-common whitebtn controlalumi" >180mm x 180mm x 101 m</button>
+                                                    <div class="nested-options">
+                                                        <!-- 1st colour -->
+                                                        <div class="option-group">
+                                                            <button class="option-btn btn-common whitebtn controlalumi" data-coloralu="aluming9" data-codealu="2059J14" data-discsalu="Aluminium Housing 9 Way Cutoff Dia 180mm*180mm*101mm with Grey Cover / Grey Housing">
+                                                                <div class="gray-btn"></div> Grey Cover / Black Housing
+                                                            </button>                                                                           
+                                                        </div>
+                                                      
+                                                      
+                                              
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+
+
+
+                </div>
+              
+
+               
+
+
+              
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultcontrolsalu" class="result hidden">
+  
+     <p id="generated-codecontrolsalu"></p>
+     <div id="description" class="description hidden">
+         <p id="description-titlecontrolsalu"></p>
+     </div>
+ </div>
+ 
+
+   <div class="controlaluimg">
+
+    <img src="controlstation/alugray/aw1.png" id="aluming1" class="hidden" alt="alumin">
+    <img src="controlstation/alugray/aw2.png" id="aluming2" class="hidden" alt="alumin">
+    <img src="controlstation/alugray/aw3.png" id="aluming3" class="hidden" alt="alumin">
+    <img src="controlstation/alugray/aw4.png" id="aluming4" class="hidden" alt="alumin">
+    <img src="controlstation/alugray/aw6.png" id="aluming6" class="hidden" alt="alumin">
+    <img src="controlstation/alugray/aw9.png" id="aluming9" class="hidden" alt="alumin">
+
+    <img src="controlstation/aluyellow/aw1.png" id="aluminy1" class="hidden" alt="alumin">
+    <img src="controlstation/aluyellow/aw2.png" id="aluminy2" class="hidden" alt="alumin">
+    <img src="controlstation/aluyellow/aw3.png" id="aluminy3" class="hidden" alt="alumin">
+    <img src="controlstation/aluyellow/aw4.png" id="aluminy4" class="hidden" alt="alumin">
+    <img src="controlstation/aluyellow/aw5.png" id="aluminy5" class="hidden" alt="alumin">
+    <img src="controlstation/aluyellow/aw6.png" id="aluminy6" class="hidden" alt="alumin">
+
+
+
+  
+
+
+
+
+   </div> 
+ 
+    <script>
+       // six
+       
+       document.querySelectorAll('.controlalumi').forEach(button => {
+               button.addEventListener('click', function () {
+                   const color = this.getAttribute('data-coloralu');
+                   const productCode = this.getAttribute('data-codealu');
+                   const productdisc = this.getAttribute('data-discsalu');
+       
+                   // Hide all images
+                   document.querySelectorAll('.controlaluimg img').forEach(img => img.classList.add('hidden'));
+       
+                   // Show the selected image
+                   const selectedImage = document.getElementById(color);
+                   if (selectedImage) {
+                       selectedImage.classList.remove('hidden');
+                   }
+       
+                   // Display the product code
+                   const productInfo = document.getElementById('generated-codecontrolsalu');
+                   productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+                   const productDIS = document.getElementById('description-titlecontrolsalu');
+        productDIS.innerHTML = `<span class='label'>Description: </span>` + productdisc;
+                   document.getElementById("resultcontrolsalu").classList.remove("hidden"); // Make result visible
+               });
+           });  
+    
+    </script>
+  
+ </div>
+
+
+   
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+ 
+  </script>
+<style>
+    .outputflex{
+        display: flex;
+    }
+    .output{
+        margin-top: -100px;
+        margin-left: 500px;
+    }
+    .imagecon {
+        position: relative;
+    
+        
+    }
+
+    #resultcw{
+    margin-bottom: 30PX;
+}
+     .imagecon img{
+        width: 150px;
+     }
+</style>
+<body>
+    <div class="outputflex">
+
+        <div class="clipop">
+            <div class="option-group">
+               
+                    
+                          <!-- 2 colour -->
+                    <div class="option-group">
+                        <button class="option-btn btn-common whitebtn secondthoptionab"><div class="black-btn"></div>Black</button>
+                        
+                                
+                        <div class="nested-options">
+                            <!-- Silver Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptionab" gdata-colorcaab="blackcea" code-coloraab="22.5 Metal 3 Position stayput 1NO Contact"  gdata-codecaab="2PSJS2210-4P">1NO</button>
+                                
+                            </div>
+                            <!-- Gold Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptionab" gdata-colorcaab="blackcea" code-coloraab="22.5 Metal 3 Position stayput 2NO Contact"  gdata-codecaab="2PSJS2220-4P">2NO</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptionab" gdata-colorcaab="blackcea" code-coloraab="22.5 Metal 3 Position stayput 3NO Contact"   gdata-codecaab="2PSJS2230-4P">3NO</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common secondthoptionab" gdata-colorcaab="blackcea" code-coloraab="22.5 Metal 3 Position stayput 4NO Contact"  gdata-codecaab="2PSJS2240-4P">4NO</button> 
+                          
+                            </div>
+                           
+                        </div>
+                            </div>
+                            
+     
+           
+         
+
+            </div>
+        </div>
+
+        <div class="output">
+
+            <!-- Result display section -->
+         <!-- Result display section -->
+         <div id="resultcw" class="result hidden">
+          
+             <p id="generated-codec"></p>
+             <div id="description" class="description hidden">
+                 <p id="description-titlecr"></p>
+             </div>
+         </div>
+      
+
+<div class="imagecon sevenhimgab">
+    
+
+        <img src="joystick/3images.jpg" id="blackcea" class="hidden" alt="Black">
+
+        
+
+    
+    </div>
+
+
+<script>
+    document.querySelectorAll('.secondthoptionab').forEach(button => {
+   button.addEventListener('click', function () {
+       const color = this.getAttribute('gdata-colorcaab');
+       const codeclr = this.getAttribute('code-coloraab');
+       const productCode = this.getAttribute('gdata-codecaab');
+
+
+       // Hide all images initially
+       document.querySelectorAll('.sevenhimgab img, .sevencodeab img').forEach(img => img.classList.add('hidden'));
+     
+
+      
+       // Show the primary color image
+       const selectedImage = document.getElementById(color);
+       if (selectedImage) {
+           selectedImage.classList.remove('hidden');
+       }
+
+
+       // Display the product code
+       const productInfo = document.getElementById('generated-codec');
+       productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+
+       const productdis = document.getElementById('description-titlecr');
+       productdis.innerHTML = `<span class='label'>Description: </span>` + codeclr;
+       document.getElementById("resultcw").classList.remove("hidden"); 
+   });
+});
+
+           </script>
+
+
+
+
+         </div>
+         
+        </div>
+        
+</body>
+</html>

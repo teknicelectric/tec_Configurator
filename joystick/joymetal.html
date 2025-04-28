@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+
+<script>
+
+$(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+//        document.querySelectorAll('.whitebtn').forEach(button => {
+//     button.addEventListener('click', function () {
+//         // Select all forms with the class 'flushform' and reset their inputs
+//         const flushForms = document.querySelectorAll('.flushform');
+//         flushForms.forEach(form => form.reset());
+
+//         // Hide elements
+//         document.getElementById('result').classList.add('hidden');
+//         document.getElementById('description').classList.add('hidden');
+//         document.getElementById('noimageContainer').classList.add('hidden');
+//         document.getElementById('ncimageContainer').classList.add('hidden');
+//         document.getElementById('EnoimageContainer').classList.add('hidden');
+//         document.getElementById('EncimageContainer').classList.add('hidden');
+//         document.getElementById('whiteimageContainer').classList.add('hidden');
+//         document.getElementById('blackimageContainer').classList.add('hidden');
+//         document.getElementById('greenimageContainer').classList.add('hidden');
+//         document.getElementById('redimageContainer').classList.add('hidden');
+//         document.getElementById('blueimageContainer').classList.add('hidden');
+//         document.getElementById('yellowimageContainer').classList.add('hidden');
+
+//         // Hide plus buttons
+//         document.getElementById('plus1').style.display = 'none';
+//         document.getElementById('plus2').style.display = 'none';
+//         document.getElementById('Eplus2').style.display = 'none';
+
+//     });
+// });
+</script>
+<body>
+    
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" onclick="joytoryfeatch()">2 Position Stayput</button>
+        <div class="nested-options momentoryactj">
+      
+
+                </div>
+                <script> function joytoryfeatch() {
+                    fetch('joystick/joy22mmoptions1.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.querySelector('.momentoryactj').innerHTML = data;
+                            executeScriptj(document.querySelector('.momentoryactj')); // Execute scripts in loaded content
+                        })
+                        .catch(error => console.error('Error fetching content:', error));
+                }
+                
+          function executeScriptj(element = document.getElementById('momentoryactj')) {
+        if (!element) {
+            console.error("Element not found: secondc");
+            return;
+        }
+    
+        const scripts = element.getElementsByTagName('script');
+    
+        for (let i = 0; i < scripts.length; i++) {
+            const script = scripts[i];
+    
+            if (script.src) {
+                // Check if script already exists to prevent duplication
+                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                    const newScript = document.createElement('script');
+                    newScript.src = script.src;
+                    document.body.appendChild(newScript);
+                }
+            } else {
+                // Remove previous inline scripts before appending new ones
+                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                oldScripts.forEach(oldScript => oldScript.remove());
+    
+                const newScript = document.createElement('script');
+                newScript.text = script.innerHTML;
+                newScript.setAttribute("data-dynamic", "true"); 
+                document.body.appendChild(newScript);
+            }
+        }
+    }
+    
+    
+    
+            </script>
+
+        </div>
+
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="flsuhpsuhj()">2 Position Spring Return</button> 
+
+            <div class="nested-options flsuhpsuhj">
+      
+
+            </div>
+            <script> function flsuhpsuhj() {
+                fetch('joystick/joy22mmoptions2.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.flsuhpsuhj').innerHTML = data;
+                        executeScriptpj(document.querySelector('.flsuhpsuhj')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScriptpj(element = document.getElementById('flsuhpsuhj')) {
+    if (!element) {
+        console.error("Element not found: secondc");
+        return;
+    }
+
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+}
+
+
+
+        </script>
+
+
+        </div>
+
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="latpsuhj()">3 Position Stayput</button>
+
+            <div class="nested-options latpsuhj">
+      
+
+            </div>
+            <script> function latpsuhj() {
+                fetch('joystick/joy22mmoptions3.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.latpsuhj').innerHTML = data;
+                        executeScriptlj(document.querySelector('.latpsuhj')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScriptlj(element = document.getElementById('latpsuhj')) {
+    if (!element) {
+        console.error("Element not found: secondc");
+        return;
+    }
+
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+}
+
+
+
+        </script>
+
+        </div>
+
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="sectpsuhj()">3 Position Spring Return</button>
+
+            <div class="nested-options sectpsuhj">
+      
+
+            </div>
+            <script> function sectpsuhj() {
+                fetch('joystick/joy22mmoptions4.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.sectpsuhj').innerHTML = data;
+                        executeScriptsj(document.querySelector('.sectpsuhj')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScriptsj(element = document.getElementById('sectpsuhj')) {
+    if (!element) {
+        console.error("Element not found: secondc");
+        return;
+    }
+
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+}
+
+
+
+        </script>
+
+
+        </div>
+
+      
+
+
+        
+
+       
+</body>
+</html>
