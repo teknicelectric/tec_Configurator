@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+//     document.querySelectorAll('.whitebtn').forEach(button => {
+//     button.addEventListener('click', function () {
+//         // Select all forms with the class 'flushform' and reset their inputs
+//         const flushForms = document.querySelectorAll('.flushform');
+//         flushForms.forEach(form => form.reset());
+
+//         // Hide elements
+//         document.getElementById('result').classList.add('hidden');
+//         document.getElementById('description').classList.add('hidden');
+//         document.getElementById('noimageContainer').classList.add('hidden');
+//         document.getElementById('ncimageContainer').classList.add('hidden');
+//         document.getElementById('EnoimageContainer').classList.add('hidden');
+//         document.getElementById('EncimageContainer').classList.add('hidden');
+//         document.getElementById('whiteimageContainer').classList.add('hidden');
+//         document.getElementById('blackimageContainer').classList.add('hidden');
+//         document.getElementById('greenimageContainer').classList.add('hidden');
+//         document.getElementById('redimageContainer').classList.add('hidden');
+//         document.getElementById('blueimageContainer').classList.add('hidden');
+//         document.getElementById('yellowimageContainer').classList.add('hidden');
+
+//         // Hide plus buttons
+//         document.getElementById('plus1').style.display = 'none';
+//         document.getElementById('plus2').style.display = 'none';
+//         document.getElementById('Eplus2').style.display = 'none';
+
+//     });
+// });
+</script>
+
+<body>
+   
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="pushBtn">Push Button</button>
+        <div class="nested-options momentorypushbtn"></div>
+    </div>
+    
+    <script> 
+    document.getElementById("pushBtn").addEventListener("click", momentorypushfetch);
+    
+    function momentorypushfetch() {
+        fetch('pushbtn/momentorypushbtn.html')
+            .then(response => response.text())
+            .then(data => {
+                const targetElement = document.querySelector('.momentorypushbtn');
+    
+                if (!targetElement) {
+                    console.error("Target element not found.");
+                    return;
+                }
+    
+                // Remove old scripts before inserting new content
+                removeOldScripts(targetElement);
+    
+                // Insert new content
+                targetElement.innerHTML = data;
+    
+                // Execute scripts in the loaded content
+                executeScripts(targetElement);
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+    
+    function executeScripts(element) {
+    if (!element) {
+        console.error("Element not found.");
+        return;
+    }
+
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+            // Check if script is already loaded
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Check if function is already declared
+            const scriptText = script.innerHTML.trim();
+            if (!window.positiveNumberOnly || !scriptText.includes('function positiveNumberOnly')) {
+                const newScript = document.createElement('script');
+                newScript.text = scriptText;
+                document.body.appendChild(newScript);
+            }
+        }
+    }
+}
+
+    
+    // Function to remove previously loaded dynamic scripts
+    function removeOldScripts(parentElement) {
+        if (!parentElement) return;
+    
+        // Remove inline scripts inside the parent
+        parentElement.querySelectorAll("script").forEach(script => script.remove());
+    
+        // Remove dynamically added scripts from the document
+        document.querySelectorAll("script[data-dynamic]").forEach(script => script.remove());
+    }
+    </script>
+    
+</div>
+              
+
+
+
+
+   
+     
+
+
+
+
+
+</div>
+</body>
+</html>
