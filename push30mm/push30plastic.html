@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+
+<script>
+
+$(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+</script>
+<body>
+    <div class="option-group">
+        <button class="option-btn btn-common">Non Illuminated actuator</button>
+        <div class="nested-options">
+    <div class="option-group">
+        <button class="option-btn btn-common " onclick="momentoractuy30mmfeatch()">Momentary Actuator</button>
+        <div class="nested-options momentoractuy30mmact">
+      
+
+                </div>
+                <script> function momentoractuy30mmfeatch() {
+                    fetch('push30mm/momentory30mm.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.querySelector('.momentoractuy30mmact').innerHTML = data;
+                            executeScripts30mmmomentor(document.querySelector('.momentoractuy30mmact')); // Execute scripts in loaded content
+                        })
+                        .catch(error => console.error('Error fetching content:', error));
+                }
+                
+          function executeScripts30mmmomentor(element = document.getElementById('momentoractuy30mmact')) {
+        if (!element) {
+            console.error("Element not found: momentoractuy30mmact");
+            return;
+        }
+    
+        const scripts = element.getElementsByTagName('script');
+    
+        for (let i = 0; i < scripts.length; i++) {
+            const script = scripts[i];
+    
+            if (script.src) {
+                // Check if script already exists to prevent duplication
+                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                    const newScript = document.createElement('script');
+                    newScript.src = script.src;
+                    document.body.appendChild(newScript);
+                }
+            } else {
+                // Remove previous inline scripts before appending new ones
+                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                oldScripts.forEach(oldScript => oldScript.remove());
+    
+                const newScript = document.createElement('script');
+                newScript.text = script.innerHTML;
+                newScript.setAttribute("data-dynamic", "true"); 
+                document.body.appendChild(newScript);
+            }
+        }
+    }
+    
+    
+    
+            </script>
+
+        </div>
+
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="mashroomactuy30mmfeatch()">Mushroom Head Actuators</button> 
+            <div class="nested-options mashroomactuy30mmact">
+      
+
+            </div>
+            <script> function mashroomactuy30mmfeatch() {
+                fetch('push30mm/mashroom30mm.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.mashroomactuy30mmact').innerHTML = data;
+                        executeScripts30mmmashroom(document.querySelector('.mashroomactuy30mmact')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScripts30mmmashroom(element = document.getElementById('mashroomactuy30mmact')) {
+    if (!element) {
+        console.error("Element not found: mashroomactuy30mmact");
+        return;
+    }
+
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+}
+
+
+
+        </script>
+
+        </div>
+
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="selectoractuator30mmfeatch()">Selector Actuators</button>
+            <div class="nested-options selectoractuator30mms">
+      
+
+            </div>
+            <script> function selectoractuator30mmfeatch() {
+                fetch('push30mm/selector30mm.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.selectoractuator30mms').innerHTML = data;
+                        executeScripts30mmmashroom(document.querySelector('.selectoractuator30mms')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScripts30mmmashroom(element = document.getElementById('selectoractuator30mms')) {
+    if (!element) {
+        console.error("Element not found: selectoractuator30mms");
+        return;
+    }
+
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+}
+
+
+
+        </script>
+
+        </div>
+
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="keyselectoractuator30mmsfeatch()">Key Selector Actuators</button>
+            <div class="nested-options keyselectoractuator30mms">
+      
+
+            </div>
+            <script> function keyselectoractuator30mmsfeatch() {
+                fetch('push30mm/keyselectoractuator30mms.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.keyselectoractuator30mms').innerHTML = data;
+                        executeScripts30mmmashroom(document.querySelector('.keyselectoractuator30mms')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScripts30mmmashroom(element = document.getElementById('keyselectoractuator30mms')) {
+    if (!element) {
+        console.error("Element not found: keyselectoractuator30mms");
+        return;
+    }
+
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+}
+
+
+
+        </script>
+
+        </div>
+
+       
+
+    </div>
+        
+
+       
+</body>
+</html>

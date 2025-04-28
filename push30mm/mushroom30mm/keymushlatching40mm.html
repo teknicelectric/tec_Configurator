@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+  </script>
+<style>
+    .outputflex{
+        display: flex;
+    }
+    .output{
+        margin-top: -110px;
+        margin-left: 500px;
+        gap: 50PX;
+    }
+    .imagecon {
+        position: relative;
+
+        
+    }
+#flushkeymushlatresultc{
+    margin-bottom: 30PX;
+}
+   
+     .output img{
+        width: 150px;
+     }
+</style>
+<body>
+    <div class="outputflex">
+
+        <div class="clipop">
+                 
+                           
+      
+                        
+               
+
+                            
+                                   
+                             
+                          
+                        
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common whitebtn fourththoptionkeymushlat"><div class="red-btn"></div>AMLKB4</button>
+                      
+
+                        <div class="nested-options">
+                            <!-- Silver Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn fourththoptionkeymushlat" gdata-colorckeymushlatabc="redceabckeymushlat" code-colorkeymushlatabc="Key Mushroom Latching Head 40mm Red Colour with 1NO+1NC" noimgabc="1" gdata-codeckeymushlatabc="PSF411">1NO+1NC</button>
+                                
+                            </div>
+                            <!-- Gold Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn fourththoptionkeymushlat" gdata-colorckeymushlatabc="redceabckeymushlat" code-colorkeymushlatabc="Key Mushroom Latching Head 40mm Red Colour with 2NO+2NC" noimgabc="1" gdata-codeckeymushlatabc="PSF422">2NO+2NC</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn fourththoptionkeymushlat" gdata-colorckeymushlatabc="redceabckeymushlat" code-colorkeymushlatabc="Key Mushroom Latching Head 40mm Red Colour with 3NO+3NC" noimgabc="1" code-colorkeymushlat2abc="nc-1abc" gdata-codeckeymushlatabc="PSF433">3NO+3NC</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common fourththoptionkeymushlat" gdata-colorckeymushlatabc="redceabckeymushlat" code-colorkeymushlatabc="Key Mushroom Latching Head 40mm Red Colour with 4NO+4NC" noimgabc="2" gdata-codeckeymushlatabc="PSF444">4NO+4NC</button> 
+                          
+                            </div>
+                            
+                        </div>
+                        </div>
+                          
+                      
+
+
+                  
+
+                          
+
+
+
+                   
+                      
+            
+         
+
+            </div>
+        
+
+        <div class="output">
+
+            <!-- Result display section -->
+         <!-- Result display section -->
+         <div id="flushkeymushlatresultc" class="result hidden">
+          
+             <p id="generated-codecflushkeymushlat"></p>
+             <div id="description" class="description hidden">
+                 <p id="description-titleflushkeymushlat"></p>
+             </div>
+         </div>
+      
+        
+
+
+    
+
+
+    <div class="keymushlatflushimgabc">
+
+       
+        <img src="push30mm/plasticmono/Key Mushroom Latching.png" id="redceabckeymushlat" class="hidden" alt="Red">
+        
+        
+    </div>
+   
+
+
+<script>
+    document.querySelectorAll('.fourththoptionkeymushlat').forEach(button => {
+   button.addEventListener('click', function () {
+       const color = this.getAttribute('gdata-colorckeymushlatabc');
+       const codeclr = this.getAttribute('code-colorkeymushlatabc');
+       const codeclr2 = this.getAttribute('code-colorkeymushlat2abc');
+       const productCode = this.getAttribute('gdata-codeckeymushlatabc');
+     
+
+       // Hide all images initially
+       document.querySelectorAll('.keymushlatflushimgabc img').forEach(img => img.classList.add('hidden'));
+     
+     // Show the primary color image
+     const selectedImage = document.getElementById(color);
+       if (selectedImage) {
+           selectedImage.classList.remove('hidden');
+       }
+       // Display the product code
+       const productInfo = document.getElementById('generated-codecflushkeymushlat');
+      productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+       const productDIS = document.getElementById('description-titleflushkeymushlat');
+           productDIS.innerHTML = `<span class='label'>Description: </span>` + codeclr;
+       document.getElementById("flushkeymushlatresultc").classList.remove("hidden"); // Make result visible
+   });
+});
+
+           </script>
+
+
+  
+
+
+         </div>
+         
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+  </script>
+<style>
+    .outputflex{
+        display: flex;
+    }
+    .output{
+        margin-top: -110px;
+        margin-left: 500px;
+        gap: 50PX;
+    }
+    .imagecon {
+        position: relative;
+
+        
+    }
+#flushstayput30mmresultc{
+    margin-bottom: 30PX;
+}
+   
+     .output img{
+        width: 150px;
+     }
+</style>
+<body>
+    <div class="outputflex">
+
+        <div class="clipop">
+                 
+                           
+                     
+                    
+                          <!-- 2 colour -->
+                    <div class="option-group">
+                        <button class="option-btn btn-common whitebtn secondthoptionstayput30mm"><div class="black-btn"></div>AS2-2P</button>
+                        
+                                
+                        <div class="nested-options">
+                            <!-- Silver Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptionstayput30mm" gdata-colorcstayput30mma="blackceastayput30mm" code-colorstayput30mma="2 Position Stayput  Black Colour with 1NO+1NC" noimga="1" gdata-codecstayput30mma="PSS211-2P">1NO+1NC</button>
+                                
+                            </div>
+                            <!-- Gold Contact Button -->
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptionstayput30mm" gdata-colorcstayput30mma="blackceastayput30mm" code-colorstayput30mma="2 Position Stayput  Black Colour with 2NO+2NC" noimga="1" gdata-codecstayput30mma="PSS222-2P">2NO+2NC</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn secondthoptionstayput30mm" gdata-colorcstayput30mma="blackceastayput30mm" code-colorstayput30mma="2 Position Stayput  Black Colour with 3NO+3NC" noimga="1" code-colorstayput30mm2a="nc-1a" gdata-codecstayput30mma="PSS233-2P">3NO+3NC</button> 
+                          
+                            </div>
+                            <div class="option-group">
+                                <button class="option-btn btn-common secondthoptionstayput30mm" gdata-colorcstayput30mma="blackceastayput30mm" code-colorstayput30mma="2 Position Stayput  Black Colour with 4NO+4NC" noimga="2" gdata-codecstayput30mma="PSS244-2P">4NO+4NC</button> 
+                          
+                            </div>
+                           
+                        </div>
+                            </div>
+                            
+                        
+               
+
+                            
+                                   
+                             
+                          
+                        
+
+              
+                          
+                      
+
+
+                  
+
+                          
+
+
+
+                   
+                      
+            
+         
+
+            </div>
+        
+
+        <div class="output">
+
+            <!-- Result display section -->
+         <!-- Result display section -->
+         <div id="flushstayput30mmresultc" class="result hidden">
+          
+             <p id="generated-codecflushstayput30mm"></p>
+             <div id="description" class="description hidden">
+                 <p id="description-titleflushstayput30mm"></p>
+             </div>
+         </div>
+      
+        
+
+
+    <div class="stayput30mmflushimga">
+
+       
+        <img src="push30mm/plasticmono/Selector.png" id="blackceastayput30mm" class="hidden" alt="Black">
+       
+        
+    </div>
+   
+    
+    
+
+
+<script>
+    document.querySelectorAll('.secondthoptionstayput30mm').forEach(button => {
+   button.addEventListener('click', function () {
+       const color = this.getAttribute('gdata-colorcstayput30mma');
+       const codeclr = this.getAttribute('code-colorstayput30mma');
+       const codeclr2 = this.getAttribute('code-colorstayput30mm2a');
+       const productCode = this.getAttribute('gdata-codecstayput30mma');
+       
+
+       // Hide all images initially
+       document.querySelectorAll('.stayput30mmflushimga img').forEach(img => img.classList.add('hidden'));
+      
+       // Show the primary color image
+       const selectedImage = document.getElementById(color);
+       if (selectedImage) {
+           selectedImage.classList.remove('hidden');
+       }
+
+      
+       const productInfo = document.getElementById('generated-codecflushstayput30mm');
+      productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+       const productDIS = document.getElementById('description-titleflushstayput30mm');
+           productDIS.innerHTML = `<span class='label'>Description: </span>` + codeclr;
+       document.getElementById("flushstayput30mmresultc").classList.remove("hidden"); // Make result visible
+   });
+});
+
+           </script>
+
+
+
+
+         </div>
+         
+        </div>
+        
+</body>
+</html>
