@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.latching30mmclipbtn').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+        const flushForms = document.querySelectorAll('.flushform');
+        flushForms.forEach(form => form.reset());
+
+        // Hide elements
+        // document.getElementById('resultlatching30mmclip').classList.add('hidden');
+        document.getElementById('descriptionlatching30mmclip').classList.add('hidden');
+        document.getElementById('latching30mmclipnoimageContainer').classList.add('hidden');
+        document.getElementById('latching30mmclipncimageContainer').classList.add('hidden');
+        document.getElementById('Elatching30mmclipnoimageContainer').classList.add('hidden');
+        document.getElementById('Elatching30mmclipncimageContainer').classList.add('hidden');
+      
+        document.getElementById('latching30mmclipblackimageContainer').classList.add('hidden');
+       
+        document.getElementById('latching30mmclipredimageContainer').classList.add('hidden');
+      
+
+        // Hide plus buttons
+        document.getElementById('latching30mmclipplus1').style.display = 'none';
+        document.getElementById('latching30mmclipplus2').style.display = 'none';
+        document.getElementById('Elatching30mmclipplus2').style.display = 'none';
+
+    });
+});
+    
+  
+</script>
+
+
+<body>
+    
+    <div class="outputflex">
+
+        <div class="latching30mmclip">
+    
+                    <div class="option-group">
+                        <button class="option-btn btn-common latching30mmclipbtn"><div class="black-btn"></div>(P4AMLS2)</button>
+                        
+                                
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common latching30mmclipbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondlatching30mmclipbtnnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputlatching30mmclipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondlatching30mmclipbtnnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputlatching30mmclipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common latching30mmclipbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondlatching30mmclipbtnnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputlatching30mmclipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondlatching30mmclipbtnnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputlatching30mmclipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                   
+                            
+                                </div>
+                            </div>
+              
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common latching30mmclipbtn"><div class="red-btn"></div>(P4AMLS4)</button>
+                      
+
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common latching30mmclipbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="fourthlatching30mmclipbtnnbtnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="fourthlatching30mmclipbtninputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="fourthlatching30mmclipbtnnbtnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="fourthlatching30mmclipbtninputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common latching30mmclipbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Efourthlatching30mmclipbtnnbtnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Efourthlatching30mmclipbtninputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Efourthlatching30mmclipbtnnbtnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Efourthlatching30mmclipbtninputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--  Button -->
+                                  
+                                </div>
+                                
+                        </div>
+                
+                                    
+                                </div>
+
+                         
+            
+  
+                        <script>
+                        
+                            
+                            // for metalsecond
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('secondlatching30mmclipbtnnno').addEventListener('click', function () {
+                                document.getElementById('secondinputlatching30mmclipbtnno').classList.remove('hidden');
+                                document.getElementById('secondinputlatching30mmclipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('secondlatching30mmclipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('secondinputlatching30mmclipbtnnc').classList.remove('hidden');
+                                document.getElementById('secondinputlatching30mmclipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+
+                            if (typeof SmetalpositiveNumberOnly === 'undefined') {
+    const SmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('secondinputlatching30mmclipbtnno').addEventListener('input', SmetalpositiveNumberOnly);
+    document.getElementById('secondinputlatching30mmclipbtnnc').addEventListener('input', SmetalpositiveNumberOnly);
+}
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function SmetalgenerateCode() {
+                                const noValue = document.getElementById('secondinputlatching30mmclipbtnno').value;
+                                const ncValue = document.getElementById('secondinputlatching30mmclipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultlatching30mmclip');
+                                const descriptionContainer = document.getElementById('descriptionlatching30mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codelatching30mmclip');
+                            
+                                // Image containers
+                                const latching30mmclipblackimageContainer = document.getElementById('latching30mmclipblackimageContainer');
+                                const latching30mmclipnoimageContainer = document.getElementById('latching30mmclipnoimageContainer');
+                                const latching30mmclipncimageContainer = document.getElementById('latching30mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const latching30mmclipplus1 = document.getElementById('latching30mmclipplus1');
+                                const latching30mmclipplus2 = document.getElementById('latching30mmclipplus2');
+                            
+                                // Ensure black image is always visible
+                                latching30mmclipblackimageContainer.classList.remove('hidden');
+                                latching30mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                latching30mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = latching30mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = latching30mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    latching30mmclipnoimageContainer.querySelector('img').src = `pushbtn/clipon/no-${noValue}.png`;
+                                    noImageName.textContent = `C1*${noValue}`;
+                                    latching30mmclipnoimageContainer.classList.remove('hidden');
+                                    latching30mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    latching30mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    latching30mmclipncimageContainer.querySelector('img').src = `pushbtn/clipon/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `C2*${ncValue}`;
+                                    latching30mmclipncimageContainer.classList.remove('hidden');
+                                    latching30mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    latching30mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P4PSMLS211",
+                                        "12": "P4PSMLS212",
+                                        "10": "P4PSMLS210",
+                                        "01": "P4PSMLS201",
+                                        "21": "P4PSMLS221",
+                                        "23": "P4PSMLS223",
+                                        "22": "P4PSMLS222",
+                                        "33": "P4PSMLS233",
+                                        "32": "P4PSMLS232",
+                                        "13": "P4PSMLS213",
+                                        "14": "P4PSMLS214",
+                                        "15": "P4PSMLS215",
+                                        "24": "P4PSMLS224",
+                                        "31": "P4PSMLS231",
+                                        "41": "P4PSMLS241",
+                                        "42": "P4PSMLS242",
+                                        "51": "P4PSMLS251",
+                                        "00": "P4PSMLS200",
+                                        "20": "P4PSMLS220",
+                                        "30": "P4PSMLS230",
+                                        "40": "P4PSMLS240",
+                                        "50": "P4PSMLS250",
+                                        "60": "P4PSMLS260",
+                                        "02": "P4PSMLS202",
+                                        "03": "P4PSMLS203",
+                                        "04": "P4PSMLS204",
+                                        "05": "P4PSMLS205",
+                                        "06": "P4PSMLS206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        latching30mmclipnoimageContainer.classList.add('hidden');
+                                        latching30mmclipncimageContainer.classList.add('hidden');
+                                        latching30mmclipplus1.style.display = 'none';
+                                        latching30mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('secondinputlatching30mmclipbtnno').addEventListener('input', SmetalgenerateCode);
+                            document.getElementById('secondinputlatching30mmclipbtnnc').addEventListener('input', SmetalgenerateCode);
+                            
+                            // economy
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Esecondlatching30mmclipbtnnno').addEventListener('click', function () {
+                                document.getElementById('Esecondinputlatching30mmclipbtnno').classList.remove('hidden');
+                                document.getElementById('Esecondinputlatching30mmclipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Esecondlatching30mmclipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('Esecondinputlatching30mmclipbtnnc').classList.remove('hidden');
+                                document.getElementById('Esecondinputlatching30mmclipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof ESmetalpositiveNumberOnly === 'undefined') {
+    const ESmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Esecondinputlatching30mmclipbtnno').addEventListener('input', ESmetalpositiveNumberOnly);
+                            document.getElementById('Esecondinputlatching30mmclipbtnnc').addEventListener('input', ESmetalpositiveNumberOnly);
+}
+
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function ESmetalgenerateCode() {
+                                const noValue = document.getElementById('Esecondinputlatching30mmclipbtnno').value;
+                                const ncValue = document.getElementById('Esecondinputlatching30mmclipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultlatching30mmclip');
+                                const descriptionContainer = document.getElementById('descriptionlatching30mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codelatching30mmclip');
+                            
+                                // Image containers
+                                const latching30mmclipblackimageContainer = document.getElementById('latching30mmclipblackimageContainer');
+                                const latching30mmclipnoimageContainer = document.getElementById('Elatching30mmclipnoimageContainer');
+                                const latching30mmclipncimageContainer = document.getElementById('Elatching30mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const latching30mmclipplus1 = document.getElementById('latching30mmclipplus1');
+                                const latching30mmclipplus2 = document.getElementById('Elatching30mmclipplus2');
+                            
+                                // Ensure black image is always visible
+                                latching30mmclipblackimageContainer.classList.remove('hidden');
+                                latching30mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                latching30mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = latching30mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = latching30mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    latching30mmclipnoimageContainer.querySelector('img').src = `pushbtn/clipone/no-${noValue}.png`;
+                                    noImageName.textContent = `EC1*${noValue}`;
+                                    latching30mmclipnoimageContainer.classList.remove('hidden');
+                                    latching30mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    latching30mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    latching30mmclipncimageContainer.querySelector('img').src = `pushbtn/clipone/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `EC2*${ncValue}`;
+                                    latching30mmclipncimageContainer.classList.remove('hidden');
+                                    latching30mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    latching30mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP4PSMLS211",
+                                        "12": "EP4PSMLS212",
+                                        "10": "EP4PSMLS210",
+                                        "01": "EP4PSMLS201",
+                                        "21": "EP4PSMLS221",
+                                        "23": "EP4PSMLS223",
+                                        "22": "EP4PSMLS222",
+                                        "33": "EP4PSMLS233",
+                                        "32": "EP4PSMLS232",
+                                        "13": "EP4PSMLS213",
+                                        "14": "EP4PSMLS214",
+                                        "15": "EP4PSMLS215",
+                                        "24": "EP4PSMLS224",
+                                        "31": "EP4PSMLS231",
+                                        "41": "EP4PSMLS241",
+                                        "42": "EP4PSMLS242",
+                                        "51": "EP4PSMLS251",
+                                        "00": "EP4PSMLS200",
+                                        "20": "EP4PSMLS220",
+                                        "30": "EP4PSMLS230",
+                                        "40": "EP4PSMLS240",
+                                        "50": "EP4PSMLS250",
+                                        "60": "EP4PSMLS260",
+                                        "02": "EP4PSMLS202",
+                                        "03": "EP4PSMLS203",
+                                        "04": "EP4PSMLS204",
+                                        "05": "EP4PSMLS205",
+                                        "06": "EP4PSMLS206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        latching30mmclipnoimageContainer.classList.add('hidden');
+                                        latching30mmclipncimageContainer.classList.add('hidden');
+                                        latching30mmclipplus1.style.display = 'none';
+                                        latching30mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Esecondinputlatching30mmclipbtnno').addEventListener('input', ESmetalgenerateCode);
+                            document.getElementById('Esecondinputlatching30mmclipbtnnc').addEventListener('input', ESmetalgenerateCode);
+                            
+                          
+                            // fourthlatching30mmclipbtn
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('fourthlatching30mmclipbtnnbtnno').addEventListener('click', function () {
+                                document.getElementById('fourthlatching30mmclipbtninputno').classList.remove('hidden');
+                                document.getElementById('fourthlatching30mmclipbtninputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('fourthlatching30mmclipbtnnbtnnc').addEventListener('click', function () {
+                                document.getElementById('fourthlatching30mmclipbtninputnc').classList.remove('hidden');
+                                document.getElementById('fourthlatching30mmclipbtninputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                             
+                            if (typeof redgreenmetalpositiveNumberOnly === 'undefined') {
+    const redgreenmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+          // Add event listeners to enforce positive number restriction
+          document.getElementById('fourthlatching30mmclipbtninputno').addEventListener('input', redgreenmetalpositiveNumberOnly);
+                            document.getElementById('fourthlatching30mmclipbtninputnc').addEventListener('input', redgreenmetalpositiveNumberOnly);
+ 
+}
+             
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function redgreenmetalgenerateCode() {
+                                const noValue = document.getElementById('fourthlatching30mmclipbtninputno').value;
+                                const ncValue = document.getElementById('fourthlatching30mmclipbtninputnc').value;
+                            
+                                const resultContainer = document.getElementById('resultlatching30mmclip');
+                                const descriptionContainer = document.getElementById('descriptionlatching30mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codelatching30mmclip');
+                            
+                                // Image containers
+                                const latching30mmclipredimageContainer = document.getElementById('latching30mmclipredimageContainer');
+                                const latching30mmclipnoimageContainer = document.getElementById('latching30mmclipnoimageContainer');
+                                const latching30mmclipncimageContainer = document.getElementById('latching30mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const latching30mmclipplus1 = document.getElementById('latching30mmclipplus1');
+                                const latching30mmclipplus2 = document.getElementById('latching30mmclipplus2');
+                            
+                                // Ensure red image is always visible
+                                latching30mmclipredimageContainer.classList.remove('hidden');
+                                latching30mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                latching30mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = latching30mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = latching30mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    latching30mmclipnoimageContainer.querySelector('img').src = `pushbtn/clipon/no-${noValue}.png`;
+                                    noImageName.textContent = `C1*${noValue}`;
+                                    latching30mmclipnoimageContainer.classList.remove('hidden');
+                                    latching30mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    latching30mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    latching30mmclipncimageContainer.querySelector('img').src = `pushbtn/clipon/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `C2*${ncValue}`;
+                                    latching30mmclipncimageContainer.classList.remove('hidden');
+                                    latching30mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    latching30mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P4PSMLS411",
+                                        "12": "P4PSMLS412",
+                                        "10": "P4PSMLS410",
+                                        "01": "P4PSMLS401",
+                                        "21": "P4PSMLS421",
+                                        "23": "P4PSMLS423",
+                                        "22": "P4PSMLS422",
+                                        "33": "P4PSMLS433",
+                                        "32": "P4PSMLS432",
+                                        "13": "P4PSMLS413",
+                                        "14": "P4PSMLS414",
+                                        "15": "P4PSMLS415",
+                                        "24": "P4PSMLS424",
+                                        "31": "P4PSMLS431",
+                                        "41": "P4PSMLS441",
+                                        "42": "P4PSMLS442",
+                                        "51": "P4PSMLS451",
+                                        "00": "P4PSMLS400",
+                                        "20": "P4PSMLS420",
+                                        "30": "P4PSMLS430",
+                                        "40": "P4PSMLS440",
+                                        "50": "P4PSMLS450",
+                                        "60": "P4PSMLS460",
+                                        "02": "P4PSMLS402",
+                                        "03": "P4PSMLS403",
+                                        "04": "P4PSMLS404",
+                                        "05": "P4PSMLS405",
+                                        "06": "P4PSMLS406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        latching30mmclipnoimageContainer.classList.add('hidden');
+                                        latching30mmclipncimageContainer.classList.add('hidden');
+                                        latching30mmclipplus1.style.display = 'none';
+                                        latching30mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('fourthlatching30mmclipbtninputno').addEventListener('input', redgreenmetalgenerateCode);
+                            document.getElementById('fourthlatching30mmclipbtninputnc').addEventListener('input', redgreenmetalgenerateCode);
+             
+                            // economay
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Efourthlatching30mmclipbtnnbtnno').addEventListener('click', function () {
+                                document.getElementById('Efourthlatching30mmclipbtninputno').classList.remove('hidden');
+                                document.getElementById('Efourthlatching30mmclipbtninputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Efourthlatching30mmclipbtnnbtnnc').addEventListener('click', function () {
+                                document.getElementById('Efourthlatching30mmclipbtninputnc').classList.remove('hidden');
+                                document.getElementById('Efourthlatching30mmclipbtninputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof EredgreenmetalpositiveNumberOnly === 'undefined') {
+    const EredgreenmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+         // Add event listeners to enforce positive number restriction
+         document.getElementById('Efourthlatching30mmclipbtninputno').addEventListener('input', EredgreenmetalpositiveNumberOnly);
+                            document.getElementById('Efourthlatching30mmclipbtninputnc').addEventListener('input', EredgreenmetalpositiveNumberOnly);
+                             
+}
+             
+                            
+                          
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function EredgreenmetalgenerateCode() {
+                                const noValue = document.getElementById('Efourthlatching30mmclipbtninputno').value;
+                                const ncValue = document.getElementById('Efourthlatching30mmclipbtninputnc').value;
+                            
+                                const resultContainer = document.getElementById('resultlatching30mmclip');
+                                const descriptionContainer = document.getElementById('descriptionlatching30mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codelatching30mmclip');
+                            
+                                // Image containers
+                                const latching30mmclipredimageContainer = document.getElementById('latching30mmclipredimageContainer');
+                                const latching30mmclipnoimageContainer = document.getElementById('Elatching30mmclipnoimageContainer');
+                                const latching30mmclipncimageContainer = document.getElementById('Elatching30mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const latching30mmclipplus1 = document.getElementById('latching30mmclipplus1');
+                                const latching30mmclipplus2 = document.getElementById('Elatching30mmclipplus2');
+                            
+                                // Ensure red image is always visible
+                                latching30mmclipredimageContainer.classList.remove('hidden');
+                                latching30mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                latching30mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = latching30mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = latching30mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    latching30mmclipnoimageContainer.querySelector('img').src = `pushbtn/clipone/no-${noValue}.png`;
+                                    noImageName.textContent = `EC1*${noValue}`;
+                                    latching30mmclipnoimageContainer.classList.remove('hidden');
+                                    latching30mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    latching30mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    latching30mmclipncimageContainer.querySelector('img').src = `pushbtn/clipone/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `EC2*${ncValue}`;
+                                    latching30mmclipncimageContainer.classList.remove('hidden');
+                                    latching30mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    latching30mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP4PSMLS411",
+                                        "12": "EP4PSMLS412",
+                                        "10": "EP4PSMLS410",
+                                        "01": "EP4PSMLS401",
+                                        "21": "EP4PSMLS421",
+                                        "23": "EP4PSMLS423",
+                                        "22": "EP4PSMLS422",
+                                        "33": "EP4PSMLS433",
+                                        "32": "EP4PSMLS432",
+                                        "13": "EP4PSMLS413",
+                                        "14": "EP4PSMLS414",
+                                        "15": "EP4PSMLS415",
+                                        "24": "EP4PSMLS424",
+                                        "31": "EP4PSMLS431",
+                                        "41": "EP4PSMLS441",
+                                        "42": "EP4PSMLS442",
+                                        "51": "EP4PSMLS451",
+                                        "00": "EP4PSMLS400",
+                                        "20": "EP4PSMLS420",
+                                        "30": "EP4PSMLS430",
+                                        "40": "EP4PSMLS440",
+                                        "50": "EP4PSMLS450",
+                                        "60": "EP4PSMLS460",
+                                        "02": "EP4PSMLS402",
+                                        "03": "EP4PSMLS403",
+                                        "04": "EP4PSMLS404",
+                                        "05": "EP4PSMLS405",
+                                        "06": "EP4PSMLS406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        latching30mmclipnoimageContainer.classList.add('hidden');
+                                        latching30mmclipncimageContainer.classList.add('hidden');
+                                        latching30mmclipplus1.style.display = 'none';
+                                        latching30mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Efourthlatching30mmclipbtninputno').addEventListener('input', EredgreenmetalgenerateCode);
+                            document.getElementById('Efourthlatching30mmclipbtninputnc').addEventListener('input', EredgreenmetalgenerateCode);
+                        
+                    
+                            </script>
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultlatching30mmclip" class="result hidden">
+  
+     <p id="generated-codelatching30mmclip"></p>
+     <div id="descriptionlatching30mmclip" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ <!-- flush images -->
+ <div class="flushimg">
+   
+    <div class="image-container hidden" id="latching30mmclipblackimageContainer">
+        <img src="pushmashroom/Mushroom Clip On Plastic/Mushroom Clip On Plastic/Latching 30mm Black.png" alt="Product Image" class="product-image">
+        <div class="image-name">P4AMLS2</div>
+    </div>
+    <div class="image-container hidden" id="latching30mmclipredimageContainer">
+        <img src="pushmashroom/Mushroom Clip On Plastic/Latching 30mm Black.png" alt="Product Image" class="product-image">
+        <div class="image-name">P4AMLS4</div>
+    </div>
+    <div id="latching30mmclipplus1" class="plus-symbol" style="display: none;">+</div>
+
+    <div class="image-container hidden" id="latching30mmclipnoimageContainer">
+    <img src="pushbtn/clipon/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="latching30mmclipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="latching30mmclipncimageContainer">
+    <img src="pushbtn/cliponnc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>
+</div>
+
+<div class="image-container hidden" id="Elatching30mmclipnoimageContainer">
+    <img src="pushbtn/cliponeno-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="Elatching30mmclipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="Elatching30mmclipncimageContainer">
+    <img src="pushbtn/cliponenc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>    
+</div>
+    
+</div>
+
+
+ </div>
+
+</div>
+
+</body>
+</html>

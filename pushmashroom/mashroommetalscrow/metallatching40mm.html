@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.metallatching40mmbtn').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+        const flushForms = document.querySelectorAll('.flushform');
+        flushForms.forEach(form => form.reset());
+
+        // Hide elements
+        // document.getElementById('resultmetallatching40').classList.add('hidden');
+        document.getElementById('descriptionmetallatching40mm').classList.add('hidden');
+        document.getElementById('metallatching40mmnoimageContainer').classList.add('hidden');
+        document.getElementById('metallatching40mmncimageContainer').classList.add('hidden');
+        document.getElementById('Emetallatching40mmnoimageContainer').classList.add('hidden');
+        document.getElementById('Emetallatching40mmncimageContainer').classList.add('hidden');
+      
+        document.getElementById('metallatching40mmblackimageContainer').classList.add('hidden');
+       
+        document.getElementById('metallatching40mmredimageContainer').classList.add('hidden');
+      
+
+        // Hide plus buttons
+        document.getElementById('metallatching40mmplus1').style.display = 'none';
+        document.getElementById('metallatching40mmplus2').style.display = 'none';
+        document.getElementById('Emetallatching40mmplus2').style.display = 'none';
+
+    });
+});
+    
+  
+</script>
+
+
+<body>
+    
+    <div class="outputflex">
+
+        <div class="metallatching40mm">
+    
+                    <div class="option-group">
+                        <button class="option-btn btn-common metallatching40mmbtn"><div class="black-btn"></div>(2AML2)</button>
+                        
+                                
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metallatching40mmbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetallatching40mmbtnnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetallatching40mmbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetallatching40mmbtnnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetallatching40mmbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metallatching40mmbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetallatching40mmbtnnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetallatching40mmbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetallatching40mmbtnnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetallatching40mmbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                   
+                            
+                                </div>
+                            </div>
+              
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common metallatching40mmbtn"><div class="red-btn"></div>(2AML4)</button>
+                      
+
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metallatching40mmbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="fourthmetallatching40mmbtnnbtnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="fourthmetallatching40mmbtninputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="fourthmetallatching40mmbtnnbtnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="fourthmetallatching40mmbtninputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metallatching40mmbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Efourthmetallatching40mmbtnnbtnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Efourthmetallatching40mmbtninputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Efourthmetallatching40mmbtnnbtnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Efourthmetallatching40mmbtninputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--  Button -->
+                                  
+                                </div>
+                                
+                        </div>
+                
+                                    
+                                </div>
+
+                         
+            
+  
+                        <script>
+                        
+                            
+                            // for metalsecond
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('secondmetallatching40mmbtnnno').addEventListener('click', function () {
+                                document.getElementById('secondinputmetallatching40mmbtnno').classList.remove('hidden');
+                                document.getElementById('secondinputmetallatching40mmbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('secondmetallatching40mmbtnnnc').addEventListener('click', function () {
+                                document.getElementById('secondinputmetallatching40mmbtnnc').classList.remove('hidden');
+                                document.getElementById('secondinputmetallatching40mmbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+
+                            if (typeof SmetalpositiveNumberOnly === 'undefined') {
+    const SmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('secondinputmetallatching40mmbtnno').addEventListener('input', SmetalpositiveNumberOnly);
+    document.getElementById('secondinputmetallatching40mmbtnnc').addEventListener('input', SmetalpositiveNumberOnly);
+}
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function SmetalgenerateCode() {
+                                const noValue = document.getElementById('secondinputmetallatching40mmbtnno').value;
+                                const ncValue = document.getElementById('secondinputmetallatching40mmbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetallatching40');
+                                const descriptionContainer = document.getElementById('descriptionmetallatching40mm');
+                                const generatedCodeElement = document.getElementById('generated-codemetallatching40');
+                            
+                                // Image containers
+                                const metallatching40mmblackimageContainer = document.getElementById('metallatching40mmblackimageContainer');
+                                const metallatching40mmnoimageContainer = document.getElementById('metallatching40mmnoimageContainer');
+                                const metallatching40mmncimageContainer = document.getElementById('metallatching40mmncimageContainer');
+                            
+                                // Plus symbols
+                                const metallatching40mmplus1 = document.getElementById('metallatching40mmplus1');
+                                const metallatching40mmplus2 = document.getElementById('metallatching40mmplus2');
+                            
+                                // Ensure black image is always visible
+                                metallatching40mmblackimageContainer.classList.remove('hidden');
+                                metallatching40mmplus1.style.display = 'none'; // Hide symbols initially
+                                metallatching40mmplus2.style.display = 'none';
+                            
+                                const noImageName = metallatching40mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metallatching40mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metallatching40mmnoimageContainer.querySelector('img').src = `push/metalscrew/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metallatching40mmnoimageContainer.classList.remove('hidden');
+                                    metallatching40mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metallatching40mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metallatching40mmncimageContainer.querySelector('img').src = `push/metalscrew/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metallatching40mmncimageContainer.classList.remove('hidden');
+                                    metallatching40mmplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metallatching40mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "2PSML211",
+                                        "12": "2PSML212",
+                                        "10": "2PSML210",
+                                        "01": "2PSML201",
+                                        "21": "2PSML221",
+                                        "23": "2PSML223",
+                                        "22": "2PSML222",
+                                        "33": "2PSML233",
+                                        "32": "2PSML232",
+                                        "13": "2PSML213",
+                                        "14": "2PSML214",
+                                        "15": "2PSML215",
+                                        "24": "2PSML224",
+                                        "31": "2PSML231",
+                                        "41": "2PSML241",
+                                        "42": "2PSML242",
+                                        "51": "2PSML251",
+                                        "00": "2PSML200",
+                                        "20": "2PSML220",
+                                        "30": "2PSML230",
+                                        "40": "2PSML240",
+                                        "50": "2PSML250",
+                                        "60": "2PSML260",
+                                        "02": "2PSML202",
+                                        "03": "2PSML203",
+                                        "04": "2PSML204",
+                                        "05": "2PSML205",
+                                        "06": "2PSML206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metallatching40mmnoimageContainer.classList.add('hidden');
+                                        metallatching40mmncimageContainer.classList.add('hidden');
+                                        metallatching40mmplus1.style.display = 'none';
+                                        metallatching40mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('secondinputmetallatching40mmbtnno').addEventListener('input', SmetalgenerateCode);
+                            document.getElementById('secondinputmetallatching40mmbtnnc').addEventListener('input', SmetalgenerateCode);
+                            
+                            // economy
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Esecondmetallatching40mmbtnnno').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetallatching40mmbtnno').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetallatching40mmbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Esecondmetallatching40mmbtnnnc').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetallatching40mmbtnnc').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetallatching40mmbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof ESmetalpositiveNumberOnly === 'undefined') {
+    const ESmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Esecondinputmetallatching40mmbtnno').addEventListener('input', ESmetalpositiveNumberOnly);
+                            document.getElementById('Esecondinputmetallatching40mmbtnnc').addEventListener('input', ESmetalpositiveNumberOnly);
+}
+
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function ESmetalgenerateCode() {
+                                const noValue = document.getElementById('Esecondinputmetallatching40mmbtnno').value;
+                                const ncValue = document.getElementById('Esecondinputmetallatching40mmbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetallatching40');
+                                const descriptionContainer = document.getElementById('descriptionmetallatching40mm');
+                                const generatedCodeElement = document.getElementById('generated-codemetallatching40');
+                            
+                                // Image containers
+                                const metallatching40mmblackimageContainer = document.getElementById('metallatching40mmblackimageContainer');
+                                const metallatching40mmnoimageContainer = document.getElementById('Emetallatching40mmnoimageContainer');
+                                const metallatching40mmncimageContainer = document.getElementById('Emetallatching40mmncimageContainer');
+                            
+                                // Plus symbols
+                                const metallatching40mmplus1 = document.getElementById('metallatching40mmplus1');
+                                const metallatching40mmplus2 = document.getElementById('Emetallatching40mmplus2');
+                            
+                                // Ensure black image is always visible
+                                metallatching40mmblackimageContainer.classList.remove('hidden');
+                                metallatching40mmplus1.style.display = 'none'; // Hide symbols initially
+                                metallatching40mmplus2.style.display = 'none';
+                            
+                                const noImageName = metallatching40mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metallatching40mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metallatching40mmnoimageContainer.querySelector('img').src = `push/metalscrew/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metallatching40mmnoimageContainer.classList.remove('hidden');
+                                    metallatching40mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metallatching40mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metallatching40mmncimageContainer.querySelector('img').src = `push/metalscrew/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metallatching40mmncimageContainer.classList.remove('hidden');
+                                    metallatching40mmplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metallatching40mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "E2PSML211",
+                                        "12": "E2PSML212",
+                                        "10": "E2PSML210",
+                                        "01": "E2PSML201",
+                                        "21": "E2PSML221",
+                                        "23": "E2PSML223",
+                                        "22": "E2PSML222",
+                                        "33": "E2PSML233",
+                                        "32": "E2PSML232",
+                                        "13": "E2PSML213",
+                                        "14": "E2PSML214",
+                                        "15": "E2PSML215",
+                                        "24": "E2PSML224",
+                                        "31": "E2PSML231",
+                                        "41": "E2PSML241",
+                                        "42": "E2PSML242",
+                                        "51": "E2PSML251",
+                                        "00": "E2PSML200",
+                                        "20": "E2PSML220",
+                                        "30": "E2PSML230",
+                                        "40": "E2PSML240",
+                                        "50": "E2PSML250",
+                                        "60": "E2PSML260",
+                                        "02": "E2PSML202",
+                                        "03": "E2PSML203",
+                                        "04": "E2PSML204",
+                                        "05": "E2PSML205",
+                                        "06": "E2PSML206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metallatching40mmnoimageContainer.classList.add('hidden');
+                                        metallatching40mmncimageContainer.classList.add('hidden');
+                                        metallatching40mmplus1.style.display = 'none';
+                                        metallatching40mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Esecondinputmetallatching40mmbtnno').addEventListener('input', ESmetalgenerateCode);
+                            document.getElementById('Esecondinputmetallatching40mmbtnnc').addEventListener('input', ESmetalgenerateCode);
+                            
+                          
+                            // fourthmetallatching40mmbtn
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('fourthmetallatching40mmbtnnbtnno').addEventListener('click', function () {
+                                document.getElementById('fourthmetallatching40mmbtninputno').classList.remove('hidden');
+                                document.getElementById('fourthmetallatching40mmbtninputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('fourthmetallatching40mmbtnnbtnnc').addEventListener('click', function () {
+                                document.getElementById('fourthmetallatching40mmbtninputnc').classList.remove('hidden');
+                                document.getElementById('fourthmetallatching40mmbtninputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                             
+                            if (typeof redgreenmetalpositiveNumberOnly === 'undefined') {
+    const redgreenmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+          // Add event listeners to enforce positive number restriction
+          document.getElementById('fourthmetallatching40mmbtninputno').addEventListener('input', redgreenmetalpositiveNumberOnly);
+                            document.getElementById('fourthmetallatching40mmbtninputnc').addEventListener('input', redgreenmetalpositiveNumberOnly);
+ 
+}
+             
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function redgreenmetalgenerateCode() {
+                                const noValue = document.getElementById('fourthmetallatching40mmbtninputno').value;
+                                const ncValue = document.getElementById('fourthmetallatching40mmbtninputnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetallatching40');
+                                const descriptionContainer = document.getElementById('descriptionmetallatching40mm');
+                                const generatedCodeElement = document.getElementById('generated-codemetallatching40');
+                            
+                                // Image containers
+                                const metallatching40mmredimageContainer = document.getElementById('metallatching40mmredimageContainer');
+                                const metallatching40mmnoimageContainer = document.getElementById('metallatching40mmnoimageContainer');
+                                const metallatching40mmncimageContainer = document.getElementById('metallatching40mmncimageContainer');
+                            
+                                // Plus symbols
+                                const metallatching40mmplus1 = document.getElementById('metallatching40mmplus1');
+                                const metallatching40mmplus2 = document.getElementById('metallatching40mmplus2');
+                            
+                                // Ensure red image is always visible
+                                metallatching40mmredimageContainer.classList.remove('hidden');
+                                metallatching40mmplus1.style.display = 'none'; // Hide symbols initially
+                                metallatching40mmplus2.style.display = 'none';
+                            
+                                const noImageName = metallatching40mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metallatching40mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metallatching40mmnoimageContainer.querySelector('img').src = `push/metalscrew/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metallatching40mmnoimageContainer.classList.remove('hidden');
+                                    metallatching40mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metallatching40mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metallatching40mmncimageContainer.querySelector('img').src = `push/metalscrew/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metallatching40mmncimageContainer.classList.remove('hidden');
+                                    metallatching40mmplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metallatching40mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "2PSML411",
+                                        "12": "2PSML412",
+                                        "10": "2PSML410",
+                                        "01": "2PSML401",
+                                        "21": "2PSML421",
+                                        "23": "2PSML423",
+                                        "22": "2PSML422",
+                                        "33": "2PSML433",
+                                        "32": "2PSML432",
+                                        "13": "2PSML413",
+                                        "14": "2PSML414",
+                                        "15": "2PSML415",
+                                        "24": "2PSML424",
+                                        "31": "2PSML431",
+                                        "41": "2PSML441",
+                                        "42": "2PSML442",
+                                        "51": "2PSML451",
+                                        "00": "2PSML400",
+                                        "20": "2PSML420",
+                                        "30": "2PSML430",
+                                        "40": "2PSML440",
+                                        "50": "2PSML450",
+                                        "60": "2PSML460",
+                                        "02": "2PSML402",
+                                        "03": "2PSML403",
+                                        "04": "2PSML404",
+                                        "05": "2PSML405",
+                                        "06": "2PSML406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metallatching40mmnoimageContainer.classList.add('hidden');
+                                        metallatching40mmncimageContainer.classList.add('hidden');
+                                        metallatching40mmplus1.style.display = 'none';
+                                        metallatching40mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('fourthmetallatching40mmbtninputno').addEventListener('input', redgreenmetalgenerateCode);
+                            document.getElementById('fourthmetallatching40mmbtninputnc').addEventListener('input', redgreenmetalgenerateCode);
+             
+                            // economay
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Efourthmetallatching40mmbtnnbtnno').addEventListener('click', function () {
+                                document.getElementById('Efourthmetallatching40mmbtninputno').classList.remove('hidden');
+                                document.getElementById('Efourthmetallatching40mmbtninputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Efourthmetallatching40mmbtnnbtnnc').addEventListener('click', function () {
+                                document.getElementById('Efourthmetallatching40mmbtninputnc').classList.remove('hidden');
+                                document.getElementById('Efourthmetallatching40mmbtninputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof EredgreenmetalpositiveNumberOnly === 'undefined') {
+    const EredgreenmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+         // Add event listeners to enforce positive number restriction
+         document.getElementById('Efourthmetallatching40mmbtninputno').addEventListener('input', EredgreenmetalpositiveNumberOnly);
+                            document.getElementById('Efourthmetallatching40mmbtninputnc').addEventListener('input', EredgreenmetalpositiveNumberOnly);
+                             
+}
+             
+                            
+                          
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function EredgreenmetalgenerateCode() {
+                                const noValue = document.getElementById('Efourthmetallatching40mmbtninputno').value;
+                                const ncValue = document.getElementById('Efourthmetallatching40mmbtninputnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetallatching40');
+                                const descriptionContainer = document.getElementById('descriptionmetallatching40mm');
+                                const generatedCodeElement = document.getElementById('generated-codemetallatching40');
+                            
+                                // Image containers
+                                const metallatching40mmredimageContainer = document.getElementById('metallatching40mmredimageContainer');
+                                const metallatching40mmnoimageContainer = document.getElementById('Emetallatching40mmnoimageContainer');
+                                const metallatching40mmncimageContainer = document.getElementById('Emetallatching40mmncimageContainer');
+                            
+                                // Plus symbols
+                                const metallatching40mmplus1 = document.getElementById('metallatching40mmplus1');
+                                const metallatching40mmplus2 = document.getElementById('Emetallatching40mmplus2');
+                            
+                                // Ensure red image is always visible
+                                metallatching40mmredimageContainer.classList.remove('hidden');
+                                metallatching40mmplus1.style.display = 'none'; // Hide symbols initially
+                                metallatching40mmplus2.style.display = 'none';
+                            
+                                const noImageName = metallatching40mmnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metallatching40mmncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metallatching40mmnoimageContainer.querySelector('img').src = `push/metalscrew/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metallatching40mmnoimageContainer.classList.remove('hidden');
+                                    metallatching40mmplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metallatching40mmnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metallatching40mmncimageContainer.querySelector('img').src = `push/metalscrew/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metallatching40mmncimageContainer.classList.remove('hidden');
+                                    metallatching40mmplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metallatching40mmncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "E2PSML411",
+                                        "12": "E2PSML412",
+                                        "10": "E2PSML410",
+                                        "01": "E2PSML401",
+                                        "21": "E2PSML421",
+                                        "23": "E2PSML423",
+                                        "22": "E2PSML422",
+                                        "33": "E2PSML433",
+                                        "32": "E2PSML432",
+                                        "13": "E2PSML413",
+                                        "14": "E2PSML414",
+                                        "15": "E2PSML415",
+                                        "24": "E2PSML424",
+                                        "31": "E2PSML431",
+                                        "41": "E2PSML441",
+                                        "42": "E2PSML442",
+                                        "51": "E2PSML451",
+                                        "00": "E2PSML400",
+                                        "20": "E2PSML420",
+                                        "30": "E2PSML430",
+                                        "40": "E2PSML440",
+                                        "50": "E2PSML450",
+                                        "60": "E2PSML460",
+                                        "02": "E2PSML402",
+                                        "03": "E2PSML403",
+                                        "04": "E2PSML404",
+                                        "05": "E2PSML405",
+                                        "06": "E2PSML406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metallatching40mmnoimageContainer.classList.add('hidden');
+                                        metallatching40mmncimageContainer.classList.add('hidden');
+                                        metallatching40mmplus1.style.display = 'none';
+                                        metallatching40mmplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Efourthmetallatching40mmbtninputno').addEventListener('input', EredgreenmetalgenerateCode);
+                            document.getElementById('Efourthmetallatching40mmbtninputnc').addEventListener('input', EredgreenmetalgenerateCode);
+                        
+                    
+                            </script>
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultmetallatching40" class="result hidden">
+  
+     <p id="generated-codemetallatching40"></p>
+     <div id="descriptionmetallatching40mm" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ <!-- flush images -->
+ <div class="flushimg">
+   
+    <div class="image-container hidden" id="metallatching40mmblackimageContainer">
+        <img src="pushmashroom/Mashroom Screw Metal/mushroom screw metal/Latching 40mm black.png" alt="Product Image" class="product-image">
+        <div class="image-name">2AML2</div>
+    </div>
+    <div class="image-container hidden" id="metallatching40mmredimageContainer">
+        <img src="pushmashroom/Mashroom Screw Metal/Latching 40mm.png" alt="Product Image" class="product-image">
+        <div class="image-name">2AML4</div>
+    </div>
+    <div id="metallatching40mmplus1" class="plus-symbol" style="display: none;">+</div>
+
+    <div class="image-container hidden" id="metallatching40mmnoimageContainer">
+    <img src="pushbtn/images/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="metallatching40mmplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="metallatching40mmncimageContainer">
+    <img src="push/metalscrew/images/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>
+</div>
+
+<div class="image-container hidden" id="Emetallatching40mmnoimageContainer">
+    <img src="push/metalscrew/Eimages/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="Emetallatching40mmplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="Emetallatching40mmncimageContainer">
+    <img src="push/metalscrew/Eimages/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>    
+</div>
+    
+</div>
+
+
+ </div>
+
+</div>
+
+</body>
+</html>

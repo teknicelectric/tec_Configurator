@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.metallatching30mmclipbtn').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+        const flushForms = document.querySelectorAll('.flushform');
+        flushForms.forEach(form => form.reset());
+
+        // Hide elements
+        // document.getElementById('resultmetallatching30mmclip').classList.add('hidden');
+        document.getElementById('descriptionmetallatching30mmclip').classList.add('hidden');
+        document.getElementById('metallatching30mmclipnoimageContainer').classList.add('hidden');
+        document.getElementById('metallatching30mmclipncimageContainer').classList.add('hidden');
+        document.getElementById('Emetallatching30mmclipnoimageContainer').classList.add('hidden');
+        document.getElementById('Emetallatching30mmclipncimageContainer').classList.add('hidden');
+      
+        document.getElementById('metallatching30mmclipblackimageContainer').classList.add('hidden');
+       
+        document.getElementById('metallatching30mmclipredimageContainer').classList.add('hidden');
+      
+
+        // Hide plus buttons
+        document.getElementById('metallatching30mmclipplus1').style.display = 'none';
+        document.getElementById('metallatching30mmclipplus2').style.display = 'none';
+        document.getElementById('Emetallatching30mmclipplus2').style.display = 'none';
+
+    });
+});
+    
+  
+</script>
+
+
+<body>
+    
+    <div class="outputflex">
+
+        <div class="metallatching30mmclip">
+    
+                    <div class="option-group">
+                        <button class="option-btn btn-common metallatching30mmclipbtn"><div class="black-btn"></div>(4AMLS2)</button>
+                        
+                                
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metallatching30mmclipbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetallatching30mmclipbtnnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetallatching30mmclipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetallatching30mmclipbtnnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetallatching30mmclipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metallatching30mmclipbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetallatching30mmclipbtnnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetallatching30mmclipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetallatching30mmclipbtnnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetallatching30mmclipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                   
+                            
+                                </div>
+                            </div>
+              
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common metallatching30mmclipbtn"><div class="red-btn"></div>(4AMLS4)</button>
+                      
+
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metallatching30mmclipbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="fourthmetallatching30mmclipbtnnbtnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="fourthmetallatching30mmclipbtninputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="fourthmetallatching30mmclipbtnnbtnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="fourthmetallatching30mmclipbtninputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metallatching30mmclipbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Efourthmetallatching30mmclipbtnnbtnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Efourthmetallatching30mmclipbtninputno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Efourthmetallatching30mmclipbtnnbtnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Efourthmetallatching30mmclipbtninputnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--  Button -->
+                                  
+                                </div>
+                                
+                        </div>
+                
+                                    
+                                </div>
+
+                         
+            
+  
+                        <script>
+                        
+                            
+                            // for metalsecond
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('secondmetallatching30mmclipbtnnno').addEventListener('click', function () {
+                                document.getElementById('secondinputmetallatching30mmclipbtnno').classList.remove('hidden');
+                                document.getElementById('secondinputmetallatching30mmclipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('secondmetallatching30mmclipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('secondinputmetallatching30mmclipbtnnc').classList.remove('hidden');
+                                document.getElementById('secondinputmetallatching30mmclipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+
+                            if (typeof SmetalpositiveNumberOnly === 'undefined') {
+    const SmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('secondinputmetallatching30mmclipbtnno').addEventListener('input', SmetalpositiveNumberOnly);
+    document.getElementById('secondinputmetallatching30mmclipbtnnc').addEventListener('input', SmetalpositiveNumberOnly);
+}
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function SmetalgenerateCode() {
+                                const noValue = document.getElementById('secondinputmetallatching30mmclipbtnno').value;
+                                const ncValue = document.getElementById('secondinputmetallatching30mmclipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetallatching30mmclip');
+                                const descriptionContainer = document.getElementById('descriptionmetallatching30mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetallatching30mmclip');
+                            
+                                // Image containers
+                                const metallatching30mmclipblackimageContainer = document.getElementById('metallatching30mmclipblackimageContainer');
+                                const metallatching30mmclipnoimageContainer = document.getElementById('metallatching30mmclipnoimageContainer');
+                                const metallatching30mmclipncimageContainer = document.getElementById('metallatching30mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metallatching30mmclipplus1 = document.getElementById('metallatching30mmclipplus1');
+                                const metallatching30mmclipplus2 = document.getElementById('metallatching30mmclipplus2');
+                            
+                                // Ensure black image is always visible
+                                metallatching30mmclipblackimageContainer.classList.remove('hidden');
+                                metallatching30mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                metallatching30mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = metallatching30mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metallatching30mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metallatching30mmclipnoimageContainer.querySelector('img').src = `pushbtn/clipon/no-${noValue}.png`;
+                                    noImageName.textContent = `C1*${noValue}`;
+                                    metallatching30mmclipnoimageContainer.classList.remove('hidden');
+                                    metallatching30mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metallatching30mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metallatching30mmclipncimageContainer.querySelector('img').src = `pushbtn/clipon/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `C2*${ncValue}`;
+                                    metallatching30mmclipncimageContainer.classList.remove('hidden');
+                                    metallatching30mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metallatching30mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "4PSMLS211",
+                                        "12": "4PSMLS212",
+                                        "10": "4PSMLS210",
+                                        "01": "4PSMLS201",
+                                        "21": "4PSMLS221",
+                                        "23": "4PSMLS223",
+                                        "22": "4PSMLS222",
+                                        "33": "4PSMLS233",
+                                        "32": "4PSMLS232",
+                                        "13": "4PSMLS213",
+                                        "14": "4PSMLS214",
+                                        "15": "4PSMLS215",
+                                        "24": "4PSMLS224",
+                                        "31": "4PSMLS231",
+                                        "41": "4PSMLS241",
+                                        "42": "4PSMLS242",
+                                        "51": "4PSMLS251",
+                                        "00": "4PSMLS200",
+                                        "20": "4PSMLS220",
+                                        "30": "4PSMLS230",
+                                        "40": "4PSMLS240",
+                                        "50": "4PSMLS250",
+                                        "60": "4PSMLS260",
+                                        "02": "4PSMLS202",
+                                        "03": "4PSMLS203",
+                                        "04": "4PSMLS204",
+                                        "05": "4PSMLS205",
+                                        "06": "4PSMLS206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metallatching30mmclipnoimageContainer.classList.add('hidden');
+                                        metallatching30mmclipncimageContainer.classList.add('hidden');
+                                        metallatching30mmclipplus1.style.display = 'none';
+                                        metallatching30mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('secondinputmetallatching30mmclipbtnno').addEventListener('input', SmetalgenerateCode);
+                            document.getElementById('secondinputmetallatching30mmclipbtnnc').addEventListener('input', SmetalgenerateCode);
+                            
+                            // economy
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Esecondmetallatching30mmclipbtnnno').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetallatching30mmclipbtnno').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetallatching30mmclipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Esecondmetallatching30mmclipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetallatching30mmclipbtnnc').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetallatching30mmclipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof ESmetalpositiveNumberOnly === 'undefined') {
+    const ESmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Esecondinputmetallatching30mmclipbtnno').addEventListener('input', ESmetalpositiveNumberOnly);
+                            document.getElementById('Esecondinputmetallatching30mmclipbtnnc').addEventListener('input', ESmetalpositiveNumberOnly);
+}
+
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function ESmetalgenerateCode() {
+                                const noValue = document.getElementById('Esecondinputmetallatching30mmclipbtnno').value;
+                                const ncValue = document.getElementById('Esecondinputmetallatching30mmclipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetallatching30mmclip');
+                                const descriptionContainer = document.getElementById('descriptionmetallatching30mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetallatching30mmclip');
+                            
+                                // Image containers
+                                const metallatching30mmclipblackimageContainer = document.getElementById('metallatching30mmclipblackimageContainer');
+                                const metallatching30mmclipnoimageContainer = document.getElementById('Emetallatching30mmclipnoimageContainer');
+                                const metallatching30mmclipncimageContainer = document.getElementById('Emetallatching30mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metallatching30mmclipplus1 = document.getElementById('metallatching30mmclipplus1');
+                                const metallatching30mmclipplus2 = document.getElementById('Emetallatching30mmclipplus2');
+                            
+                                // Ensure black image is always visible
+                                metallatching30mmclipblackimageContainer.classList.remove('hidden');
+                                metallatching30mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                metallatching30mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = metallatching30mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metallatching30mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metallatching30mmclipnoimageContainer.querySelector('img').src = `pushbtn/clipone/no-${noValue}.png`;
+                                    noImageName.textContent = `EC1*${noValue}`;
+                                    metallatching30mmclipnoimageContainer.classList.remove('hidden');
+                                    metallatching30mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metallatching30mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metallatching30mmclipncimageContainer.querySelector('img').src = `pushbtn/clipone/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `EC2*${ncValue}`;
+                                    metallatching30mmclipncimageContainer.classList.remove('hidden');
+                                    metallatching30mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metallatching30mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "E4PSMLS211",
+                                        "12": "E4PSMLS212",
+                                        "10": "E4PSMLS210",
+                                        "01": "E4PSMLS201",
+                                        "21": "E4PSMLS221",
+                                        "23": "E4PSMLS223",
+                                        "22": "E4PSMLS222",
+                                        "33": "E4PSMLS233",
+                                        "32": "E4PSMLS232",
+                                        "13": "E4PSMLS213",
+                                        "14": "E4PSMLS214",
+                                        "15": "E4PSMLS215",
+                                        "24": "E4PSMLS224",
+                                        "31": "E4PSMLS231",
+                                        "41": "E4PSMLS241",
+                                        "42": "E4PSMLS242",
+                                        "51": "E4PSMLS251",
+                                        "00": "E4PSMLS200",
+                                        "20": "E4PSMLS220",
+                                        "30": "E4PSMLS230",
+                                        "40": "E4PSMLS240",
+                                        "50": "E4PSMLS250",
+                                        "60": "E4PSMLS260",
+                                        "02": "E4PSMLS202",
+                                        "03": "E4PSMLS203",
+                                        "04": "E4PSMLS204",
+                                        "05": "E4PSMLS205",
+                                        "06": "E4PSMLS206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metallatching30mmclipnoimageContainer.classList.add('hidden');
+                                        metallatching30mmclipncimageContainer.classList.add('hidden');
+                                        metallatching30mmclipplus1.style.display = 'none';
+                                        metallatching30mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Esecondinputmetallatching30mmclipbtnno').addEventListener('input', ESmetalgenerateCode);
+                            document.getElementById('Esecondinputmetallatching30mmclipbtnnc').addEventListener('input', ESmetalgenerateCode);
+                            
+                          
+                            // fourthmetallatching30mmclipbtn
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('fourthmetallatching30mmclipbtnnbtnno').addEventListener('click', function () {
+                                document.getElementById('fourthmetallatching30mmclipbtninputno').classList.remove('hidden');
+                                document.getElementById('fourthmetallatching30mmclipbtninputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('fourthmetallatching30mmclipbtnnbtnnc').addEventListener('click', function () {
+                                document.getElementById('fourthmetallatching30mmclipbtninputnc').classList.remove('hidden');
+                                document.getElementById('fourthmetallatching30mmclipbtninputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                             
+                            if (typeof redgreenmetalpositiveNumberOnly === 'undefined') {
+    const redgreenmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+          // Add event listeners to enforce positive number restriction
+          document.getElementById('fourthmetallatching30mmclipbtninputno').addEventListener('input', redgreenmetalpositiveNumberOnly);
+                            document.getElementById('fourthmetallatching30mmclipbtninputnc').addEventListener('input', redgreenmetalpositiveNumberOnly);
+ 
+}
+             
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function redgreenmetalgenerateCode() {
+                                const noValue = document.getElementById('fourthmetallatching30mmclipbtninputno').value;
+                                const ncValue = document.getElementById('fourthmetallatching30mmclipbtninputnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetallatching30mmclip');
+                                const descriptionContainer = document.getElementById('descriptionmetallatching30mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetallatching30mmclip');
+                            
+                                // Image containers
+                                const metallatching30mmclipredimageContainer = document.getElementById('metallatching30mmclipredimageContainer');
+                                const metallatching30mmclipnoimageContainer = document.getElementById('metallatching30mmclipnoimageContainer');
+                                const metallatching30mmclipncimageContainer = document.getElementById('metallatching30mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metallatching30mmclipplus1 = document.getElementById('metallatching30mmclipplus1');
+                                const metallatching30mmclipplus2 = document.getElementById('metallatching30mmclipplus2');
+                            
+                                // Ensure red image is always visible
+                                metallatching30mmclipredimageContainer.classList.remove('hidden');
+                                metallatching30mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                metallatching30mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = metallatching30mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metallatching30mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metallatching30mmclipnoimageContainer.querySelector('img').src = `pushbtn/clipon/no-${noValue}.png`;
+                                    noImageName.textContent = `C1*${noValue}`;
+                                    metallatching30mmclipnoimageContainer.classList.remove('hidden');
+                                    metallatching30mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metallatching30mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metallatching30mmclipncimageContainer.querySelector('img').src = `pushbtn/clipon/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `C2*${ncValue}`;
+                                    metallatching30mmclipncimageContainer.classList.remove('hidden');
+                                    metallatching30mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metallatching30mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "4PSMLS411",
+                                        "12": "4PSMLS412",
+                                        "10": "4PSMLS410",
+                                        "01": "4PSMLS401",
+                                        "21": "4PSMLS421",
+                                        "23": "4PSMLS423",
+                                        "22": "4PSMLS422",
+                                        "33": "4PSMLS433",
+                                        "32": "4PSMLS432",
+                                        "13": "4PSMLS413",
+                                        "14": "4PSMLS414",
+                                        "15": "4PSMLS415",
+                                        "24": "4PSMLS424",
+                                        "31": "4PSMLS431",
+                                        "41": "4PSMLS441",
+                                        "42": "4PSMLS442",
+                                        "51": "4PSMLS451",
+                                        "00": "4PSMLS400",
+                                        "20": "4PSMLS420",
+                                        "30": "4PSMLS430",
+                                        "40": "4PSMLS440",
+                                        "50": "4PSMLS450",
+                                        "60": "4PSMLS460",
+                                        "02": "4PSMLS402",
+                                        "03": "4PSMLS403",
+                                        "04": "4PSMLS404",
+                                        "05": "4PSMLS405",
+                                        "06": "4PSMLS406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metallatching30mmclipnoimageContainer.classList.add('hidden');
+                                        metallatching30mmclipncimageContainer.classList.add('hidden');
+                                        metallatching30mmclipplus1.style.display = 'none';
+                                        metallatching30mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('fourthmetallatching30mmclipbtninputno').addEventListener('input', redgreenmetalgenerateCode);
+                            document.getElementById('fourthmetallatching30mmclipbtninputnc').addEventListener('input', redgreenmetalgenerateCode);
+             
+                            // economay
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Efourthmetallatching30mmclipbtnnbtnno').addEventListener('click', function () {
+                                document.getElementById('Efourthmetallatching30mmclipbtninputno').classList.remove('hidden');
+                                document.getElementById('Efourthmetallatching30mmclipbtninputnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Efourthmetallatching30mmclipbtnnbtnnc').addEventListener('click', function () {
+                                document.getElementById('Efourthmetallatching30mmclipbtninputnc').classList.remove('hidden');
+                                document.getElementById('Efourthmetallatching30mmclipbtninputno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof EredgreenmetalpositiveNumberOnly === 'undefined') {
+    const EredgreenmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+         // Add event listeners to enforce positive number restriction
+         document.getElementById('Efourthmetallatching30mmclipbtninputno').addEventListener('input', EredgreenmetalpositiveNumberOnly);
+                            document.getElementById('Efourthmetallatching30mmclipbtninputnc').addEventListener('input', EredgreenmetalpositiveNumberOnly);
+                             
+}
+             
+                            
+                          
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function EredgreenmetalgenerateCode() {
+                                const noValue = document.getElementById('Efourthmetallatching30mmclipbtninputno').value;
+                                const ncValue = document.getElementById('Efourthmetallatching30mmclipbtninputnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetallatching30mmclip');
+                                const descriptionContainer = document.getElementById('descriptionmetallatching30mmclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetallatching30mmclip');
+                            
+                                // Image containers
+                                const metallatching30mmclipredimageContainer = document.getElementById('metallatching30mmclipredimageContainer');
+                                const metallatching30mmclipnoimageContainer = document.getElementById('Emetallatching30mmclipnoimageContainer');
+                                const metallatching30mmclipncimageContainer = document.getElementById('Emetallatching30mmclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metallatching30mmclipplus1 = document.getElementById('metallatching30mmclipplus1');
+                                const metallatching30mmclipplus2 = document.getElementById('Emetallatching30mmclipplus2');
+                            
+                                // Ensure red image is always visible
+                                metallatching30mmclipredimageContainer.classList.remove('hidden');
+                                metallatching30mmclipplus1.style.display = 'none'; // Hide symbols initially
+                                metallatching30mmclipplus2.style.display = 'none';
+                            
+                                const noImageName = metallatching30mmclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metallatching30mmclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metallatching30mmclipnoimageContainer.querySelector('img').src = `pushbtn/clipone/no-${noValue}.png`;
+                                    noImageName.textContent = `EC1*${noValue}`;
+                                    metallatching30mmclipnoimageContainer.classList.remove('hidden');
+                                    metallatching30mmclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metallatching30mmclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metallatching30mmclipncimageContainer.querySelector('img').src = `pushbtn/clipone/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `EC2*${ncValue}`;
+                                    metallatching30mmclipncimageContainer.classList.remove('hidden');
+                                    metallatching30mmclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metallatching30mmclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "E4PSMLS411",
+                                        "12": "E4PSMLS412",
+                                        "10": "E4PSMLS410",
+                                        "01": "E4PSMLS401",
+                                        "21": "E4PSMLS421",
+                                        "23": "E4PSMLS423",
+                                        "22": "E4PSMLS422",
+                                        "33": "E4PSMLS433",
+                                        "32": "E4PSMLS432",
+                                        "13": "E4PSMLS413",
+                                        "14": "E4PSMLS414",
+                                        "15": "E4PSMLS415",
+                                        "24": "E4PSMLS424",
+                                        "31": "E4PSMLS431",
+                                        "41": "E4PSMLS441",
+                                        "42": "E4PSMLS442",
+                                        "51": "E4PSMLS451",
+                                        "00": "E4PSMLS400",
+                                        "20": "E4PSMLS420",
+                                        "30": "E4PSMLS430",
+                                        "40": "E4PSMLS440",
+                                        "50": "E4PSMLS450",
+                                        "60": "E4PSMLS460",
+                                        "02": "E4PSMLS402",
+                                        "03": "E4PSMLS403",
+                                        "04": "E4PSMLS404",
+                                        "05": "E4PSMLS405",
+                                        "06": "E4PSMLS406"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metallatching30mmclipnoimageContainer.classList.add('hidden');
+                                        metallatching30mmclipncimageContainer.classList.add('hidden');
+                                        metallatching30mmclipplus1.style.display = 'none';
+                                        metallatching30mmclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = 'Description:';
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Efourthmetallatching30mmclipbtninputno').addEventListener('input', EredgreenmetalgenerateCode);
+                            document.getElementById('Efourthmetallatching30mmclipbtninputnc').addEventListener('input', EredgreenmetalgenerateCode);
+                        
+                    
+                            </script>
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultmetallatching30mmclip" class="result hidden">
+  
+     <p id="generated-codemetallatching30mmclip"></p>
+     <div id="descriptionmetallatching30mmclip" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ <!-- flush images -->
+ <div class="flushimg">
+   
+    <div class="image-container hidden" id="metallatching30mmclipblackimageContainer">
+        <img src="pushmashroom/Mushroom Clip on Metal/Mushroom Clip on Metal/Latching Head 30mm Black.png" alt="Product Image" class="product-image">
+        <div class="image-name">4AMLS2</div>
+    </div>
+    <div class="image-container hidden" id="metallatching30mmclipredimageContainer">
+        <img src="pushmashroom/Mushroom Clip on Metal/Latching Head 30mm Black.png" alt="Product Image" class="product-image">
+        <div class="image-name">4AMLS4</div>
+    </div>
+    <div id="metallatching30mmclipplus1" class="plus-symbol" style="display: none;">+</div>
+
+    <div class="image-container hidden" id="metallatching30mmclipnoimageContainer">
+    <img src="pushbtn/clipon/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="metallatching30mmclipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="metallatching30mmclipncimageContainer">
+    <img src="pushbtn/cliponnc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>
+</div>
+
+<div class="image-container hidden" id="Emetallatching30mmclipnoimageContainer">
+    <img src="pushbtn/cliponeno-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="Emetallatching30mmclipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="Emetallatching30mmclipncimageContainer">
+    <img src="pushbtn/cliponenc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>    
+</div>
+    
+</div>
+
+
+ </div>
+
+</div>
+
+</body>
+</html>
