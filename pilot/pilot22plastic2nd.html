@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+</script>
+<style>
+    .mainoptions2nd{
+        display: flex;
+    }
+
+    .mainoptions2nd img{
+        width: 300px;
+    }
+    
+   
+    .imagecon2nd {
+       display: block;
+    
+        
+    }
+    #pilotplastic2ndresult{
+    margin-bottom: 30PX;
+}
+    
+     .imagecon2nd img{
+        width: 150px;
+     }
+ 
+</style>
+<body>
+    <div class="mainoptions2nd">
+   <div class="colorsoptions">
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn">3PLBR</button>
+        <div class="nested-options">
+        <div class="option-group">
+            <button class="option-btn btn-common whitebtn pilotplastic2ndoption" >110VAC</button>
+            <div class="nested-options">
+               
+                <div class="option-group">
+                    <button class="option-btn btn-common whitebtn pilotplastic2ndoption" data-colorb="reda" data-codeb="P2PLBT4LB110/06">
+                        <div class="red-btn"></div> Red LED BULB / Red Lens 
+                    </button>
+                </div>
+               
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotplastic2ndoption" >12VAC/DC</button>
+        <div class="nested-options">
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotplastic2ndoption" data-colorb="redab" data-codeb="P2PLBT4LB110/12">
+                    <div class="red-btn"></div> Red LED BULB / Red Lens 
+                </button>
+            </div>
+           
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotplastic2ndoption" >230VAC</button>
+        <div class="nested-options">
+           
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotplastic2ndoption" data-colorb="redac" data-codeb="P2PLBT4LB110/24">
+                    <div class="red-btn"></div> Red LED BULB / Red Lens 
+                </button>
+            </div>
+           
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotplastic2ndoption">24VAC/DC</button>
+        <div class="nested-options">
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotplastic2ndoption" data-colorb="redad" data-codeb="P2PLBT4LB240/06">
+                    <div class="red-btn"></div> Red LED BULB / Red Lens 
+                </button>
+            </div>
+           
+
+         
+    </div>
+    </div>
+
+  
+    </div>
+    </div>
+
+   
+
+   
+
+    
+</div>
+         
+
+<div class="output">
+
+ 
+ <div id="pilotplastic2ndresult" class="result hidden">
+  
+     <p id="pilotplastic2ndgenerated-code"></p>
+     <div id="description" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ 
+
+    
+ <div class="imagecon2nd">
+    
+
+     <img src="pilotlights/flush/red.png" id="reda" class="hidden" alt="Red">
+   
+
+    </div>
+
+ 
+ 
+ 
+ 
+ <div class="imagecon2nd">
+
+    <img src="pilotlights/flush/red.png" id="redab" class="hidden" alt="Red">
+
+
+   </div>
+
+
+
+
+
+<div class="imagecon2nd">
+    
+
+    <img src="pilotlights/flush/red.png" id="redac" class="hidden" alt="Red">
+
+
+   </div>
+
+
+
+
+<div class="imagecon2nd">
+    
+
+    <img src="pilotlights/flush/red.png" id="redad" class="hidden" alt="Red">
+  
+   </div>
+
+
+
+
+
+
+
+
+
+<script>
+ 
+
+
+document.querySelectorAll('.pilotplastic2ndoption').forEach(button => {
+    button.addEventListener('click', function () {
+        const color = this.getAttribute('data-colorb');
+        const productCode = this.getAttribute('data-codeb');
+
+        // Hide all images
+        document.querySelectorAll('.imagecon2nd img').forEach(img => img.classList.add('hidden'));
+
+        // Show the selected image
+        const selectedImage = document.getElementById(color);
+        if (selectedImage) {
+            selectedImage.classList.remove('hidden');
+        }
+
+        // Display the product code
+        const productInfo = document.getElementById('pilotplastic2ndgenerated-code');
+       productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+        document.getElementById("pilotplastic2ndresult").classList.remove("hidden");
+    });
+});
+</script>
+
+ </div>
+
+     
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

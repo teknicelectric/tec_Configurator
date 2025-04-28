@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+  
+</script>
+<style>
+    .pilotlaboptionsecondlabps{
+        display: flex;
+    }
+
+    .pilotlaboptionsecondlabps img{
+        width: 300px;
+    }
+    
+    .product-codec{
+margin-top: 50px;
+    }
+
+    .imageconlaboptions {
+        display: block;
+    
+        
+    }
+    #resultlaboptions{
+    margin-bottom: 30PX;
+}
+    
+     .imageconlaboptions img{
+        width: 150px;
+     }
+ 
+</style>
+<body>
+    <div class="pilotlaboptionsecondlabps">
+   <div class="colorsoptions">
+        <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionsecond">110VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond" data-colorpls="whitepsa" data-codepls="3PLBR1L(S)110VAC">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond" data-colorpls="greenpsa" data-codepls="3PLBR3L110VAC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond" data-colorpls="redpsa" data-codepls="3PLBR4L110VAC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond" data-colorpls="amberpsa" data-codepls="3PLBR5L110VAC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond" data-colorpls="bluepsa" data-codepls="3PLBR6L110VAC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond" data-colorpls="clearpsa" data-codepls="3PLBR7L(S)110VAC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond" data-colorpls="yellowpsa" data-codepls="3PLBR8L110VAC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+            
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionsecond ">110VDC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="whitepsb" data-codepls="3PLBR1L(S)110VDC">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="greenpsb" data-codepls="3PLBR3L110VDC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="redpsb" data-codepls="3PLBR4L110VDC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="amberpsb" data-codepls="3PLBR5L110VDC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="bluepsb" data-codepls="3PLBR6L110VDC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="clearpsb" data-codepls="3PLBR7L(S)110VDC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="yellowpsb" data-codepls="3PLBR8L110VDC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+       
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionsecond " >12VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="whitepsc" data-codepls="3PLBR1L(S)12VAC/DC">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="greenpsc" data-codepls="3PLBR3L12VAC/DC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="redpsc" data-codepls="3PLBR4L12VAC/DC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="amberpsc" data-codepls="3PLBR5L12VAC/DC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="bluepsc" data-codepls="3PLBR6L12VAC/DC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="clearpsc" data-codepls="3PLBR7L(S)12VAC/DC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="yellowpsc" data-codepls="3PLBR8L12VAC/DC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+      
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionsecond " >220VDC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="whitepsd" data-codepls="3PLBR1L(S)220VDC">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="greenpsd" data-codepls="3PLBR3L220VDC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="redpsd" data-codepls="3PLBR4L220VDC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="amberpsd" data-codepls="3PLBR5L220VDC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="bluepsd" data-codepls="3PLBR6L220VDC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond" data-colorpls="clearpsd" data-codepls="3PLBR7L(S)220VDC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="yellowpsd" data-codepls="3PLBR8L220VDC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+       
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionsecond " >230VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="whitepse" data-codepls="3PLBR1L(S)230VAC">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="greenpse" data-codepls="3PLBR3L230VAC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="redpse" data-codepls="3PLBR4L230VAC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="amberpse" data-codepls="3PLBR5L230VAC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="bluepse" data-codepls="3PLBR6L230VAC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="clearpse" data-codepls="3PLBR7L(S)230VAC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+         
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="yellowpse" data-codepls="3PLBR8L230VAC/DC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+      
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionsecond " >24VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="whitepsf" data-codepls="3PLBR1L(S)24VAC/DC">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="greenpsf" data-codepls="3PLBR3L24VAC/DC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="redpsf" data-codepls="3PLBR4L24VAC/DC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="amberpsf" data-codepls="3PLBR5L24VAC/DC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="bluepsf" data-codepls="3PLBR6L24VAC/DC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="clearpsf" data-codepls="3PLBR7L(S)24VAC/DC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="yellowpsf" data-codepls="3PLBR8L24VAC/DC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+       
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionsecond " >48VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="whitepsg" data-codepls="3PLBR1L(S)48VAC/DC">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="greenpsg" data-codepls="3PLBR3L48VAC/DC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="redpsg" data-codepls="3PLBR4L48VAC/DC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="amberpsg" data-codepls="3PLBR5L48VAC/DC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="bluepsg" data-codepls="3PLBR6L48VAC/DC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="clearpsg" data-codepls="3PLBR7L(S)48VAC/DC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="yellowpsg" data-codepls="3PLBR8L48VAC/DC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+           
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionsecond " >6VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="whitepsh" data-codepls="3PLBR1L(S)6VAC/DC">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="greenpsh" data-codepls="3PLBR3L6VAC/DC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="redpsh" data-codepls="3PLBR4L6VAC/DC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="amberpsh" data-codepls="3PLBR5L6VAC/DC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="bluepsh" data-codepls="3PLBR6L6VAC/DC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="clearpsh" data-codepls="3PLBR7L(S)6VAC/DC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionsecond " data-colorpls="yellowpsh" data-codepls="3PLBR8L6VAC/DC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+          
+         
+    </div>
+    </div>
+    
+
+
+   
+
+    
+</div>
+              
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultlaboptions" class="result hidden">
+  
+     <p id="generated-codectlaboptions"></p>
+     <div id="description" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ 
+
+    
+ <div class="imageconlaboptions">
+    
+     <img src="pilotlights/flush/white.png" id="whitepsa" class="hidden" alt="White">
+     <img src="pilotlights/flush/black.png" id="blackpsa" class="hidden" alt="Black">
+     <img src="pilotlights/flush/green.png" id="greenpsa" class="hidden" alt="Green">
+     <img src="pilotlights/flush/red.png" id="redpsa" class="hidden" alt="Red">
+     <img src="pilotlights/flush/blue.png" id="bluepsa" class="hidden" alt="Blue">
+     <img src="pilotlights/flush/yellow.png" id="yellowpsa" class="hidden" alt="Yellow">
+
+    </div>
+
+ 
+ 
+
+ 
+    <div class="imageconlaboptions">
+    
+    <img src="pilotlights/flush/white.png" id="whitepsb" class="hidden" alt="White">
+    <img src="pilotlights/flush/black.png" id="blackpsb" class="hidden" alt="Black">
+    <img src="pilotlights/flush/green.png" id="greenpsb" class="hidden" alt="Green">
+    <img src="pilotlights/flush/red.png" id="redpsb" class="hidden" alt="Red">
+    <img src="pilotlights/flush/blue.png" id="bluepsb" class="hidden" alt="Blue">
+    <img src="pilotlights/flush/yellow.png" id="yellowpsb" class="hidden" alt="Yellow">
+
+   </div>
+
+ 
+ <div class="imageconlaboptions">
+ 
+ <img src="pilotlights/flush/white.png" id="whitepsc" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackpsc" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenpsc" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redpsc" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluepsc" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowpsc" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ <div class="imageconlaboptions">
+ 
+ <img src="pilotlights/flush/white.png" id="whitepsd" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackpsd" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenpsd" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redpsd" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluepsd" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowpsd" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ <div class="imageconlaboptions">
+ 
+ <img src="pilotlights/flush/white.png" id="whitepse" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackpse" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenpse" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redpse" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluepse" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowpse" class="hidden" alt="Yellow">
+
+</div>
+
+ <div class="imageconlaboptions">
+ 
+ <img src="pilotlights/flush/white.png" id="whitepsf" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackpsf" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenpsf" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redpsf" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluepsf" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowpsf" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ 
+
+ 
+<div class="imageconlaboptions">
+
+<img src="pilotlights/flush/white.png" id="whitepsg" class="hidden" alt="White">
+<img src="pilotlights/flush/black.png" id="blackpsg" class="hidden" alt="Black">
+<img src="pilotlights/flush/green.png" id="greenpsg" class="hidden" alt="Green">
+<img src="pilotlights/flush/red.png" id="redpsg" class="hidden" alt="Red">
+<img src="pilotlights/flush/blue.png" id="bluepsg" class="hidden" alt="Blue">
+<img src="pilotlights/flush/yellow.png" id="yellowpsg" class="hidden" alt="Yellow">
+
+</div>
+
+
+
+
+<div class="imageconlaboptions">
+
+    <img src="pilotlights/flush/white.png" id="whitepsh" class="hidden" alt="White">
+    <img src="pilotlights/flush/black.png" id="blackpsh" class="hidden" alt="Black">
+    <img src="pilotlights/flush/green.png" id="greenpsh" class="hidden" alt="Green">
+    <img src="pilotlights/flush/red.png" id="redpsh" class="hidden" alt="Red">
+    <img src="pilotlights/flush/blue.png" id="bluepsh" class="hidden" alt="Blue">
+    <img src="pilotlights/flush/yellow.png" id="yellowpsh" class="hidden" alt="Yellow">
+    
+    </div>
+    <script>
+       // six
+       
+       document.querySelectorAll('.pilotlaboptionsecond').forEach(button => {
+               button.addEventListener('click', function () {
+                   const color = this.getAttribute('data-colorpls');
+                   const productCode = this.getAttribute('data-codepls');
+       
+                   // Hide all images
+                   document.querySelectorAll('.imageconlaboptions img').forEach(img => img.classList.add('hidden'));
+       
+                   // Show the selected image
+                   const selectedImage = document.getElementById(color);
+                   if (selectedImage) {
+                       selectedImage.classList.remove('hidden');
+                   }
+       
+                   // Display the product code
+                   const productInfo = document.getElementById('generated-codectlaboptions');
+                  productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+                   document.getElementById("resultlaboptions").classList.remove("hidden"); // Make result visible
+               });
+           });  
+    
+    </script>
+    
+ </div>
+
+
+   
+     
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

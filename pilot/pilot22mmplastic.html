@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+</script>
+
+<body>
+   
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="connectionwtpilotplastic">Connection with Transformer</button>
+        <div class="nested-options connectionwtpilotplastic"></div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integraledwbpilotplastic">Integral LED with Buzzer</button>
+        <div class="nested-options integraledwbpilotplastic"></div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integralledpilotplastic">Integral LED</button>
+        <div class="nested-options integralledpilotplastic"></div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integrakledfpilotplastic">Integral LED Flasher</button>
+        <div class="nested-options integrakledfpilotplastic"></div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integralltlpilotplastic">Integral LED Test lamp</button>
+        <div class="nested-options integralltlpilotplastic"></div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integrallupilotplastic">Integral LED Universal</button>
+        <div class="nested-options integrallupilotplastic"></div>
+    </div>
+    
+    
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="dualcolorplasticpilot">Integral LED, Dual Colour</button>
+        <div class="nested-options dualcolorplasticpilot"></div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integrallbulbplasticpilot">LED bulb (BA96 type)</button>
+        <div class="nested-options integrallbulbplasticpilot"></div>
+    </div>
+
+
+   
+    
+    <script> 
+    document.getElementById("connectionwtpilotplastic").addEventListener("click", connectionwtpilotplasticfetch);
+    
+    function connectionwtpilotplasticfetch() {
+        fetch('pilot/pilot22plastic1st.html')
+            .then(response => response.text())
+            .then(data => {
+                const targetElement = document.querySelector('.connectionwtpilotplastic');
+    
+                if (!targetElement) {
+                    console.error("Target element not found.");
+                    return;
+                }
+    
+                // Remove old scripts before inserting new content
+                removeOldScripts(targetElement);
+    
+                // Insert new content
+                targetElement.innerHTML = data;
+    
+                // Execute scripts in the loaded content
+                executeScriptsplasticpilot(targetElement);
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+
+
+    document.getElementById("integraledwbpilotplastic").addEventListener("click", integraledwbpilotplasticfetch);
+    
+    function integraledwbpilotplasticfetch() {
+        fetch('pilot/pilot22plastic2nd.html')
+            .then(response => response.text())
+            .then(data => {
+                const targetElement = document.querySelector('.integraledwbpilotplastic');
+    
+                if (!targetElement) {
+                    console.error("Target element not found.");
+                    return;
+                }
+    
+                // Remove old scripts before inserting new content
+                removeOldScripts(targetElement);
+    
+                // Insert new content
+                targetElement.innerHTML = data;
+    
+                // Execute scripts in the loaded content
+                executeScriptsplasticpilot(targetElement);
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+    document.getElementById("integralledpilotplastic").addEventListener("click", integralledpilotplasticfetch);
+    
+    function integralledpilotplasticfetch() {
+        fetch('pilot/pilot22plastic3rd.html')
+            .then(response => response.text())
+            .then(data => {
+                const targetElement = document.querySelector('.integralledpilotplastic');
+    
+                if (!targetElement) {
+                    console.error("Target element not found.");
+                    return;
+                }
+    
+                // Remove old scripts before inserting new content
+                removeOldScripts(targetElement);
+    
+                // Insert new content
+                targetElement.innerHTML = data;
+    
+                // Execute scripts in the loaded content
+                executeScriptsplasticpilot(targetElement);
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+
+    document.getElementById("integrakledfpilotplastic").addEventListener("click", integrakledfpilotplasticfetch);
+    
+    function integrakledfpilotplasticfetch() {
+        fetch('pilot/pilot22plastic4th.html')
+            .then(response => response.text())
+            .then(data => {
+                const targetElement = document.querySelector('.integrakledfpilotplastic');
+    
+                if (!targetElement) {
+                    console.error("Target element not found.");
+                    return;
+                }
+    
+                // Remove old scripts before inserting new content
+                removeOldScripts(targetElement);
+    
+                // Insert new content
+                targetElement.innerHTML = data;
+    
+                // Execute scripts in the loaded content
+                executeScriptsplasticpilot(targetElement);
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+    document.getElementById("integralltlpilotplastic").addEventListener("click", integralltlpilotplasticfetch);
+    
+    function integralltlpilotplasticfetch() {
+        fetch('pilot/pilot22plastic5th.html')
+            .then(response => response.text())
+            .then(data => {
+                const targetElement = document.querySelector('.integralltlpilotplastic');
+    
+                if (!targetElement) {
+                    console.error("Target element not found.");
+                    return;
+                }
+    
+                // Remove old scripts before inserting new content
+                removeOldScripts(targetElement);
+    
+                // Insert new content
+                targetElement.innerHTML = data;
+    
+                // Execute scripts in the loaded content
+                executeScriptsplasticpilot(targetElement);
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+    document.getElementById("integrallupilotplastic").addEventListener("click", integrallupilotplasticfetch);
+    
+    function integrallupilotplasticfetch() {
+        fetch('pilot/pilot22plastic6th.html')
+            .then(response => response.text())
+            .then(data => {
+                const targetElement = document.querySelector('.integrallupilotplastic');
+    
+                if (!targetElement) {
+                    console.error("Target element not found.");
+                    return;
+                }
+    
+                // Remove old scripts before inserting new content
+                removeOldScripts(targetElement);
+    
+                // Insert new content
+                targetElement.innerHTML = data;
+    
+                // Execute scripts in the loaded content
+                executeScriptsplasticpilot(targetElement);
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+   
+    document.getElementById("dualcolorplasticpilot").addEventListener("click", dualcolorplasticpilotfetch);
+    
+    function dualcolorplasticpilotfetch() {
+        fetch('pilot/pilot22plastic7th.html')
+            .then(response => response.text())
+            .then(data => {
+                const targetElement = document.querySelector('.dualcolorplasticpilot');
+    
+                if (!targetElement) {
+                    console.error("Target element not found.");
+                    return;
+                }
+    
+                // Remove old scripts before inserting new content
+                removeOldScripts(targetElement);
+    
+                // Insert new content
+                targetElement.innerHTML = data;
+    
+                // Execute scripts in the loaded content
+                executeScriptsplasticpilot(targetElement);
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+    document.getElementById("integrallbulbplasticpilot").addEventListener("click", integrallbulbplasticpilotfetch);
+    
+    function integrallbulbplasticpilotfetch() {
+        fetch('pilot/pilot22plastic8th.html')
+            .then(response => response.text())
+            .then(data => {
+                const targetElement = document.querySelector('.integrallbulbplasticpilot');
+    
+                if (!targetElement) {
+                    console.error("Target element not found.");
+                    return;
+                }
+    
+                // Remove old scripts before inserting new content
+                removeOldScripts(targetElement);
+    
+                // Insert new content
+                targetElement.innerHTML = data;
+    
+                // Execute scripts in the loaded content
+                executeScriptsplasticpilot(targetElement);
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+
+
+
+    
+    function executeScriptsplasticpilot(element) {
+    if (!element) {
+        console.error("Element not found.");
+        return;
+    }
+
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+            // Check if script is already loaded
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Check if function is already declared
+            const scriptText = script.innerHTML.trim();
+            if (!window.positiveNumberOnly || !scriptText.includes('function positiveNumberOnly')) {
+                const newScript = document.createElement('script');
+                newScript.text = scriptText;
+                document.body.appendChild(newScript);
+            }
+        }
+    }
+}
+
+    
+    // Function to remove previously loaded dynamic scripts
+    function removeOldScripts(parentElement) {
+        if (!parentElement) return;
+    
+        // Remove inline scripts inside the parent
+        parentElement.querySelectorAll("script").forEach(script => script.remove());
+    
+        // Remove dynamically added scripts from the document
+        document.querySelectorAll("script[data-dynamic]").forEach(script => script.remove());
+    }
+    </script>
+    
+</div>
+              
+
+
+
+
+   
+     
+
+
+
+
+
+</div>
+</body>
+</html>

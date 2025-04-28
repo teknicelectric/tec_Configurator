@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+</script>
+<style>
+    .mainoptionsbulp1op3{
+        display: flex;
+    }
+
+    .mainoptionsbulp1op3 img{
+        width: 300px;
+    }
+    
+    .product-codec{
+margin-top: 50px;
+    }
+
+    .imageconlabbt {
+       display: block;
+    
+        
+    }
+    #resultlaboptiont{
+    margin-bottom: 30PX;
+}
+    
+     .imageconlabbt img{
+        width: 150px;
+     }
+ 
+</style>
+<body>
+    <div class="mainoptionsbulp1op3">
+   <div class="colorsoptions">
+        <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotbulpoptionthird">110VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="whitebtaa" data-codebulpt="3EPLBR1L(S)110VAC">
+                    <div class="white-btn"></div>White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="greenbtaa" data-codebulpt="3EPLBR3L110VAC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="redbtaa" data-codebulpt="3EPLBR4L110VAC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="amberbtaa" data-codebulpt="3EPLBR5L110VAC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="bluebtaa" data-codebulpt="3EPLBR6L110VAC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="clearbtaa" data-codebulpt="3EPLBR7L(S)110VAC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="yellowbtaa" data-codebulpt="3EPLBR8L110VAC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+          
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotbulpoptionthird" >110VDC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="whitebta" data-codebulpt="3EPLBR1L(S)110VDC">
+                    <div class="white-btn"></div>White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="greenbta" data-codebulpt="3EPLBR3L110VDC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="redbta" data-codebulpt="3EPLBR4L110VDC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="amberbta" data-codebulpt="3EPLBR5L110VDC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="bluebta" data-codebulpt="3EPLBR6L110VDC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="clearbta" data-codebulpt="3EPLBR7L(S)110VDC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="yellowbta" data-codebulpt="3EPLBR8L110VDC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+        
+         
+    </div>
+    </div>
+
+   
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotbulpoptionthird" >220VDC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="whitebtc" data-codebulpt="3EPLBR1L(S)220VDC">
+                    <div class="white-btn"></div>White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="greenbtc" data-codebulpt="3EPLBR3L220VDC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="redbtc" data-codebulpt="3EPLBR4L220VDC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="amberbtc" data-codebulpt="3EPLBR5L220VDC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="bluebtc" data-codebulpt="3EPLBR6L220VDC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="clearbtc" data-codebulpt="3EPLBR7L(S)220VDC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="yellowbtc" data-codebulpt="3EPLBR8L220VDC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotbulpoptionthird" >230VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="whitebtd" data-codebulpt="3EPLBR1L(S)230VAC">
+                    <div class="white-btn"></div>White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="greenbtd" data-codebulpt="3EPLBR3L230VAC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="redbtd" data-codebulpt="3EPLBR4L230VAC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="amberbtd" data-codebulpt="3EPLBR5L230VAC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="bluebtd" data-codebulpt="3EPLBR6L230VAC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="clearbtd" data-codebulpt="3EPLBR7L(S)230VAC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="yellowbtd" data-codebulpt="3EPLBR8L230VAC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotbulpoptionthird" >24VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="whitebte" data-codebulpt="3EPLBR1L(S)24VAC/DC">
+                    <div class="white-btn"></div>White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="greenbte" data-codebulpt="3EPLBR3L24VAC/DC">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="redbte" data-codebulpt="3EPLBR4L24VAC/DC">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="amberbte" data-codebulpt="3EPLBR5L24VAC/DC">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="bluebte" data-codebulpt="3EPLBR6L24VAC/DC">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="clearbte" data-codebulpt="3EPLBR7L(S)24VAC/DC">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotbulpoptionthird" data-colorbulpt="yellowbte" data-codebulpt="3EPLBR8L24VAC/DC">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+           
+         
+    </div>
+    </div>
+
+    
+</div>
+              
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultlaboptiont" class="result hidden">
+  
+     <p id="generated-codebulpoptiont"></p>
+     <div id="description" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ 
+
+    
+ <div class="imageconlabbt">
+    
+     <img src="pilotlights/flush/white.png" id="whitebtaa" class="hidden" alt="White">
+     <img src="pilotlights/flush/black.png" id="blackbtaa" class="hidden" alt="Black">
+     <img src="pilotlights/flush/green.png" id="greenbtaa" class="hidden" alt="Green">
+     <img src="pilotlights/flush/red.png" id="redbtaa" class="hidden" alt="Red">
+     <img src="pilotlights/flush/blue.png" id="bluebtaa" class="hidden" alt="Blue">
+     <img src="pilotlights/flush/yellow.png" id="yellowbtaa" class="hidden" alt="Yellow">
+
+    </div>
+
+ 
+
+  
+ 
+ 
+    <div class="imageconlabbt">
+    
+    <img src="pilotlights/flush/white.png" id="whitebta" class="hidden" alt="White">
+    <img src="pilotlights/flush/black.png" id="blackbta" class="hidden" alt="Black">
+    <img src="pilotlights/flush/green.png" id="greenbta" class="hidden" alt="Green">
+    <img src="pilotlights/flush/red.png" id="redbta" class="hidden" alt="Red">
+    <img src="pilotlights/flush/blue.png" id="bluebta" class="hidden" alt="Blue">
+    <img src="pilotlights/flush/yellow.png" id="yellowbta" class="hidden" alt="Yellow">
+
+   </div>
+
+ 
+ <div class="imageconlabbt">
+ 
+ <img src="pilotlights/flush/white.png" id="whitebtb" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackbtb" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenbtb" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redbtb" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluebtb" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowbtb" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ <div class="imageconlabbt">
+ 
+ <img src="pilotlights/flush/white.png" id="whitebtc" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackbtc" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenbtc" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redbtc" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluebtc" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowbtc" class="hidden" alt="Yellow">
+
+</div>
+
+  
+ <div class="imageconlabbt">
+ 
+ <img src="pilotlights/flush/white.png" id="whitebtd" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackbtd" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenbtd" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redbtd" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluebtd" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowbtd" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ <div class="imageconlabbt">
+ 
+ <img src="pilotlights/flush/white.png" id="whitebte" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackbte" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenbte" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redbte" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluebte" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowbte" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ 
+
+ 
+<div class="imageconlabbt">
+
+<img src="pilotlights/flush/white.png" id="whitebtf" class="hidden" alt="White">
+<img src="pilotlights/flush/black.png" id="blackbtf" class="hidden" alt="Black">
+<img src="pilotlights/flush/green.png" id="greenbtf" class="hidden" alt="Green">
+<img src="pilotlights/flush/red.png" id="redbtf" class="hidden" alt="Red">
+<img src="pilotlights/flush/blue.png" id="bluebtf" class="hidden" alt="Blue">
+<img src="pilotlights/flush/yellow.png" id="yellowbtf" class="hidden" alt="Yellow">
+
+</div>
+
+
+
+
+<div class="imageconlabbt">
+
+    <img src="pilotlights/flush/white.png" id="whitebtg" class="hidden" alt="White">
+    <img src="pilotlights/flush/black.png" id="blackbtg" class="hidden" alt="Black">
+    <img src="pilotlights/flush/green.png" id="greenbtg" class="hidden" alt="Green">
+    <img src="pilotlights/flush/red.png" id="redbtg" class="hidden" alt="Red">
+    <img src="pilotlights/flush/blue.png" id="bluebtg" class="hidden" alt="Blue">
+    <img src="pilotlights/flush/yellow.png" id="yellowbtg" class="hidden" alt="Yellow">
+    
+    </div>
+    <script>
+       // six
+       
+       document.querySelectorAll('.pilotbulpoptionthird').forEach(button => {
+               button.addEventListener('click', function () {
+                   const color = this.getAttribute('data-colorbulpt');
+                   const productCode = this.getAttribute('data-codebulpt');
+       
+                   // Hide all images
+                   document.querySelectorAll('.imageconlabbt img').forEach(img => img.classList.add('hidden'));
+       
+                   // Show the selected image
+                   const selectedImage = document.getElementById(color);
+                   if (selectedImage) {
+                       selectedImage.classList.remove('hidden');
+                   }
+       
+                   // Display the product code
+                   const productInfo = document.getElementById('generated-codebulpoptiont');
+                  productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+                   document.getElementById("resultlaboptiont").classList.remove("hidden"); // Make result visible
+               });
+           });  
+    
+    </script>
+    
+ </div>
+
+
+   
+     
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

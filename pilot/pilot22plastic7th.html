@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+</script>
+<style>
+    .mainoptionspilot22dualcolor{
+        display: flex;
+    }
+
+    .mainoptionspilot22dualcolor img{
+        width: 300px;
+    }
+    
+    .product-codedualcolorc{
+margin-top: 50px;
+    }
+    .imagecondualcolorf {
+       display: block;
+    
+        
+    }
+    #pilotdualcolorstresult{
+    margin-bottom: 30PX;
+}
+    
+     .imagecondualcolorf img{
+        width: 150px;
+     }
+ 
+</style>
+<body>
+    <div class="mainoptionspilot22dualcolor">
+   <div class="colorsoptions">
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn">P2PLB</button>
+        <div class="nested-options">
+        <div class="option-group">
+            <button class="option-btn btn-common whitebtn pilotdualcolorstoption" >110VAC</button>
+            <div class="nested-options">
+                <!-- 1st colour -->
+                <div class="option-group">
+                    <button class="option-btn btn-common whitebtn pilotdualcolorstoption" data-colordualcolor="whitedualc" data-codedualcolor="3PLBR34L110VAC">
+                        <div class="white-btn"></div>White Lens/RedLED/GreenLED
+                    </button>                                                                           
+                </div>
+                     
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotdualcolorstoption" >230VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotdualcolorstoption" data-colordualcolor="whitedualcb" data-codedualcolor="3PLBR34L230VAC">
+                    <div class="white-btn"></div> White Lens/RedLED/GreenLED
+                </button>                                                                           
+            </div>
+           
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotdualcolorstoption" >24VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotdualcolorstoption" data-colordualcolor="whitedualcc" data-codedualcolor="3PLBR34L24VAC">
+                    <div class="white-btn"></div>White Lens/RedLED/GreenLED
+                </button>                                                                           
+            </div>
+          
+    </div>
+    </div>
+
+
+   
+
+   
+
+    
+</div>
+</div>
+</div>          
+
+<div class="output">
+
+ 
+ <div id="pilotdualcolorstresult" class="result hidden">
+  
+     <p id="pilotdualcolorstgenerated-codedualcolor"></p>
+     <div id="description" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ 
+
+    
+ <div class="imagecondualcolorf">
+    
+     <img src="pilotlights/flush/white.png" id="whitedualc" class="hidden" alt="White">
+    </div>
+
+ 
+ 
+ 
+ 
+ <div class="imagecondualcolorf">
+    
+    <img src="pilotlights/flush/white.png" id="whitedualcb" class="hidden" alt="White">
+   </div>
+
+
+
+
+
+<div class="imagecondualcolorf">
+    
+    <img src="pilotlights/flush/white.png" id="whitedualcc" class="hidden" alt="White">
+
+   </div>
+
+
+
+<script>
+ 
+
+
+document.querySelectorAll('.pilotdualcolorstoption').forEach(button => {
+    button.addEventListener('click', function () {
+        const color = this.getAttribute('data-colordualcolor');
+        const productCode = this.getAttribute('data-codedualcolor');
+
+        // Hide all images
+        document.querySelectorAll('.imagecondualcolorf img').forEach(img => img.classList.add('hidden'));
+
+        // Show the selected image
+        const selectedImage = document.getElementById(color);
+        if (selectedImage) {
+            selectedImage.classList.remove('hidden');
+        }
+
+        // Display the product code
+        const productInfo = document.getElementById('pilotdualcolorstgenerated-codedualcolor');
+       productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+        document.getElementById("pilotdualcolorstresult").classList.remove("hidden");
+    });
+});
+</script>
+
+ </div>
+
+     
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

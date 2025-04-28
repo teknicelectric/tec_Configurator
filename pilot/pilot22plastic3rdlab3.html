@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+</script>
+<style>
+    .mainoptionslabthirdop{
+        display: flex;
+    }
+
+    .mainoptionslabthirdop img{
+        width: 300px;
+    }
+    
+    .product-codec{
+margin-top: 50px;
+    }
+    .imageconpilotlabthird {
+        position: relative;
+    
+        
+    }
+    #resultlaboptionsthird{
+    margin-bottom: 30PX;
+}
+    
+     .imageconpilotlabthird img{
+        width: 150px;
+     }
+ 
+</style>
+<body>
+    <div class="mainoptionslabthirdop">
+   <div class="colorsoptions">
+        <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionthird">110VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird" data-colorplt="whiteplta" data-codeplt="6PLBR5L24VAC/DC">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird" data-colorplt="greenplta" data-codeplt="6PLBR6L24VAC/DC">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird" data-colorplt="redplta" data-codeplt="6PLBR4L24VAC/DC">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird" data-colorplt="amberplta" data-codeplt="6PLBR5L24VAC/DC">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird" data-colorplt="blueplta" data-codeplt="P2PLBT7LB(S)110/06">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird" data-colorplt="yellowplta" data-codeplt="P2PLBT8LB110/06">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird" data-colorplt="clearplta" data-codeplt="P2PLBT7LB(S)110/06">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionthird ">110VDC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird "data-colorplt="whitepltb"data-codeplt="P2PLBT1LB(S)110/12">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird "data-colorplt="greenpltb"data-codeplt="P2PLBT3LB110/12">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird "data-colorplt="redpltb"data-codeplt="P2PLBT4LB110/12">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird "data-colorplt="amberpltb"data-codeplt="P2PLBT5LB110/12">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird "data-colorplt="bluepltb"data-codeplt="P2PLBT7LB(S)110/12">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird "data-colorplt="yellowpltb"data-codeplt="P2PLBT8LB110/12">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird "data-colorplt="clearpltb"data-codeplt="P2PLBT7LB(S)110/12">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionthird ">12VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="whitepltc" data-codeplt="P2PLBT1LB(S)110/24">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="greenpltc" data-codeplt="P2PLBT3LB110/24">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="redpltc" data-codeplt="P2PLBT4LB110/24">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="amberpltc" data-codeplt="P2PLBT5LB110/24">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="bluepltc" data-codeplt="P2PLBT7LB(S)110/24">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="yellowpltc" data-codeplt="P2PLBT8LB110/24">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="clearpltc" data-codeplt="P2PLBT7LB(S)110/24">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionthird " >220VDC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="whitepltd" data-codeplt="P2PLBT1LB(S)110/06">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="greenpltd" data-codeplt="P2PLBT3LB110/06">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="redpltd" data-codeplt="P2PLBT4LB110/06">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="amberpltd" data-codeplt="P2PLBT5LB110/06">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="bluepltd" data-codeplt="P2PLBT7LB(S)110/06">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="yellowpltd" data-codeplt="P2PLBT8LB110/06">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird" data-colorplt="clearpltd" data-codeplt="P2PLBT7LB(S)110/06">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionthird ">230VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="whiteplte" data-codeplt="P2PLBT1LB(S)110/12">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="greenplte" data-codeplt="P2PLBT3LB110/12">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="redplte" data-codeplt="P2PLBT4LB110/12">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="amberplte" data-codeplt="P2PLBT5LB110/12">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="blueplte" data-codeplt="P2PLBT7LB(S)110/12">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="yellowplte" data-codeplt="P2PLBT8LB110/12">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="clearplte" data-codeplt="P2PLBT7LB(S)110/12">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionthird ">24VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="whitepltf" data-codeplt="P2PLBT1LB(S)110/24">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="greenpltf" data-codeplt="P2PLBT3LB110/24">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="redpltf" data-codeplt="P2PLBT4LB110/24">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="amberpltf" data-codeplt="P2PLBT5LB110/24">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="bluepltf" data-codeplt="P2PLBT7LB(S)110/24">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="yellowpltf" data-codeplt="P2PLBT8LB110/24">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="clearpltf" data-codeplt="P2PLBT7LB(S)110/24">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionthird ">48VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="whitepltg" data-codeplt="P2PLBT1LB(S)110/12">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="greenpltg" data-codeplt="P2PLBT3LB110/12">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="redpltg" data-codeplt="P2PLBT4LB110/12">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="amberpltg" data-codeplt="P2PLBT5LB110/12">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="bluepltg" data-codeplt="P2PLBT7LB(S)110/12">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="yellowpltg" data-codeplt="P2PLBT8LB110/12">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="clearpltg" data-codeplt="P2PLBT7LB(S)110/12">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn pilotlaboptionthird ">6VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="whiteplth" data-codeplt="P2PLBT1LB(S)110/24">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="greenplth" data-codeplt="P2PLBT3LB110/24">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="redplth" data-codeplt="P2PLBT4LB110/24">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="amberplth" data-codeplt="P2PLBT5LB110/24">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="blueplth" data-codeplt="P2PLBT7LB(S)110/24">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="yellowplth" data-codeplt="P2PLBT8LB110/24">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn pilotlaboptionthird " data-colorplt="clearplth" data-codeplt="P2PLBT7LB(S)110/24">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+    
+
+
+   
+
+    
+</div>
+              
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultlaboptionsthird" class="result hidden">
+  
+     <p id="generated-codelaboptionsthird"></p>
+     <div id="description" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ 
+
+    
+ <div class="imageconpilotlabthird">
+    
+     <img src="pilotlights/flush/white.png" id="whiteplta" class="hidden" alt="White">
+     <img src="pilotlights/flush/black.png" id="blackplta" class="hidden" alt="Black">
+     <img src="pilotlights/flush/green.png" id="greenplta" class="hidden" alt="Green">
+     <img src="pilotlights/flush/red.png" id="redplta" class="hidden" alt="Red">
+     <img src="pilotlights/flush/blue.png" id="blueplta" class="hidden" alt="Blue">
+     <img src="pilotlights/flush/yellow.png" id="yellowplta" class="hidden" alt="Yellow">
+
+    </div>
+
+ 
+ 
+ 
+ 
+    <div class="imageconpilotlabthird">
+    
+    <img src="pilotlights/flush/white.png" id="whitepltb" class="hidden" alt="White">
+    <img src="pilotlights/flush/black.png" id="blackpltb" class="hidden" alt="Black">
+    <img src="pilotlights/flush/green.png" id="greenpltb" class="hidden" alt="Green">
+    <img src="pilotlights/flush/red.png" id="redpltb" class="hidden" alt="Red">
+    <img src="pilotlights/flush/blue.png" id="bluepltb" class="hidden" alt="Blue">
+    <img src="pilotlights/flush/yellow.png" id="yellowpltb" class="hidden" alt="Yellow">
+
+   </div>
+
+ 
+ <div class="imageconpilotlabthird">
+ 
+ <img src="pilotlights/flush/white.png" id="whitepltc" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackpltc" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenpltc" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redpltc" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluepltc" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowpltc" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ <div class="imageconpilotlabthird">
+ 
+ <img src="pilotlights/flush/white.png" id="whitepltd" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackpltd" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenpltd" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redpltd" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluepltd" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowpltd" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ <div class="imageconpilotlabthird">
+ 
+ <img src="pilotlights/flush/white.png" id="whiteplte" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackplte" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenplte" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redplte" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="blueplte" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowplte" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ <div class="imageconpilotlabthird">
+ 
+ <img src="pilotlights/flush/white.png" id="whitepltf" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackpltf" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greenpltf" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redpltf" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluepltf" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowpltf" class="hidden" alt="Yellow">
+
+</div>
+
+ 
+ 
+
+ 
+<div class="imageconpilotlabthird">
+
+<img src="pilotlights/flush/white.png" id="whitepltg" class="hidden" alt="White">
+<img src="pilotlights/flush/black.png" id="blackpltg" class="hidden" alt="Black">
+<img src="pilotlights/flush/green.png" id="greenpltg" class="hidden" alt="Green">
+<img src="pilotlights/flush/red.png" id="redpltg" class="hidden" alt="Red">
+<img src="pilotlights/flush/blue.png" id="bluepltg" class="hidden" alt="Blue">
+<img src="pilotlights/flush/yellow.png" id="yellowpltg" class="hidden" alt="Yellow">
+
+</div>
+
+
+
+
+<div class="imageconpilotlabthird">
+
+    <img src="pilotlights/flush/white.png" id="whiteplth" class="hidden" alt="White">
+    <img src="pilotlights/flush/black.png" id="blackplth" class="hidden" alt="Black">
+    <img src="pilotlights/flush/green.png" id="greenplth" class="hidden" alt="Green">
+    <img src="pilotlights/flush/red.png" id="redplth" class="hidden" alt="Red">
+    <img src="pilotlights/flush/blue.png" id="blueplth" class="hidden" alt="Blue">
+    <img src="pilotlights/flush/yellow.png" id="yellowplth" class="hidden" alt="Yellow">
+    
+    </div>
+    <script>
+       // six
+       
+       document.querySelectorAll('.pilotlaboptionthird').forEach(button => {
+               button.addEventListener('click', function () {
+                   const color = this.getAttribute('data-colorplt');
+                   const productCode = this.getAttribute('data-codeplt');
+       
+                   // Hide all images
+                   document.querySelectorAll('.imageconpilotlabthird img').forEach(img => img.classList.add('hidden'));
+       
+                   // Show the selected image
+                   const selectedImage = document.getElementById(color);
+                   if (selectedImage) {
+                       selectedImage.classList.remove('hidden');
+                   }
+       
+                   // Display the product code
+                   const productInfo = document.getElementById('generated-codelaboptionsthird');
+                  productInfo.innerHTML = `<span class='label'>Product Code: </span>` + productCode;
+                   document.getElementById("resultlaboptionsthird").classList.remove("hidden"); // Make result visible
+               });
+           });  
+    
+    </script>
+    
+ </div>
+
+
+   
+     
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
