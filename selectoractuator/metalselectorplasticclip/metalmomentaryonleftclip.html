@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.metalmomentaryonleftclipbtn').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+        const flushForms = document.querySelectorAll('.flushform');
+        flushForms.forEach(form => form.reset());
+
+        // Hide elements
+        // document.getElementById('resultmetalmomentaryonleftclip').classList.add('hidden');
+        document.getElementById('descriptionmetalmomentaryonleftclip').classList.add('hidden');
+        document.getElementById('metalmomentaryonleftclipnoimageContainer').classList.add('hidden');
+        document.getElementById('metalmomentaryonleftclipncimageContainer').classList.add('hidden');
+        document.getElementById('EmetalmomentaryonleftclipnoimageContainer').classList.add('hidden');
+        document.getElementById('EmetalmomentaryonleftclipncimageContainer').classList.add('hidden');
+      
+        document.getElementById('metalmomentaryonleftclipblackimageContainer').classList.add('hidden');
+       
+     
+
+        // Hide plus buttons
+        document.getElementById('metalmomentaryonleftclipplus1').style.display = 'none';
+        document.getElementById('metalmomentaryonleftclipplus2').style.display = 'none';
+        document.getElementById('Emetalmomentaryonleftclipplus2').style.display = 'none';
+
+    });
+});
+    
+  
+</script>
+
+
+<body>
+    
+    <div class="outputflex">
+
+        <div class="metalmomentaryonleftclip">
+    
+                    <div class="option-group">
+                        <button class="option-btn btn-common metalmomentaryonleftclipbtn"><div class="black-btn"></div>(4AS2-3PSRL)</button>
+                        
+                                
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metalmomentaryonleftclipbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetalmomentaryonleftclipbtnnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetalmomentaryonleftclipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondmetalmomentaryonleftclipbtnnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputmetalmomentaryonleftclipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common metalmomentaryonleftclipbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetalmomentaryonleftclipbtnnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetalmomentaryonleftclipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondmetalmomentaryonleftclipbtnnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputmetalmomentaryonleftclipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                   
+                            
+                                </div>
+                            </div>
+              
+
+                  
+                                    
+                                </div>
+
+                         
+            
+  
+                        <script>
+                        
+                            
+                            // for metalsecond
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('secondmetalmomentaryonleftclipbtnnno').addEventListener('click', function () {
+                                document.getElementById('secondinputmetalmomentaryonleftclipbtnno').classList.remove('hidden');
+                                document.getElementById('secondinputmetalmomentaryonleftclipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('secondmetalmomentaryonleftclipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('secondinputmetalmomentaryonleftclipbtnnc').classList.remove('hidden');
+                                document.getElementById('secondinputmetalmomentaryonleftclipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+
+                            if (typeof SmetalpositiveNumberOnly === 'undefined') {
+    const SmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('secondinputmetalmomentaryonleftclipbtnno').addEventListener('input', SmetalpositiveNumberOnly);
+    document.getElementById('secondinputmetalmomentaryonleftclipbtnnc').addEventListener('input', SmetalpositiveNumberOnly);
+}
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function SmetalgenerateCode() {
+                                const noValue = document.getElementById('secondinputmetalmomentaryonleftclipbtnno').value;
+                                const ncValue = document.getElementById('secondinputmetalmomentaryonleftclipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetalmomentaryonleftclip');
+                                const descriptionContainer = document.getElementById('descriptionmetalmomentaryonleftclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetalmomentaryonleftclip');
+                            
+                                // Image containers
+                                const metalmomentaryonleftclipblackimageContainer = document.getElementById('metalmomentaryonleftclipblackimageContainer');
+                                const metalmomentaryonleftclipnoimageContainer = document.getElementById('metalmomentaryonleftclipnoimageContainer');
+                                const metalmomentaryonleftclipncimageContainer = document.getElementById('metalmomentaryonleftclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metalmomentaryonleftclipplus1 = document.getElementById('metalmomentaryonleftclipplus1');
+                                const metalmomentaryonleftclipplus2 = document.getElementById('metalmomentaryonleftclipplus2');
+                            
+                                // Ensure black image is always visible
+                                metalmomentaryonleftclipblackimageContainer.classList.remove('hidden');
+                                metalmomentaryonleftclipplus1.style.display = 'none'; // Hide symbols initially
+                                metalmomentaryonleftclipplus2.style.display = 'none';
+                            
+                                const noImageName = metalmomentaryonleftclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metalmomentaryonleftclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metalmomentaryonleftclipnoimageContainer.querySelector('img').src = `push/metalclip/images/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metalmomentaryonleftclipnoimageContainer.classList.remove('hidden');
+                                    metalmomentaryonleftclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metalmomentaryonleftclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metalmomentaryonleftclipncimageContainer.querySelector('img').src = `push/metalclip/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metalmomentaryonleftclipncimageContainer.classList.remove('hidden');
+                                    metalmomentaryonleftclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metalmomentaryonleftclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "4PSS211-3PSRL",
+                                        "12": "4PSS212-3PSRL",
+                                        "10": "4PSS210-3PSRL",
+                                        "01": "4PSS201-3PSRL",
+                                        "21": "4PSS221-3PSRL",
+                                        "23": "4PSS223-3PSRL",
+                                        "22": "4PSS222-3PSRL",
+                                        "33": "4PSS233-3PSRL",
+                                        "32": "4PSS232-3PSRL",
+                                        "13": "4PSS213-3PSRL",
+                                        "14": "4PSS214-3PSRL",
+                                        "15": "4PSS215-3PSRL",
+                                        "24": "4PSS224-3PSRL",
+                                        "31": "4PSS231-3PSRL",
+                                        "41": "4PSS241-3PSRL",
+                                        "42": "4PSS242-3PSRL",
+                                        "51": "4PSS251-3PSRL",
+                                        "00": "4PSS200-3PSRL",
+                                        "20": "4PSS220-3PSRL",
+                                        "30": "4PSS230-3PSRL",
+                                        "40": "4PSS240-3PSRL",
+                                        "50": "4PSS250-3PSRL",
+                                        "60": "4PSS260-3PSRL",
+                                        "02": "4PSS202-3PSRL",
+                                        "03": "4PSS203-3PSRL",
+                                        "04": "4PSS204-3PSRL",
+                                        "05": "4PSS205-3PSRL",
+                                        "06": "4PSS206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metalmomentaryonleftclipnoimageContainer.classList.add('hidden');
+                                        metalmomentaryonleftclipncimageContainer.classList.add('hidden');
+                                        metalmomentaryonleftclipplus1.style.display = 'none';
+                                        metalmomentaryonleftclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('secondinputmetalmomentaryonleftclipbtnno').addEventListener('input', SmetalgenerateCode);
+                            document.getElementById('secondinputmetalmomentaryonleftclipbtnnc').addEventListener('input', SmetalgenerateCode);
+                            
+                            // economy
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Esecondmetalmomentaryonleftclipbtnnno').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetalmomentaryonleftclipbtnno').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetalmomentaryonleftclipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Esecondmetalmomentaryonleftclipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('Esecondinputmetalmomentaryonleftclipbtnnc').classList.remove('hidden');
+                                document.getElementById('Esecondinputmetalmomentaryonleftclipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof ESmetalpositiveNumberOnly === 'undefined') {
+    const ESmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Esecondinputmetalmomentaryonleftclipbtnno').addEventListener('input', ESmetalpositiveNumberOnly);
+                            document.getElementById('Esecondinputmetalmomentaryonleftclipbtnnc').addEventListener('input', ESmetalpositiveNumberOnly);
+}
+
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function ESmetalgenerateCode() {
+                                const noValue = document.getElementById('Esecondinputmetalmomentaryonleftclipbtnno').value;
+                                const ncValue = document.getElementById('Esecondinputmetalmomentaryonleftclipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultmetalmomentaryonleftclip');
+                                const descriptionContainer = document.getElementById('descriptionmetalmomentaryonleftclip');
+                                const generatedCodeElement = document.getElementById('generated-codemetalmomentaryonleftclip');
+                            
+                                // Image containers
+                                const metalmomentaryonleftclipblackimageContainer = document.getElementById('metalmomentaryonleftclipblackimageContainer');
+                                const metalmomentaryonleftclipnoimageContainer = document.getElementById('EmetalmomentaryonleftclipnoimageContainer');
+                                const metalmomentaryonleftclipncimageContainer = document.getElementById('EmetalmomentaryonleftclipncimageContainer');
+                            
+                                // Plus symbols
+                                const metalmomentaryonleftclipplus1 = document.getElementById('metalmomentaryonleftclipplus1');
+                                const metalmomentaryonleftclipplus2 = document.getElementById('Emetalmomentaryonleftclipplus2');
+                            
+                                // Ensure black image is always visible
+                                metalmomentaryonleftclipblackimageContainer.classList.remove('hidden');
+                                metalmomentaryonleftclipplus1.style.display = 'none'; // Hide symbols initially
+                                metalmomentaryonleftclipplus2.style.display = 'none';
+                            
+                                const noImageName = metalmomentaryonleftclipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = metalmomentaryonleftclipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    metalmomentaryonleftclipnoimageContainer.querySelector('img').src = `push/metalclip/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `S1*${noValue}`;
+                                    metalmomentaryonleftclipnoimageContainer.classList.remove('hidden');
+                                    metalmomentaryonleftclipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    metalmomentaryonleftclipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    metalmomentaryonleftclipncimageContainer.querySelector('img').src = `push/metalclip/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `S2*${ncValue}`;
+                                    metalmomentaryonleftclipncimageContainer.classList.remove('hidden');
+                                    metalmomentaryonleftclipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    metalmomentaryonleftclipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "E4PSS211-3PSRL",
+                                        "12": "E4PSS212-3PSRL",
+                                        "10": "E4PSS210-3PSRL",
+                                        "01": "E4PSS201-3PSRL",
+                                        "21": "E4PSS221-3PSRL",
+                                        "23": "E4PSS223-3PSRL",
+                                        "22": "E4PSS222-3PSRL",
+                                        "33": "E4PSS233-3PSRL",
+                                        "32": "E4PSS232-3PSRL",
+                                        "13": "E4PSS213-3PSRL",
+                                        "14": "E4PSS214-3PSRL",
+                                        "15": "E4PSS215-3PSRL",
+                                        "24": "E4PSS224-3PSRL",
+                                        "31": "E4PSS231-3PSRL",
+                                        "41": "E4PSS241-3PSRL",
+                                        "42": "E4PSS242-3PSRL",
+                                        "51": "E4PSS251-3PSRL",
+                                        "00": "E4PSS200-3PSRL",
+                                        "20": "E4PSS220-3PSRL",
+                                        "30": "E4PSS230-3PSRL",
+                                        "40": "E4PSS240-3PSRL",
+                                        "50": "E4PSS250-3PSRL",
+                                        "60": "E4PSS260-3PSRL",
+                                        "02": "E4PSS202-3PSRL",
+                                        "03": "E4PSS203-3PSRL",
+                                        "04": "E4PSS204-3PSRL",
+                                        "05": "E4PSS205-3PSRL",
+                                        "06": "E4PSS206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        metalmomentaryonleftclipnoimageContainer.classList.add('hidden');
+                                        metalmomentaryonleftclipncimageContainer.classList.add('hidden');
+                                        metalmomentaryonleftclipplus1.style.display = 'none';
+                                        metalmomentaryonleftclipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Esecondinputmetalmomentaryonleftclipbtnno').addEventListener('input', ESmetalgenerateCode);
+                            document.getElementById('Esecondinputmetalmomentaryonleftclipbtnnc').addEventListener('input', ESmetalgenerateCode);
+                            
+                          
+                            </script>
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultmetalmomentaryonleftclip" class="result hidden">
+  
+     <p id="generated-codemetalmomentaryonleftclip"></p>
+     <div id="descriptionmetalmomentaryonleftclip" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ <!-- flush images -->
+ <div class="flushimg">
+   
+    <div class="image-container hidden" id="metalmomentaryonleftclipblackimageContainer">
+        <img src="selectoractuator/Selector Actuator/Selector Actuator pos 3 Clip on Metal (1).png" alt="Product Image" class="product-image">
+        <div class="image-name">4AS2-3PSRL</div>
+    </div>
+
+    <div id="metalmomentaryonleftclipplus1" class="plus-symbol" style="display: none;">+</div>
+
+    <div class="image-container hidden" id="metalmomentaryonleftclipnoimageContainer">
+    <img src="pushbtn/images/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="metalmomentaryonleftclipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="metalmomentaryonleftclipncimageContainer">
+    <img src="push/metalclip/images/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>
+</div>
+
+<div class="image-container hidden" id="EmetalmomentaryonleftclipnoimageContainer">
+    <img src="push/metalclip/Eimages/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="Emetalmomentaryonleftclipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="EmetalmomentaryonleftclipncimageContainer">
+    <img src="push/metalclip/Eimages/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>    
+</div>
+    
+</div>
+
+
+ </div>
+
+</div>
+
+</body>
+</html>

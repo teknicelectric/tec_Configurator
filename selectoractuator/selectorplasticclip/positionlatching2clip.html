@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.positionlatching2clipbtn').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+        const flushForms = document.querySelectorAll('.flushform');
+        flushForms.forEach(form => form.reset());
+
+        // Hide elements
+        // document.getElementById('resultpositionlatching2clip').classList.add('hidden');
+        document.getElementById('descriptionpositionlatching2clip').classList.add('hidden');
+        document.getElementById('positionlatching2clipnoimageContainer').classList.add('hidden');
+        document.getElementById('positionlatching2clipncimageContainer').classList.add('hidden');
+        document.getElementById('Epositionlatching2clipnoimageContainer').classList.add('hidden');
+        document.getElementById('Epositionlatching2clipncimageContainer').classList.add('hidden');
+      
+        document.getElementById('positionlatching2clipblackimageContainer').classList.add('hidden');
+       
+     
+
+        // Hide plus buttons
+        document.getElementById('positionlatching2clipplus1').style.display = 'none';
+        document.getElementById('positionlatching2clipplus2').style.display = 'none';
+        document.getElementById('Epositionlatching2clipplus2').style.display = 'none';
+
+    });
+});
+    
+  
+</script>
+
+
+<body>
+    
+    <div class="outputflex">
+
+        <div class="positionlatching2clip">
+    
+                    <div class="option-group">
+                        <button class="option-btn btn-common positionlatching2clipbtn"><div class="black-btn"></div>(P4AS2-2P)</button>
+                        
+                                
+                                <div class="nested-options">
+                                    <!-- Silver Contact Button -->
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common">Silver Contact</button>
+                                        <div class="nested-options">
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common positionlatching2clipbtn">UL Approved</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondpositionlatching2clipbtnnno">Normally Open (S1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputpositionlatching2clipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="secondpositionlatching2clipbtnnnc">Normally Close (S2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="secondinputpositionlatching2clipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common positionlatching2clipbtn">Economy</button>
+                                            <div class="nested-options">
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondpositionlatching2clipbtnnno">Normally Open (ES1)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputpositionlatching2clipbtnno" class="hidden" placeholder="Enter NO code">
+                                                    </form>
+                                                </div>
+                                                <div class="option-group">
+                                                    <button class="option-btn" id="Esecondpositionlatching2clipbtnnnc">Normally Close (ES2)</button>
+                                                    <form action="" class="flushform">
+                                                        <input type="number" id="Esecondinputpositionlatching2clipbtnnc" class="hidden" placeholder="Enter NC code">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                   
+                            
+                                </div>
+                            </div>
+              
+
+                  
+                                    
+                                </div>
+
+                         
+            
+  
+                        <script>
+                        
+                            
+                            // for metalsecond
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('secondpositionlatching2clipbtnnno').addEventListener('click', function () {
+                                document.getElementById('secondinputpositionlatching2clipbtnno').classList.remove('hidden');
+                                document.getElementById('secondinputpositionlatching2clipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('secondpositionlatching2clipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('secondinputpositionlatching2clipbtnnc').classList.remove('hidden');
+                                document.getElementById('secondinputpositionlatching2clipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+
+                            if (typeof SmetalpositiveNumberOnly === 'undefined') {
+    const SmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('secondinputpositionlatching2clipbtnno').addEventListener('input', SmetalpositiveNumberOnly);
+    document.getElementById('secondinputpositionlatching2clipbtnnc').addEventListener('input', SmetalpositiveNumberOnly);
+}
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function SmetalgenerateCode() {
+                                const noValue = document.getElementById('secondinputpositionlatching2clipbtnno').value;
+                                const ncValue = document.getElementById('secondinputpositionlatching2clipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultpositionlatching2clip');
+                                const descriptionContainer = document.getElementById('descriptionpositionlatching2clip');
+                                const generatedCodeElement = document.getElementById('generated-codepositionlatching2clip');
+                            
+                                // Image containers
+                                const positionlatching2clipblackimageContainer = document.getElementById('positionlatching2clipblackimageContainer');
+                                const positionlatching2clipnoimageContainer = document.getElementById('positionlatching2clipnoimageContainer');
+                                const positionlatching2clipncimageContainer = document.getElementById('positionlatching2clipncimageContainer');
+                            
+                                // Plus symbols
+                                const positionlatching2clipplus1 = document.getElementById('positionlatching2clipplus1');
+                                const positionlatching2clipplus2 = document.getElementById('positionlatching2clipplus2');
+                            
+                                // Ensure black image is always visible
+                                positionlatching2clipblackimageContainer.classList.remove('hidden');
+                                positionlatching2clipplus1.style.display = 'none'; // Hide symbols initially
+                                positionlatching2clipplus2.style.display = 'none';
+                            
+                                const noImageName = positionlatching2clipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = positionlatching2clipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    positionlatching2clipnoimageContainer.querySelector('img').src = `push/metalclip/images/no-${noValue}.png`;
+                                    noImageName.textContent = `C1*${noValue}`;
+                                    positionlatching2clipnoimageContainer.classList.remove('hidden');
+                                    positionlatching2clipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    positionlatching2clipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    positionlatching2clipncimageContainer.querySelector('img').src = `push/metalclip/images/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `C2*${ncValue}`;
+                                    positionlatching2clipncimageContainer.classList.remove('hidden');
+                                    positionlatching2clipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    positionlatching2clipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "P4PSS211-2P",
+                                        "12": "P4PSS212-2P",
+                                        "10": "P4PSS210-2P",
+                                        "01": "P4PSS201-2P",
+                                        "21": "P4PSS221-2P",
+                                        "23": "P4PSS223-2P",
+                                        "22": "P4PSS222-2P",
+                                        "33": "P4PSS233-2P",
+                                        "32": "P4PSS232-2P",
+                                        "13": "P4PSS213-2P",
+                                        "14": "P4PSS214-2P",
+                                        "15": "P4PSS215-2P",
+                                        "24": "P4PSS224-2P",
+                                        "31": "P4PSS231-2P",
+                                        "41": "P4PSS241-2P",
+                                        "42": "P4PSS242-2P",
+                                        "51": "P4PSS251-2P",
+                                        "00": "P4PSS200-2P",
+                                        "20": "P4PSS220-2P",
+                                        "30": "P4PSS230-2P",
+                                        "40": "P4PSS240-2P",
+                                        "50": "P4PSS250-2P",
+                                        "60": "P4PSS260-2P",
+                                        "02": "P4PSS202-2P",
+                                        "03": "P4PSS203-2P",
+                                        "04": "P4PSS204-2P",
+                                        "05": "P4PSS205-2P",
+                                        "06": "P4PSS206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        positionlatching2clipnoimageContainer.classList.add('hidden');
+                                        positionlatching2clipncimageContainer.classList.add('hidden');
+                                        positionlatching2clipplus1.style.display = 'none';
+                                        positionlatching2clipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('secondinputpositionlatching2clipbtnno').addEventListener('input', SmetalgenerateCode);
+                            document.getElementById('secondinputpositionlatching2clipbtnnc').addEventListener('input', SmetalgenerateCode);
+                            
+                            // economy
+                            
+                            // Ensure NO and NC are always visible and displayed together
+                            document.getElementById('Esecondpositionlatching2clipbtnnno').addEventListener('click', function () {
+                                document.getElementById('Esecondinputpositionlatching2clipbtnno').classList.remove('hidden');
+                                document.getElementById('Esecondinputpositionlatching2clipbtnnc').classList.remove('hidden'); // Always show NC with NO
+                            });
+                            
+                            document.getElementById('Esecondpositionlatching2clipbtnnnc').addEventListener('click', function () {
+                                document.getElementById('Esecondinputpositionlatching2clipbtnnc').classList.remove('hidden');
+                                document.getElementById('Esecondinputpositionlatching2clipbtnno').classList.remove('hidden'); // Always show NO with NC
+                            });
+                            
+                            if (typeof ESmetalpositiveNumberOnly === 'undefined') {
+    const ESmetalpositiveNumberOnly = (event) => {
+        const input = event.target;
+        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
+    };
+    
+    // Add event listeners to enforce positive number restriction
+    document.getElementById('Esecondinputpositionlatching2clipbtnno').addEventListener('input', ESmetalpositiveNumberOnly);
+                            document.getElementById('Esecondinputpositionlatching2clipbtnnc').addEventListener('input', ESmetalpositiveNumberOnly);
+}
+
+                           
+                            
+                            // Function to generate the code, show the images, and add plus symbols dynamically
+                            function ESmetalgenerateCode() {
+                                const noValue = document.getElementById('Esecondinputpositionlatching2clipbtnno').value;
+                                const ncValue = document.getElementById('Esecondinputpositionlatching2clipbtnnc').value;
+                            
+                                const resultContainer = document.getElementById('resultpositionlatching2clip');
+                                const descriptionContainer = document.getElementById('descriptionpositionlatching2clip');
+                                const generatedCodeElement = document.getElementById('generated-codepositionlatching2clip');
+                            
+                                // Image containers
+                                const positionlatching2clipblackimageContainer = document.getElementById('positionlatching2clipblackimageContainer');
+                                const positionlatching2clipnoimageContainer = document.getElementById('Epositionlatching2clipnoimageContainer');
+                                const positionlatching2clipncimageContainer = document.getElementById('Epositionlatching2clipncimageContainer');
+                            
+                                // Plus symbols
+                                const positionlatching2clipplus1 = document.getElementById('positionlatching2clipplus1');
+                                const positionlatching2clipplus2 = document.getElementById('Epositionlatching2clipplus2');
+                            
+                                // Ensure black image is always visible
+                                positionlatching2clipblackimageContainer.classList.remove('hidden');
+                                positionlatching2clipplus1.style.display = 'none'; // Hide symbols initially
+                                positionlatching2clipplus2.style.display = 'none';
+                            
+                                const noImageName = positionlatching2clipnoimageContainer.querySelector('.image-name');
+                                const ncImageName = positionlatching2clipncimageContainer.querySelector('.image-name');
+                            
+                                // Logic for NO and NC images
+                                if (noValue) {
+                                    positionlatching2clipnoimageContainer.querySelector('img').src = `push/metalclip/Eimages/no-${noValue}.png`;
+                                    noImageName.textContent = `C1*${noValue}`;
+                                    positionlatching2clipnoimageContainer.classList.remove('hidden');
+                                    positionlatching2clipplus1.style.display = 'block'; // Show the first plus symbol
+                                } else {
+                                    positionlatching2clipnoimageContainer.classList.add('hidden');
+                                }
+                            
+                                if (ncValue) {
+                                    positionlatching2clipncimageContainer.querySelector('img').src = `push/metalclip/Eimages/nc-${ncValue}.png`;
+                                    ncImageName.textContent = `C2*${ncValue}`;
+                                    positionlatching2clipncimageContainer.classList.remove('hidden');
+                                    positionlatching2clipplus2.style.display = 'block'; // Show the metalsecond plus symbol
+                                } else {
+                                    positionlatching2clipncimageContainer.classList.add('hidden');
+                                }
+                            
+                                // Code generation logic
+                                if (noValue && ncValue) {
+                                    const codes = {
+                                        "11": "EP4PSS211-2P",
+                                        "12": "EP4PSS212-2P",
+                                        "10": "EP4PSS210-2P",
+                                        "01": "EP4PSS201-2P",
+                                        "21": "EP4PSS221-2P",
+                                        "23": "EP4PSS223-2P",
+                                        "22": "EP4PSS222-2P",
+                                        "33": "EP4PSS233-2P",
+                                        "32": "EP4PSS232-2P",
+                                        "13": "EP4PSS213-2P",
+                                        "14": "EP4PSS214-2P",
+                                        "15": "EP4PSS215-2P",
+                                        "24": "EP4PSS224-2P",
+                                        "31": "EP4PSS231-2P",
+                                        "41": "EP4PSS241-2P",
+                                        "42": "EP4PSS242-2P",
+                                        "51": "EP4PSS251-2P",
+                                        "00": "EP4PSS200-2P",
+                                        "20": "EP4PSS220-2P",
+                                        "30": "EP4PSS230-2P",
+                                        "40": "EP4PSS240-2P",
+                                        "50": "EP4PSS250-2P",
+                                        "60": "EP4PSS260-2P",
+                                        "02": "EP4PSS202-2P",
+                                        "03": "EP4PSS203-2P",
+                                        "04": "EP4PSS204-2P",
+                                        "05": "EP4PSS205-2P",
+                                        "06": "EP4PSS206"
+                                    };
+                            
+                                    const combinedValue = noValue + ncValue;
+                                    const code = codes[combinedValue] || 'Invalid Code';
+                            
+                                    if (code === 'Invalid Code') {
+                                        positionlatching2clipnoimageContainer.classList.add('hidden');
+                                        positionlatching2clipncimageContainer.classList.add('hidden');
+                                        positionlatching2clipplus1.style.display = 'none';
+                                        positionlatching2clipplus2.style.display = 'none';
+                                        generatedCodeElement.textContent = 'Generated Code: Invalid Code';
+                                        descriptionContainer.classList.add('hidden'); // Hide description for invalid code
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    } else {
+                                        generatedCodeElement.textContent = `ORDERING CODE: ${code}`;
+                                        descriptionContainer.querySelector('#description-title').textContent = `Description:`;
+                                        descriptionContainer.classList.remove('hidden'); // Show description
+                                        resultContainer.classList.remove('hidden'); // Show result div
+                                    }
+                                } else {
+                                    resultContainer.classList.add('hidden'); // Hide result if no input
+                                }
+                            }
+                            
+                            // Monitor input changes to update generated code and show images
+                            document.getElementById('Esecondinputpositionlatching2clipbtnno').addEventListener('input', ESmetalgenerateCode);
+                            document.getElementById('Esecondinputpositionlatching2clipbtnnc').addEventListener('input', ESmetalgenerateCode);
+                            
+                          
+                            </script>
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultpositionlatching2clip" class="result hidden">
+  
+     <p id="generated-codepositionlatching2clip"></p>
+     <div id="descriptionpositionlatching2clip" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ <!-- flush images -->
+ <div class="flushimg">
+   
+    <div class="image-container hidden" id="positionlatching2clipblackimageContainer">
+        <img src="selectoractuator/Selector Actuator/Selector Actuator 2 Pos Clip on Plastic (1).png" alt="Product Image" class="product-image">
+        <div class="image-name">P4AS2-2P</div>
+    </div>
+
+    <div id="positionlatching2clipplus1" class="plus-symbol" style="display: none;">+</div>
+
+    <div class="image-container hidden" id="positionlatching2clipnoimageContainer">
+    <img src="pushbtn/images/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="positionlatching2clipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="positionlatching2clipncimageContainer">
+    <img src="push/metalclip/images/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>
+</div>
+
+<div class="image-container hidden" id="Epositionlatching2clipnoimageContainer">
+    <img src="push/metalclip/Eimages/no-default.png" alt="NO Image" class="product-image">
+    <div class="image-name">S1</div>
+</div>
+
+<div id="Epositionlatching2clipplus2" class="plus-symbol" style="display: none;">+</div>
+
+<div class="image-container hidden" id="Epositionlatching2clipncimageContainer">
+    <img src="push/metalclip/Eimages/nc-default.png" alt="NC Image" class="product-image">
+    <div class="image-name">S2</div>    
+</div>
+    
+</div>
+
+
+ </div>
+
+</div>
+
+</body>
+</html>

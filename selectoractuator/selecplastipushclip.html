@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+</script>
+
+
+<body>
+    
+    
+   <div class="option-group">
+                <button class="option-btn btn-common" onclick="positionlatching2clipfetch()">2 Position Latching</button>
+                <div class="nested-options positionlatching2clip">  </div>
+               
+                    
+                
+
+
+
+                <script> 
+                    function positionlatching2clipfetch() {
+                
+                        fetch('selectoractuator/selectorplasticclip/positionlatching2clip.html')
+                            .then(response => response.text())
+                            .then(data => {
+                                document.querySelector('.positionlatching2clip').innerHTML = data;
+                                executeScriptpositionlatching2clip(document.querySelector('.positionlatching2clip')); // Execute scripts in loaded content
+                            })
+                            .catch(error => console.error('Error fetching content:', error));
+                    }
+                    
+              function executeScriptpositionlatching2clip(element = document.getElementById('positionlatching2clip')) {
+            if (!element) {
+                console.error("Element not found: secondc");
+                return;
+            }
+            
+            const scripts = element.getElementsByTagName('script');
+            
+            for (let i = 0; i < scripts.length; i++) {
+                const script = scripts[i];
+            
+                if (script.src) {
+                    // Check if script already exists to prevent duplication
+                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                        const newScript = document.createElement('script');
+                        newScript.src = script.src;
+                        document.body.appendChild(newScript);
+                    }
+                } else {
+                    // Remove previous inline scripts before appending new ones
+                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                    oldScripts.forEach(oldScript => oldScript.remove());
+            
+                    const newScript = document.createElement('script');
+                    newScript.text = script.innerHTML;
+                    newScript.setAttribute("data-dynamic", "true"); 
+                    document.body.appendChild(newScript);
+                }
+            }
+            }
+            
+            
+            
+                </script>
+                              
+
+                </div>
+          
+                
+                 
+   <div class="option-group">
+    <button class="option-btn btn-common" onclick="positionlatching2withextclipclipfetch()">2 Position Latching with ext knob</button>
+    <div class="nested-options positionlatching2withextclipclip">  </div>
+   
+        
+    
+
+
+
+    <script> 
+        function positionlatching2withextclipclipfetch() {
+    
+            fetch('selectoractuator/selectorplasticclip/positionlatching2withextclipclip.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('.positionlatching2withextclipclip').innerHTML = data;
+                    executeScriptpositionlatching2withextclipclip(document.querySelector('.positionlatching2withextclipclip')); // Execute scripts in loaded content
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        }
+        
+  function executeScriptpositionlatching2withextclipclip(element = document.getElementById('positionlatching2withextclipclip')) {
+if (!element) {
+    console.error("Element not found: secondc");
+    return;
+}
+
+const scripts = element.getElementsByTagName('script');
+
+for (let i = 0; i < scripts.length; i++) {
+    const script = scripts[i];
+
+    if (script.src) {
+        // Check if script already exists to prevent duplication
+        if (!document.querySelector(`script[src="${script.src}"]`)) {
+            const newScript = document.createElement('script');
+            newScript.src = script.src;
+            document.body.appendChild(newScript);
+        }
+    } else {
+        // Remove previous inline scripts before appending new ones
+        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+        oldScripts.forEach(oldScript => oldScript.remove());
+
+        const newScript = document.createElement('script');
+        newScript.text = script.innerHTML;
+        newScript.setAttribute("data-dynamic", "true"); 
+        document.body.appendChild(newScript);
+    }
+}
+}
+
+
+
+    </script>
+                  
+
+    </div>
+
+
+    <div class="option-group">
+        <button class="option-btn btn-common" onclick="selectormomentaryclipfetch()">2 Position Momentary</button>
+        <div class="nested-options selectormomentaryclip">  </div>
+       
+            
+        
+    
+    
+    
+        <script> 
+            function selectormomentaryclipfetch() {
+        
+                fetch('selectoractuator/selectorplasticclip/selectormomentaryclip.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.selectormomentaryclip').innerHTML = data;
+                        executeScriptselectormomentaryclip(document.querySelector('.selectormomentaryclip')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScriptselectormomentaryclip(element = document.getElementById('selectormomentaryclip')) {
+    if (!element) {
+        console.error("Element not found: secondc");
+        return;
+    }
+    
+    const scripts = element.getElementsByTagName('script');
+    
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+    
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+    
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+    }
+    
+    
+    
+        </script>
+                      
+    
+        </div>      
+
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="momentaryextknobclipfetch()">2 Position Momentary ext knob</button>
+            <div class="nested-options momentaryextknobclip">  </div>
+           
+                
+            
+        
+        
+        
+            <script> 
+                function momentaryextknobclipfetch() {
+            
+                    fetch('selectoractuator/selectorplasticclip/momentaryextknobclip.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.querySelector('.momentaryextknobclip').innerHTML = data;
+                            executeScriptmomentaryextknobclip(document.querySelector('.momentaryextknobclip')); // Execute scripts in loaded content
+                        })
+                        .catch(error => console.error('Error fetching content:', error));
+                }
+                
+          function executeScriptmomentaryextknobclip(element = document.getElementById('momentaryextknobclip')) {
+        if (!element) {
+            console.error("Element not found: secondc");
+            return;
+        }
+        
+        const scripts = element.getElementsByTagName('script');
+        
+        for (let i = 0; i < scripts.length; i++) {
+            const script = scripts[i];
+        
+            if (script.src) {
+                // Check if script already exists to prevent duplication
+                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                    const newScript = document.createElement('script');
+                    newScript.src = script.src;
+                    document.body.appendChild(newScript);
+                }
+            } else {
+                // Remove previous inline scripts before appending new ones
+                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                oldScripts.forEach(oldScript => oldScript.remove());
+        
+                const newScript = document.createElement('script');
+                newScript.text = script.innerHTML;
+                newScript.setAttribute("data-dynamic", "true"); 
+                document.body.appendChild(newScript);
+            }
+        }
+        }
+        
+        
+        
+            </script>
+                          
+        
+            </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common" onclick="positionstayputclipfetch()">3 Position STAY PUT</button>
+        <div class="nested-options positionstayputclip">  </div>
+       
+            
+        
+    
+    
+    
+        <script> 
+            function positionstayputclipfetch() {
+        
+                fetch('selectoractuator/selectorplasticclip/positionstayputclip.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.positionstayputclip').innerHTML = data;
+                        executeScriptpositionstayputclip(document.querySelector('.positionstayputclip')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScriptpositionstayputclip(element = document.getElementById('positionstayputclip')) {
+    if (!element) {
+        console.error("Element not found: secondc");
+        return;
+    }
+    
+    const scripts = element.getElementsByTagName('script');
+    
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+    
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+    
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+    }
+    
+    
+    
+        </script>
+                      
+    
+        </div>
+                      
+        <div class="option-group">
+            <button class="option-btn btn-common" onclick="positionstayputwithextclipfetch()"> 3 Position STAY PUT with ext knob</button>
+            <div class="nested-options positionstayputwithextclip">  </div>
+           
+                
+            
+        
+        
+        
+            <script> 
+                function positionstayputwithextclipfetch() {
+            
+                    fetch('selectoractuator/selectorplasticclip/positionstayputwithextclip.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.querySelector('.positionstayputwithextclip').innerHTML = data;
+                            executeScriptpositionstayputwithextclip(document.querySelector('.positionstayputwithextclip')); // Execute scripts in loaded content
+                        })
+                        .catch(error => console.error('Error fetching content:', error));
+                }
+                
+          function executeScriptpositionstayputwithextclip(element = document.getElementById('positionstayputwithextclip')) {
+        if (!element) {
+            console.error("Element not found: secondc");
+            return;
+        }
+        
+        const scripts = element.getElementsByTagName('script');
+        
+        for (let i = 0; i < scripts.length; i++) {
+            const script = scripts[i];
+        
+            if (script.src) {
+                // Check if script already exists to prevent duplication
+                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                    const newScript = document.createElement('script');
+                    newScript.src = script.src;
+                    document.body.appendChild(newScript);
+                }
+            } else {
+                // Remove previous inline scripts before appending new ones
+                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                oldScripts.forEach(oldScript => oldScript.remove());
+        
+                const newScript = document.createElement('script');
+                newScript.text = script.innerHTML;
+                newScript.setAttribute("data-dynamic", "true"); 
+                document.body.appendChild(newScript);
+            }
+        }
+        }
+        
+        
+        
+            </script>
+                          
+        
+            </div>
+  
+           
+
+                    <div class="option-group">
+                        <button class="option-btn btn-common" onclick="momentarybothsideclipfetch()">3 Position Momentary on both side</button>
+                        <div class="nested-options momentarybothsideclip">  </div>
+                       
+                            
+                        
+                    
+                    
+                    
+                        <script> 
+                            function momentarybothsideclipfetch() {
+                        
+                                fetch('selectoractuator/selectorplasticclip/momentarybothsideclip.html')
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        document.querySelector('.momentarybothsideclip').innerHTML = data;
+                                        executeScriptmomentarybothsideclip(document.querySelector('.momentarybothsideclip')); // Execute scripts in loaded content
+                                    })
+                                    .catch(error => console.error('Error fetching content:', error));
+                            }
+                            
+                      function executeScriptmomentarybothsideclip(element = document.getElementById('momentarybothsideclip')) {
+                    if (!element) {
+                        console.error("Element not found: secondc");
+                        return;
+                    }
+                    
+                    const scripts = element.getElementsByTagName('script');
+                    
+                    for (let i = 0; i < scripts.length; i++) {
+                        const script = scripts[i];
+                    
+                        if (script.src) {
+                            // Check if script already exists to prevent duplication
+                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                const newScript = document.createElement('script');
+                                newScript.src = script.src;
+                                document.body.appendChild(newScript);
+                            }
+                        } else {
+                            // Remove previous inline scripts before appending new ones
+                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                            oldScripts.forEach(oldScript => oldScript.remove());
+                    
+                            const newScript = document.createElement('script');
+                            newScript.text = script.innerHTML;
+                            newScript.setAttribute("data-dynamic", "true"); 
+                            document.body.appendChild(newScript);
+                        }
+                    }
+                    }
+                    
+                    
+                    
+                        </script>
+                                      
+                    
+                        </div>
+
+
+                        <div class="option-group">
+                            <button class="option-btn btn-common" onclick="momentarybothsidewithextclipfetch()">3 Position Momentary on both side with ext knob</button>
+                            <div class="nested-options momentarybothsidewithextclip">  </div>
+                           
+                                
+                            
+                        
+                        
+                        
+                            <script> 
+                                function momentarybothsidewithextclipfetch() {
+                            
+                                    fetch('selectoractuator/selectorplasticclip/momentarybothsidewithextclip.html')
+                                        .then(response => response.text())
+                                        .then(data => {
+                                            document.querySelector('.momentarybothsidewithextclip').innerHTML = data;
+                                            executeScriptmomentarybothsidewithextclip(document.querySelector('.momentarybothsidewithextclip')); // Execute scripts in loaded content
+                                        })
+                                        .catch(error => console.error('Error fetching content:', error));
+                                }
+                                
+                          function executeScriptmomentarybothsidewithextclip(element = document.getElementById('momentarybothsidewithextclip')) {
+                        if (!element) {
+                            console.error("Element not found: secondc");
+                            return;
+                        }
+                        
+                        const scripts = element.getElementsByTagName('script');
+                        
+                        for (let i = 0; i < scripts.length; i++) {
+                            const script = scripts[i];
+                        
+                            if (script.src) {
+                                // Check if script already exists to prevent duplication
+                                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                    const newScript = document.createElement('script');
+                                    newScript.src = script.src;
+                                    document.body.appendChild(newScript);
+                                }
+                            } else {
+                                // Remove previous inline scripts before appending new ones
+                                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                oldScripts.forEach(oldScript => oldScript.remove());
+                        
+                                const newScript = document.createElement('script');
+                                newScript.text = script.innerHTML;
+                                newScript.setAttribute("data-dynamic", "true"); 
+                                document.body.appendChild(newScript);
+                            }
+                        }
+                        }
+                        
+                        
+                        
+                            </script>
+                                          
+                        
+                            </div>
+
+                            <div class="option-group">   
+                                <button class="option-btn btn-common" onclick="momentaryonleftclipfetch()">3 Position Momentary on left</button>
+                                <div class="nested-options momentaryonleftclip">  </div>
+                               
+                                    
+                                
+                            
+                            
+                            
+                                <script> 
+                                    function momentaryonleftclipfetch() {
+                                
+                                        fetch('selectoractuator/selectorplasticclip/momentaryonleftclip.html')
+                                            .then(response => response.text())
+                                            .then(data => {
+                                                document.querySelector('.momentaryonleftclip').innerHTML = data;
+                                                executeScriptmomentaryonleftclip(document.querySelector('.momentaryonleftclip')); // Execute scripts in loaded content
+                                            })
+                                            .catch(error => console.error('Error fetching content:', error));
+                                    }
+                                    
+                              function executeScriptmomentaryonleftclip(element = document.getElementById('momentaryonleftclip')) {
+                            if (!element) {
+                                console.error("Element not found: secondc");
+                                return;
+                            }
+                            
+                            const scripts = element.getElementsByTagName('script');
+                            
+                            for (let i = 0; i < scripts.length; i++) {
+                                const script = scripts[i];
+                            
+                                if (script.src) {
+                                    // Check if script already exists to prevent duplication
+                                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                        const newScript = document.createElement('script');
+                                        newScript.src = script.src;
+                                        document.body.appendChild(newScript);
+                                    }
+                                } else {
+                                    // Remove previous inline scripts before appending new ones
+                                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                    oldScripts.forEach(oldScript => oldScript.remove());
+                            
+                                    const newScript = document.createElement('script');
+                                    newScript.text = script.innerHTML;
+                                    newScript.setAttribute("data-dynamic", "true"); 
+                                    document.body.appendChild(newScript);
+                                }
+                            }
+                            }
+                            
+                            
+                            
+                                </script>
+                                              
+                            
+                                </div>
+
+
+                                <div class="option-group">   
+                                    <button class="option-btn btn-common" onclick="momentaryonleftwithextclipfetch()">3 Position Momentary on left with ext knob</button>
+                                    <div class="nested-options momentaryonleftwithextclip">  </div>
+                                   
+                                        
+                                    
+                                
+                                
+                                
+                                    <script> 
+                                        function momentaryonleftwithextclipfetch() {
+                                    
+                                            fetch('selectoractuator/selectorplasticclip/momentaryonleftwithextclip.html')
+                                                .then(response => response.text())
+                                                .then(data => {
+                                                    document.querySelector('.momentaryonleftwithextclip').innerHTML = data;
+                                                    executeScriptmomentaryonleftwithextclip(document.querySelector('.momentaryonleftwithextclip')); // Execute scripts in loaded content
+                                                })
+                                                .catch(error => console.error('Error fetching content:', error));
+                                        }
+                                        
+                                  function executeScriptmomentaryonleftwithextclip(element = document.getElementById('momentaryonleftwithextclip')) {
+                                if (!element) {
+                                    console.error("Element not found: secondc");
+                                    return;
+                                }
+                                
+                                const scripts = element.getElementsByTagName('script');
+                                
+                                for (let i = 0; i < scripts.length; i++) {
+                                    const script = scripts[i];
+                                
+                                    if (script.src) {
+                                        // Check if script already exists to prevent duplication
+                                        if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                            const newScript = document.createElement('script');
+                                            newScript.src = script.src;
+                                            document.body.appendChild(newScript);
+                                        }
+                                    } else {
+                                        // Remove previous inline scripts before appending new ones
+                                        const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                        oldScripts.forEach(oldScript => oldScript.remove());
+                                
+                                        const newScript = document.createElement('script');
+                                        newScript.text = script.innerHTML;
+                                        newScript.setAttribute("data-dynamic", "true"); 
+                                        document.body.appendChild(newScript);
+                                    }
+                                }
+                                }
+                                
+                                
+                                
+                                    </script>
+                                                  
+                                
+                                    </div>
+
+
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common" onclick="momentaryonrightclipfetch()">3 Position Momentary on right</button>
+                                        <div class="nested-options momentaryonrightclip">  </div>
+                                       
+                                            
+                                        
+                                    
+                                    
+                                    
+                                        <script> 
+                                            function momentaryonrightclipfetch() {
+                                        
+                                                fetch('selectoractuator/selectorplasticclip/momentaryonrightclip.html')
+                                                    .then(response => response.text())
+                                                    .then(data => {
+                                                        document.querySelector('.momentaryonrightclip').innerHTML = data;
+                                                        executeScriptmomentaryonrightclip(document.querySelector('.momentaryonrightclip')); // Execute scripts in loaded content
+                                                    })
+                                                    .catch(error => console.error('Error fetching content:', error));
+                                            }
+                                            
+                                      function executeScriptmomentaryonrightclip(element = document.getElementById('momentaryonrightclip')) {
+                                    if (!element) {
+                                        console.error("Element not found: secondc");
+                                        return;
+                                    }
+                                    
+                                    const scripts = element.getElementsByTagName('script');
+                                    
+                                    for (let i = 0; i < scripts.length; i++) {
+                                        const script = scripts[i];
+                                    
+                                        if (script.src) {
+                                            // Check if script already exists to prevent duplication
+                                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                                const newScript = document.createElement('script');
+                                                newScript.src = script.src;
+                                                document.body.appendChild(newScript);
+                                            }
+                                        } else {
+                                            // Remove previous inline scripts before appending new ones
+                                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                            oldScripts.forEach(oldScript => oldScript.remove());
+                                    
+                                            const newScript = document.createElement('script');
+                                            newScript.text = script.innerHTML;
+                                            newScript.setAttribute("data-dynamic", "true"); 
+                                            document.body.appendChild(newScript);
+                                        }
+                                    }
+                                    }
+                                    
+                                    
+                                    
+                                        </script>
+                                                      
+                                    
+                                        </div>
+
+
+                                        <div class="option-group">
+                                            <button class="option-btn btn-common" onclick="momentaryonrightwithextclipfetch()">3 Position Momentary on right with ext knob</button>
+                                            <div class="nested-options momentaryonrightwithextclip">  </div>
+                                           
+                                                
+                                            
+                                        
+                                        
+                                        
+                                            <script> 
+                                                function momentaryonrightwithextclipfetch() {
+                                            
+                                                    fetch('selectoractuator/selectorplasticclip/momentaryonrightwithextclip.html')
+                                                        .then(response => response.text())
+                                                        .then(data => {
+                                                            document.querySelector('.momentaryonrightwithextclip').innerHTML = data;
+                                                            executeScriptmomentaryonrightwithextclip(document.querySelector('.momentaryonrightwithextclip')); // Execute scripts in loaded content
+                                                        })
+                                                        .catch(error => console.error('Error fetching content:', error));
+                                                }
+                                                
+                                          function executeScriptmomentaryonrightwithextclip(element = document.getElementById('momentaryonrightwithextclip')) {
+                                        if (!element) {
+                                            console.error("Element not found: secondc");
+                                            return;
+                                        }
+                                        
+                                        const scripts = element.getElementsByTagName('script');
+                                        
+                                        for (let i = 0; i < scripts.length; i++) {
+                                            const script = scripts[i];
+                                        
+                                            if (script.src) {
+                                                // Check if script already exists to prevent duplication
+                                                if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                                    const newScript = document.createElement('script');
+                                                    newScript.src = script.src;
+                                                    document.body.appendChild(newScript);
+                                                }
+                                            } else {
+                                                // Remove previous inline scripts before appending new ones
+                                                const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                                oldScripts.forEach(oldScript => oldScript.remove());
+                                        
+                                                const newScript = document.createElement('script');
+                                                newScript.text = script.innerHTML;
+                                                newScript.setAttribute("data-dynamic", "true"); 
+                                                document.body.appendChild(newScript);
+                                            }
+                                        }
+                                        }
+                                        
+                                        
+                                        
+                                            </script>
+                                                          
+                                        
+                                            </div>
+
+
+                                  
+
+                                                       
+</body>
+</html>
