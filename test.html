@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Configurator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+       
+        .active {
+            display: block; /* Show when active */
+        }
+        .selected {
+            background-color: #007bff; /* Change color of active button */
+            color: white;
+        }
+        .suncon{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">Product Configurator</div>
+    <div class="container">
+        <div class="suncon">
+            <div class="logo">
+                <img src="logo.png" alt="Teknic Electric Logo" width="200px">
+            </div>
+        <div class="grid-container main-div">
+            <div class="fivebtn">
+            <button class="grid-item main-btn" ><a href="pushbtn/push.html">Push Button</a></button>
+            <button class="grid-item main-btn"><a href="pilotlights/pilotlights.html">Pilot lights</a></button>
+            <button class="grid-item main-btn">Monoblock</button>
+            <button class="grid-item main-btn">PushButton Accessories</button>
+            <button class="grid-item main-btn">Control Station</button>
+        </div>
+        <div class="fourbtn">
+            <button class="grid-item main-btn">CAM Switches</button>
+            <button class="grid-item main-btn">Conduit</button>
+            <button class="grid-item main-btn">Potentiometer</button>
+            <button class="grid-item main-btn">Plugs & Socket</button>
+        </div>
+        </div>
+    </div>
+        <div id="options-container">
+
+           
+        </div> 
+    </div>
+
+    <!-- <script>
+        
+        function fetchContent() {
+            fetch('pushbtn/push.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('options-container').innerHTML = data;
+                    executeScripts();
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        }
+
+
+// second model
+function pilotcontent() {
+            fetch('pilotlights/pilotlights.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('options-container').innerHTML = data;
+                    executeScripts();
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        }
+
+
+
+
+        function executeScripts(element = document.getElementById('options-container')) {
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+           
+            const newScript = document.createElement('script');
+            newScript.src = script.src;
+            document.body.appendChild(newScript);
+        } else {
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            document.body.appendChild(newScript);
+        }
+    }
+}
+
+
+
+     
+
+    </script> -->
+    
+</body>
+</html>

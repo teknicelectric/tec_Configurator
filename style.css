@@ -1,0 +1,548 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* background-image: url(bg2.png);
+    background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -300px; */
+}
+.header {
+    background: blue;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+.container {
+    padding: 20px;
+}
+.dropdown-container, .tabs-container {
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.grid-item ,.option-btn{
+    background: rgb(187, 225, 237);
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.grid-item:hover {
+    background-color: #8dbaeb;
+    transform: scale(1.05);
+}
+.tab-buttons button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.tab-content {
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+.active { display: block; }
+
+
+/* .grid-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+} */
+.hidden {
+    display: none;
+}
+
+.nested-options {
+    margin-left: 20px;
+    display: none;
+}
+
+
+.option-group {
+    margin-left: 20px;
+    padding: 12px;
+    background-color: #f9f9f9;
+}
+.option-group button {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    padding: 15px;  /* Increased padding */
+    font-size: 18px;  /* Increased text size */
+    border: none;
+    background-color: rgb(139, 210, 234);
+    color: black;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded edges */
+    transition: background-color 0.3s ease;
+}
+.option-group button:hover {
+    background-color: rgb(64, 201, 255);
+}
+
+.btn-common .white-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: white;
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+.btn-common .black-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(0, 0, 0);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+
+.btn-common .greenred-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Keeps it a perfect circle */
+    background: linear-gradient(to right, green 50%, red 50%);
+    margin-right: 5px;
+}
+
+.btn-common .yellowblack-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Keeps it a perfect circle */
+    background: linear-gradient(to right, rgb(238, 255, 0) 50%, rgb(0, 0, 0) 50%);
+    margin-right: 5px;
+}
+
+
+.btn-common .amber-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color:#FFBF00;
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+
+.btn-common .clear-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color:#F4FAFC;
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+
+
+.btn-common .green-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(0, 221, 4);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+.btn-common .blue-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(0, 64, 255);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+.btn-common .red-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(255, 0, 0);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+.btn-common .yellow-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: rgb(251, 255, 0);
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+
+.btn-common .gray-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Ensures the div is a perfect circle */
+    background-color: 	#808080;
+    margin-right: 5px; /* Adds spacing between the circle and text */
+}
+
+
+input[type="number"] {
+    padding: 12px;
+    margin-top: 12px;
+    width: 130px;
+    font-size: 18px;  /* Increased font size */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.result {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: fit-content;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+}
+
+.result p,.result h2 {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre-line; 
+}
+
+.result .label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+
+ 
+/* CSS for Image Container */
+.image-container {
+    /* text-align: center; */
+    margin-top: 0; /* Removed space between result and image */
+    
+}
+
+.product-image {
+    width: 100%; /* Set width to 100% of the parent container */
+    max-width: 150px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+    margin-left: 20px;
+    margin-top: 10px;
+  
+}
+.flushimg, .arrow , .pro, .frra, .boot,.recsss{
+    width: 100%;
+    display: flex;
+}
+.plus-symbol {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000; /* Color for plus sign */
+    display: block;
+    align-self: center; /* Centers plus signs vertically */
+}
+.image-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000; /* Black text */
+    text-align: center;
+}
+
+.description {
+    display: block;
+    /* Add your styling here */
+}
+.options-container{
+    display: flex;
+    border: 2px solid #000;  
+    border-radius: 10px;  
+}
+.output img{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+   
+}
+
+.pushbtn{
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.downloadbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.downloadbtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.downloadbtn:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
+
+.error-note {
+    background-color: #ffebeb; /* Light red background */
+    border: 1px solid #ff4d4d; /* Red border */
+    color: #000; /* Black text */
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+
+  /* Mobile Responsive Styles (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    .header {
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .logo img {
+        width: 150px;
+    }
+    
+    .suncon {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container.main-div {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .fivebtn, .fourbtn {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        width: 100%;
+    }
+    
+    .grid-item.main-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    
+    #options-container {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    
+    .option-group button {
+        padding: 12px;
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    .result {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .product-image {
+        max-width: 100px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    
+    .flushimg, .arrow, .pro, .frra, .boot, .recsss {
+        flex-direction: column;
+    }
+    
+    .plus-symbol {
+        margin: 5px 0;
+        font-size: 20px;
+    }
+    
+    .downloadbtn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    input[type="number"] {
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .options-container {
+        flex-direction: column;
+    }
+    
+    .pushbtn {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Responsive Styles (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    /* Base container with strict boundaries */
+    #options-container {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: 10px auto !important;
+        padding: 15px !important;
+        border: 2px solid #000 !important;
+        border-radius: 10px !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+        position: relative !important;
+        /* display: block !important; */
+        text-align: center !important;
+    }
+
+    /* Reset all flex containers to block layout */
+    #options-container .recsss,
+    #options-container .pushbtn,
+    #options-container .option-group {
+        /* display: block !important; */
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    /* Center all content */
+    #options-container > * {
+        /* display: block !important; */
+        width: auto !important;
+        max-width: 100% !important;
+        margin: 5px auto !important;
+        text-align: center !important;
+    }
+
+    /* Text and list items */
+    #options-container h1,
+    #options-container h2,
+    #options-container h3,
+    #options-container p,
+    #options-container li,
+    #options-container .note,
+    #options-container .description {
+        text-align: center !important;
+        /* display: block !important; */
+        width: 100% !important;
+        margin: 8px auto !important;
+        padding: 0 !important;
+        /* word-break: break-word !important; */
+    }
+
+    /* Images */
+    #options-container .product-image,
+    #options-container img {
+        max-width: 120px !important;
+        height: auto !important;
+        margin: 5px auto !important;
+        display: block !important;
+    }
+
+    /* Buttons and inputs */
+    #options-container button,
+    #options-container .downloadbtn,
+    #options-container input[type="number"],
+    #options-container .option-group button {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: 8px auto !important;
+        padding: 10px !important;
+        /* display: block !important; */
+    }
+
+    /* Special cases */
+    #options-container .error-note {
+        background-color: #ffebeb;
+        border: 1px solid #ff4d4d;
+        padding: 8px;
+        border-radius: 5px;
+        /* display: inline-block; */
+        max-width: 100%;
+    }
+
+    /* Remove any absolute positioning */
+    #options-container * {
+        position: static !important;
+        float: none !important;
+    }
+}
+
+/* Mobile Responsive Styles (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+  
+    /* Output div positioning */
+ 
+
+    /* Ensure options container doesn't overlap */
+    /* #options-container {
+        margin-bottom: 20px;
+    } */
+
+    /* Adjust result styling inside output */
+    .output .result {
+        /* width: 100%; */
+        /* margin: 0; */
+        padding: 10px;
+       
+    }
+
+    /* Make sure images in output are properly sized */
+    /* .output img {
+        max-width: 100px;
+        /* height: auto; */
+        /* margin: 5px auto; */
+    /* } */ */
+
+    /* Button adjustments in output */
+    .output {
+        width: 100%;
+        /* margin: 10px 0 0; */
+    }
+    .outputflex{
+        display: block !important;
+    }
+    .output{
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    /* Reset all flex containers to block layout */
+    #options-container .flushimg,
+    #options-container .arrow,
+    #options-container .pro,
+    #options-container .frra,
+    #options-container .boot
+  
+  {
+        display: flex !important;
+        flex-direction: row;
+       
+    }
+}
