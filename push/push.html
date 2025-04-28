@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+    
+    $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+   
+    
+</script>
+<body>
+    <p class="error-note">Note: Addition of two contact must be in between 1 to 6.</p>
+    <div class="pushbtn">
+
+    <div id="push-options" class="options">
+<div class="option-group">
+    <button class="option-btn  btn-common" onclick="pushfirstfetchtt()">&#8709;22.5 mm</button>
+    <div class="nested-options pushfirstfetchttop">
+    
+
+            </div>
+            <script>
+            function pushfirstfetchtt() {
+                fetch('push/22.5mm.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('.pushfirstfetchttop').innerHTML = data;
+                        executeScriptpushtt(document.querySelector('.pushfirstfetchttop')); // Execute scripts in loaded content
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+            
+      function executeScriptpushtt(element = document.getElementById('pushfirstfetchttop')) {
+    if (!element) {
+        console.error("Element not found: pushfirstfetchttop");
+        return;
+    }
+
+    const scripts = element.getElementsByTagName('script');
+
+    for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+            // Check if script already exists to prevent duplication
+            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                const newScript = document.createElement('script');
+                newScript.src = script.src;
+                document.body.appendChild(newScript);
+            }
+        } else {
+            // Remove previous inline scripts before appending new ones
+            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+            oldScripts.forEach(oldScript => oldScript.remove());
+
+            const newScript = document.createElement('script');
+            newScript.text = script.innerHTML;
+            newScript.setAttribute("data-dynamic", "true"); 
+            document.body.appendChild(newScript);
+        }
+    }
+}
+
+
+
+        </script>
+</div>
+    <div class="option-group">
+    <button class="option-btn  btn-common" onclick="pushsecondtz()">&#8709;30.5 mm</button>
+    <div class="nested-options pushsecondtzop">
+    
+
+    </div>
+
+
+<script>
+    function pushsecondtz() {
+        fetch('push/30.5mm.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('.pushsecondtzop').innerHTML = data;
+                executeScriptpushtz(document.querySelector('.pushsecondtzop')); // Execute scripts in loaded content
+            })
+            .catch(error => console.error('Error fetching content:', error));
+    }
+    
+function executeScriptpushtz(element = document.getElementById('pushsecondtzop')) {
+if (!element) {
+console.error("Element not found: pushsecondtzop");
+return;
+}
+
+const scripts = element.getElementsByTagName('script');
+
+for (let i = 0; i < scripts.length; i++) {
+const script = scripts[i];
+
+if (script.src) {
+    // Check if script already exists to prevent duplication
+    if (!document.querySelector(`script[src="${script.src}"]`)) {
+        const newScript = document.createElement('script');
+        newScript.src = script.src;
+        document.body.appendChild(newScript);
+    }
+} else {
+    // Remove previous inline scripts before appending new ones
+    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+    oldScripts.forEach(oldScript => oldScript.remove());
+
+    const newScript = document.createElement('script');
+    newScript.text = script.innerHTML;
+    newScript.setAttribute("data-dynamic", "true"); 
+    document.body.appendChild(newScript);
+}
+}
+}
+
+
+
+</script>
+</div>
+
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
+
+
