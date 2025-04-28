@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+  
+</script>
+<style>
+    .outputflex{
+        display: flex;
+    }
+    .output{
+        margin-top: -300px;
+    }
+    .mainoptions{
+        display: flex;
+    }
+
+    .mainoptions img{
+        width: 300px;
+    }
+    
+    .product-code{
+margin-top: 50px;
+    }
+</style>
+<body>
+   
+
+        
+
+        <div class="option-group">
+                    <button class="option-btn btn-common buttonpl" onclick="firstoptionre()">4PLB</button>
+
+                    <div class="nested-options firstoption">      
+                        
+                         </div>
+                                       
+                       
+                          
+                        
+                          
+                     
+                          
+                         
+                         
+                            
+                          <script> 
+                            function firstoptionre() {
+                                fetch('pilotlights/laboption1stbulp.html')
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        document.querySelector('.firstoption').innerHTML = data;
+                                        executeScriptsg(document.querySelector('.firstoption')); // Execute scripts in loaded content
+                                    })
+                                    .catch(error => console.error('Error fetching content:', error));
+                            }
+                            
+                      function executeScriptsg(element = document.getElementsByClassName('firstoption')) {
+                    if (!element) {
+                        console.error("Element not found: secondc");
+                        return;
+                    }
+                
+                    const scripts = element.getElementsByTagName('script');
+                
+                    for (let i = 0; i < scripts.length; i++) {
+                        const script = scripts[i];
+                
+                        if (script.src) {
+                            // Check if script already exists to prevent duplication
+                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                const newScript = document.createElement('script');
+                                newScript.src = script.src;
+                                document.body.appendChild(newScript);
+                            }
+                        } else {
+                            // Remove previous inline scripts before appending new ones
+                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                            oldScripts.forEach(oldScript => oldScript.remove());
+                
+                            const newScript = document.createElement('script');
+                            newScript.text = script.innerHTML;
+                            newScript.setAttribute("data-dynamic", "true"); 
+                            document.body.appendChild(newScript);
+                        }
+                    }
+                }
+                
+                
+                
+                        </script>    
+                         
+                        </div>    
+                         
+                        
+
+                <div class="option-group">
+                    <button class="option-btn btn-common buttonpl" onclick="secondoptiongg()">LED bulb (BA96 type)</button>
+
+                    <div class="nested-options secondoption">      
+                       
+                          </div>
+                         
+                         
+                            
+                              
+                         
+                           
+                            
+                          <script> 
+                            function secondoptiongg() {
+                                fetch('pilotlights/laboption2ndbulp.html')
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        document.querySelector('.secondoption').innerHTML = data;
+                                        executeScriptsgr(document.querySelector('.secondoption')); // Execute scripts in loaded content
+                                    })
+                                    .catch(error => console.error('Error fetching content:', error));
+                            }
+                            
+                      function executeScriptsgr(element = document.getElementsByClassName('secondoption')) {
+                    if (!element) {
+                        console.error("Element not found: secondc");
+                        return;
+                    }
+                
+                    const scripts = element.getElementsByTagName('script');
+                
+                    for (let i = 0; i < scripts.length; i++) {
+                        const script = scripts[i];
+                
+                        if (script.src) {
+                            // Check if script already exists to prevent duplication
+                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                const newScript = document.createElement('script');
+                                newScript.src = script.src;
+                                document.body.appendChild(newScript);
+                            }
+                        } else {
+                            // Remove previous inline scripts before appending new ones
+                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                            oldScripts.forEach(oldScript => oldScript.remove());
+                
+                            const newScript = document.createElement('script');
+                            newScript.text = script.innerHTML;
+                            newScript.setAttribute("data-dynamic", "true"); 
+                            document.body.appendChild(newScript);
+                        }
+                    }
+                }
+                
+                
+                
+                        </script>    
+                         
+                         
+                         
+                         
+                         
+                         </div>   
+                  
+
+
+                <div class="option-group">
+                    <button class="option-btn btn-common buttonpl thirdbtn" onclick="thirdoptionstt()">P2PLB</button>
+
+                    <div class="nested-options thirdoptions">      
+                     
+                          </div>
+                         
+                         
+                            
+                              
+                         
+                         
+                          <script> 
+                            function thirdoptionstt() {
+                                fetch('pilotlights/laboption3rdbulp.html')
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        document.querySelector('.thirdoptions').innerHTML = data;
+                                        executeScriptstt(document.querySelector('.thirdoptions')); // Execute scripts in loaded content
+                                    })
+                                    .catch(error => console.error('Error fetching content:', error));
+                            }
+                            
+                      function executeScriptstt(element = document.getElementsByClassName('thirdoptions')) {
+                    if (!element) {
+                        console.error("Element not found: secondc");
+                        return;
+                    }
+                
+                    const scripts = element.getElementsByTagName('script');
+                
+                    for (let i = 0; i < scripts.length; i++) {
+                        const script = scripts[i];
+                
+                        if (script.src) {
+                            // Check if script already exists to prevent duplication
+                            if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                const newScript = document.createElement('script');
+                                newScript.src = script.src;
+                                document.body.appendChild(newScript);
+                            }
+                        } else {
+                            // Remove previous inline scripts before appending new ones
+                            const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                            oldScripts.forEach(oldScript => oldScript.remove());
+                
+                            const newScript = document.createElement('script');
+                            newScript.text = script.innerHTML;
+                            newScript.setAttribute("data-dynamic", "true"); 
+                            document.body.appendChild(newScript);
+                        }
+                    }
+                }
+                
+                
+                
+                        </script>    
+                         
+                         
+                         
+                         
+                         </div>   
+
+                         <div class="option-group">
+                            <button class="option-btn btn-common buttonpl fourthbtn" onclick="fourthoptionsyy()">P4PLB</button>
+        
+                            <div class="nested-options fourthoption">      
+                             
+                                  </div>
+                                 
+                                 
+                                    
+                                      
+                                 
+                                 
+                                  <script> 
+                                    function fourthoptionsyy() {
+                                        fetch('pilotlights/laboption4thbulp.html')
+                                            .then(response => response.text())
+                                            .then(data => {
+                                                document.querySelector('.fourthoption').innerHTML = data;
+                                                executeScriptsy(document.querySelector('.fourthoption')); // Execute scripts in loaded content
+                                            })
+                                            .catch(error => console.error('Error fetching content:', error));
+                                    }
+                                    
+                              function executeScriptsy(element = document.getElementsByClassName('fourthoption')) {
+                            if (!element) {
+                                console.error("Element not found: secondc");
+                                return;
+                            }
+                        
+                            const scripts = element.getElementsByTagName('script');
+                        
+                            for (let i = 0; i < scripts.length; i++) {
+                                const script = scripts[i];
+                        
+                                if (script.src) {
+                                    // Check if script already exists to prevent duplication
+                                    if (!document.querySelector(`script[src="${script.src}"]`)) {
+                                        const newScript = document.createElement('script');
+                                        newScript.src = script.src;
+                                        document.body.appendChild(newScript);
+                                    }
+                                } else {
+                                    // Remove previous inline scripts before appending new ones
+                                    const oldScripts = document.querySelectorAll("script[data-dynamic]");
+                                    oldScripts.forEach(oldScript => oldScript.remove());
+                        
+                                    const newScript = document.createElement('script');
+                                    newScript.text = script.innerHTML;
+                                    newScript.setAttribute("data-dynamic", "true"); 
+                                    document.body.appendChild(newScript);
+                                }
+                            }
+                        }
+                        
+                        
+                        
+                                </script>    
+                                 
+                                 
+                                 
+                                 
+                                 </div>   
+                         
+</body>
+</html>

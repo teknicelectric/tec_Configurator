@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+</script>
+<style>
+    .mainoptionsrt{
+        display: flex;
+    }
+
+    .mainoptionsrt img{
+        width: 300px;
+    }
+    
+    .product-code{
+margin-top: 50px;
+    }
+
+    
+    .imagecon {
+        position: relative;
+    
+        
+    }
+    #resultrt55{
+    margin-bottom: 30PX;
+}
+    
+     .imagecon img{
+        width: 150px;
+     }
+ 
+</style>
+<body>
+    <div class="mainoptionsrt">
+   <div class="colorsoptions">
+        <div class="option-group">
+        <button class="option-btn btn-common whitebtn connectionwtar" >12VAC/DC</button>
+        <div class="nested-options">
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn connectionwtar" datab-color="redb" datab-code="3PLBR4LBZ12VAC/DC">
+                    <div class="red-btn"></div> Red LED 
+                </button>
+            </div>
+            
+
+        
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn  connectionwtasfr" >24VAC/DC</button>
+        <div class="nested-options">
+           
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn  connectionwtasfr" gdatab-color="redg" gdatab-code="3PLBR4LBZ24VAC/DC">
+                    <div class="red-btn"></div> Red LED
+                </button>
+            </div>
+
+        
+           
+
+           
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn  connectionwtarahu" >110VAC</button>
+        <div class="nested-options">
+         
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn  connectionwtarahu" ddatab-color="redd" ddatab-code="3PLBR4LBZ110VAC">
+                    <div class="red-btn"></div> Red LED 
+                </button>
+            </div>
+
+         
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn  connectionwtwaq">230VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn  connectionwtwaq" sdatab-color="reds" sdatab-code="3PLBR4LBZ230VAC">
+                    <div class="red-btn"></div> Red LED 
+                </button>
+            </div>
+
+    
+           
+          
+         
+    </div>
+    </div>
+
+  
+    </div>
+    
+
+
+   
+
+    
+
+              
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultrt55" class="result hidden">
+  
+     <p id="generated-codert55"></p>
+     <div id="description" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ 
+
+    
+ <div class="flushimgt imagecon">
+    
+
+     <img src="pilotlights/flush/red.png" id="redb" class="hidden" alt="Red">
+    </div>
+ <script>
+  
+  document.querySelectorAll('.connectionwtar').forEach(button => {
+        button.addEventListener('click', function () {
+            const color = this.getAttribute('datab-color');
+            const productCode = this.getAttribute('datab-code');
+
+            // Hide all images
+            document.querySelectorAll('.flushimgt img').forEach(img => img.classList.add('hidden'));
+
+            // Show the selected image
+            const selectedImage = document.getElementById(color);
+            if (selectedImage) {
+                selectedImage.classList.remove('hidden');
+            }
+
+            // Display the product code
+            const productInfo = document.getElementById('generated-codert55');
+            productInfo.textContent = "Product Code: " + productCode;
+            document.getElementById("resultrt55").classList.remove("hidden"); // Make result visible
+        });
+    });
+ </script>
+ 
+ <div class="flushgt imagecon">
+    
+
+    <img src="pilotlights/flush/red.png" id="redg" class="hidden" alt="Red">
+   </div>
+<script>
+ 
+ document.querySelectorAll('.connectionwtasfr').forEach(button => {
+       button.addEventListener('click', function () {
+           const color = this.getAttribute('gdatab-color');
+           const productCode = this.getAttribute('gdatab-code');
+
+           // Hide all images
+           document.querySelectorAll('.flushgt img').forEach(img => img.classList.add('hidden'));
+
+           // Show the selected image
+           const selectedImage = document.getElementById(color);
+           if (selectedImage) {
+               selectedImage.classList.remove('hidden');
+           }
+
+           // Display the product code
+           const productInfo = document.getElementById('generated-codert55');
+           productInfo.textContent = "Product Code: " + productCode;
+           document.getElementById("resultrt55").classList.remove("hidden"); // Make result visible
+       });
+   });
+</script>
+
+<div class="flushim imagecon">
+    
+
+    <img src="pilotlights/flush/red.png" id="redd" class="hidden" alt="Red">
+   </div>
+<script>
+ 
+ document.querySelectorAll('.connectionwtarahu').forEach(button => {
+       button.addEventListener('click', function () {
+           const color = this.getAttribute('ddatab-color');
+           const productCode = this.getAttribute('ddatab-code');
+
+           // Hide all images
+           document.querySelectorAll('.flushim img').forEach(img => img.classList.add('hidden'));
+
+           // Show the selected image
+           const selectedImage = document.getElementById(color);
+           if (selectedImage) {
+               selectedImage.classList.remove('hidden');
+           }
+
+           // Display the product code
+           const productInfo = document.getElementById('generated-codert55');
+           productInfo.textContent = "Product Code: " + productCode;
+           document.getElementById("resultrt55").classList.remove("hidden"); // Make result visible
+       });
+   });
+</script>
+  
+<div class="flumgt imagecon">
+    
+
+    <img src="pilotlights/flush/red.png" id="reds" class="hidden" alt="Red">
+   </div>
+<script>
+ 
+ document.querySelectorAll('.connectionwtwaq').forEach(button => {
+       button.addEventListener('click', function () {
+           const color = this.getAttribute('sdatab-color');
+           const productCode = this.getAttribute('sdatab-code');
+
+           // Hide all images
+           document.querySelectorAll('.flumgt img').forEach(img => img.classList.add('hidden'));
+
+           // Show the selected image
+           const selectedImage = document.getElementById(color);
+           if (selectedImage) {
+               selectedImage.classList.remove('hidden');
+           }
+
+           // Display the product code
+           const productInfo = document.getElementById('generated-codert55');
+           productInfo.textContent = "Product Code: " + productCode;
+           document.getElementById("resultrt55").classList.remove("hidden"); // Make result visible
+       });
+   });
+</script>
+
+
+
+
+
+
+</div>
+</body>
+</html>

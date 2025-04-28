@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+
+</script>
+<style>
+    .outputflex{
+        display: flex;
+    }
+    .output{
+        margin-top: -300px;
+    }
+    .mainoptions{
+        display: flex;
+    }
+
+    .mainoptions img{
+        width: 300px;
+    }
+    
+    .product-code{
+margin-top: 50px;
+    }
+</style>
+<body>
+   
+
+        
+
+        <div class="option-group">
+                    <button class="option-btn btn-common buttonpl" >3PLBR</button>
+
+                    <div class="nested-options">      
+                        <div class="mainoptions">
+                            <div class="colorsoptions">
+                                 <div class="option-group">
+                                 <button class="option-btn btn-common whitebtn" id="connectionwt">12VAC/DC</button>
+                                 <div class="nested-options">
+                                   
+                                 
+                                     <div class="option-group">
+                                         <button class="option-btn btn-common whitebtn" data-color="red" data-code="3PLBR4LBZ12VAC/DC">
+                                             <div class="red-btn"></div> (P2AF4)
+                                         </button>
+                                     </div>
+                                  
+                             </div>
+                             </div>
+  
+                             <div class="option-group">
+                                <button class="option-btn btn-common whitebtn" id="integraledwb">24VAC/DC</button>
+                                <div class="nested-options">
+                                   
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common whitebtn" bdata-color="red" bdata-code="3PLBR4LBZ24VAC/DC">
+                                            <div class="red-btn"></div> (P2AF4)
+                                        </button>
+                                    </div>
+                                   
+                                 
+                            </div>
+                            </div>
+
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn" id="integralled">110VAC</button>
+                                <div class="nested-options">
+                            
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common whitebtn" cdata-color="red" cdata-code="3PLBR4LBZ110VAC">
+                                            <div class="red-btn"></div> (P2AF4)
+                                        </button>
+                                    </div>
+                                  
+                                 
+                            </div>
+                            </div>
+                        
+                            <div class="option-group">
+                                <button class="option-btn btn-common whitebtn" id="integrakledf">230VAC</button>
+                                <div class="nested-options">
+                                  
+                                    <div class="option-group">
+                                        <button class="option-btn btn-common whitebtn" ddata-color="red" ddata-code="3PLBR4LBZ230VAC">
+                                            <div class="red-btn"></div> (P2AF4)
+                                        </button>
+                                    </div>
+                                  
+                                 
+                            </div>
+                            </div>
+
+
+                         </div>
+                                       
+                         
+                         <div class="output">
+                         
+                             <!-- Result display section -->
+                          <!-- Result display section -->
+                          <div id="result" class="result hidden">
+                           
+                              <p id="generated-code"></p>
+                              <div id="description" class="description hidden">
+                                  <h2 id="description-title"></h2>
+                              </div>
+                          </div>
+                          
+                         
+                             
+                          <div class="flushimg">
+                             
+                              <img src="pilotlights/flush/white.png" id="white" class="hidden" alt="White">
+                              <img src="pilotlights/flush/black.png" id="black" class="hidden" alt="Black">
+                              <img src="pilotlights/flush/green.png" id="green" class="hidden" alt="Green">
+                              <img src="pilotlights/flush/red.png" id="red" class="hidden" alt="Red">
+                              <img src="pilotlights/flush/blue.png" id="blue" class="hidden" alt="Blue">
+                              <img src="pilotlights/flush/yellow.png" id="yellow" class="hidden" alt="Yellow">
+                         
+                             </div>
+                         
+                          
+                          
+                          <script>
+                           
+                           document.querySelectorAll('.option-btn').forEach(button => {
+                                 button.addEventListener('click', function () {
+                                     const color = this.getAttribute('data-color');
+                                     const productCode = this.getAttribute('data-code');
+                         
+                                     // Hide all images
+                                     document.querySelectorAll('.flushimg img').forEach(img => img.classList.add('hidden'));
+                         
+                                     // Show the selected image
+                                     const selectedImage = document.getElementById(color);
+                                     if (selectedImage) {
+                                         selectedImage.classList.remove('hidden');
+                                     }
+                         
+                                     // Display the product code
+                                     const productInfo = document.getElementById('generated-code');
+                                     productInfo.textContent = "Product Code: " + productCode;
+                                     document.getElementById("result").classList.remove("hidden"); // Make result visible
+                                 });
+                             });
+                          
+                          
+                        
+                          </script>
+                          
+                          
+                         
+                          </script>
+                          </div>
+                         
+                         
+                            
+                              
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         </div>   
+                    </div>
+                </div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+</script>
+<style>
+    .mainoptions{
+        display: flex;
+    }
+
+    .mainoptions img{
+        width: 300px;
+    }
+    
+    .product-code{
+margin-top: 50px;
+    }
+ 
+</style>
+<body>
+    <div class="mainoptions">
+   <div class="colorsoptions">
+        <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="connectionwt">12VAC/DC</button>
+        <div class="nested-options">
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-color="red" data-code="3PLBR4LTL12VAC/DC">
+                    <div class="red-btn"></div> Red LED 
+                </button>
+            </div>
+            
+
+        
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn integraledwb" id="integraledwb">24VAC/DC</button>
+        <div class="nested-options">
+           
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integraledwb" data-color="red" data-code="3PLBR4LTL24VAC/DC">
+                    <div class="red-btn"></div> Red LED
+                </button>
+            </div>
+
+        
+           
+
+           
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn integralled" id="integralled">110VAC</button>
+        <div class="nested-options">
+         
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integralled" data-color="red" data-code="3PLBR4LBZ110VAC">
+                    <div class="red-btn"></div> Red LED 
+                </button>
+            </div>
+
+         
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn integrakledf" id="integrakledf">230VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integrakledf" data-color="red" data-code="3PLBR4LBZ230VAC">
+                    <div class="red-btn"></div> Red LED 
+                </button>
+            </div>
+
+    
+           
+          
+         
+    </div>
+    </div>
+
+  
+    </div>
+    
+
+
+   
+
+    
+
+              
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="result" class="result hidden">
+  
+     <p id="generated-code"></p>
+     <div id="description" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ 
+
+    
+ <div class="flushimg">
+    
+
+     <img src="pilotlights/flush/red.png" id="red" class="hidden" alt="Red">
+ 
+
+  
+
+    </div>
+
+ 
+ 
+ <script>
+  
+  document.querySelectorAll('.option-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const color = this.getAttribute('data-color');
+            const productCode = this.getAttribute('data-code');
+
+            // Hide all images
+            document.querySelectorAll('.flushimg img').forEach(img => img.classList.add('hidden'));
+
+            // Show the selected image
+            const selectedImage = document.getElementById(color);
+            if (selectedImage) {
+                selectedImage.classList.remove('hidden');
+            }
+
+            // Display the product code
+            const productInfo = document.getElementById('generated-code');
+            productInfo.textContent = "Product Code: " + productCode;
+            document.getElementById("result").classList.remove("hidden"); // Make result visible
+        });
+    });
+ </script>
+ 
+
+
+   
+     
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

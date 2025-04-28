@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    
+</script>
+<style>
+    .mainoptions{
+        display: flex;
+    }
+
+    .mainoptions img{
+        width: 300px;
+    }
+    
+    .product-codec{
+margin-top: 50px;
+    }
+ .rightside{
+    margin-left: 500px;
+ }
+</style>
+<body>
+    <div class="mainoptions">
+   <div class="colorsoptions">
+        <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="connectionwtc">110VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-colorc="whitec" data-codec="P2PLBR1L(S)110VACTL">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-colorc="greenc" data-codec="P2PLBR3L110VACTL">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-colorc="redc" data-codec="P2PLBR4L110VACTL">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-colorc="amberc" data-codec="P2PLBR5L110VACTL">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-colorc="bluec" data-codec="P2PLBR6L110VACTL">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-colorc="clearc" data-codec="P2PLBR7L(S)110VACTL">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-colorc="yellowc" data-codec="P2PLBR8L110VACTL">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn integraledwbc" id="integraledwbc">110VDC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integraledwbc" bdata-colorc="whitecs" bdata-codec="P2PLBR1L(S)110VDCTL">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integraledwbc" bdata-colorc="greencs" bdata-codec="P2PLBR3L110VDCTL">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integraledwbc" bdata-colorc="redcs" bdata-codec="P2PLBR4L110VDCTL">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integraledwbc" bdata-colorc="ambercs" bdata-codec="P2PLBR5L110VDCTL">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integraledwbc" bdata-colorc="bluecs" bdata-codec="P2PLBR6L110VDCTL">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integraledwbc" bdata-colorc="clearcs" bdata-codec="P2PLBR7L(S)110VDCTL">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn integraledwbc" bdata-colorc="yellowcs" bdata-codec="P2PLBR8L110VDCTL">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+            
+         
+    </div>
+    </div>
+
+  
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn fourthotn" id="fourthotn">220VDC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fourthotn" ddata-colorc="whitecf" ddata-codec="P2PLBR1L(S)220VDCTL">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fourthotn" ddata-colorc="greencf" ddata-codec="P2PLBR3L220VDCTL">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fourthotn" ddata-colorc="redcf" ddata-codec="P2PLBR4L220VDCTL">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fourthotn" ddata-colorc="ambercf" ddata-codec="P2PLBR5L220VDCTL">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fourthotn" ddata-colorc="bluecf" ddata-codec="P2PLBR6L220VDCTL">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" ddata-colorc="clearcf" ddata-codec="P2PLBR7L(S)220VDCTL">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fourthotn" ddata-colorc="yellowcf" ddata-codec="P2PLBR8L220VDCTL">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+          
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn fivelab" id="fivelab">230VAC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fivelab" edata-colorc="whitecv" edata-codec="P2PLBR1L(S)230VACTL">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fivelab" edata-colorc="greencv" edata-codec="P2PLBR3L230VACTL">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fivelab" edata-colorc="redcv" edata-codec="P2PLBR4L230VACTL">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fivelab" edata-colorc="ambercv" edata-codec="P2PLBR5L230VACTL">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fivelab" edata-colorc="bluecv" edata-codec="P2PLBR6L230VACTL">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fivelab" edata-colorc="clearcv" edata-codec="P2PLBR7L(S)230VACTL">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn fivelab" edata-colorc="yellowcv" edata-codec="P2PLBR8L230VACTL">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+         
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn sixsoption" id="sixsoption">24VAC/DC</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn sixsoption" fdata-colorc="whitecx" fdata-codec="P2PLBR1L(S)24VACDCTL">
+                    <div class="white-btn"></div> White LED / White Lens
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn sixsoption" fdata-colorc="greencx" fdata-codec="P2PLBR3L24VACDCTL">
+                    <div class="green-btn"></div> Green LED / Green Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn sixsoption" fdata-colorc="redcx" fdata-codec="P2PLBR4L24VACDCTL">
+                    <div class="red-btn"></div> Red LED / Red Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn sixsoption" fdata-colorc="ambercx" fdata-codec="P2PLBR5L24VACDCTL">
+                    <div class="amber-btn"></div> Amber LED / Amber Lens
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn sixsoption" fdata-colorc="bluecx" fdata-codec="P2PLBR6L24VACDCTL">
+                    <div class="blue-btn"></div> Blue LED / Blue Lens 
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn sixsoption" fdata-colorc="clearcx" fdata-codec="P2PLBR7L(S)24VACDCTL">
+                    <div class="clear-btn"></div> White LED / Clear Lens
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn sixsoption" fdata-colorc="yellowcx" fdata-codec="P2PLBR8L24VACDCTL">
+                    <div class="yellow-btn"></div> Yellow LED / Yellow Lens
+                </button>
+            </div>
+
+            
+         
+    </div>
+    </div>
+
+   
+    
+
+
+   
+
+    
+</div>
+              
+
+<div class="output rightside">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="resultc" class="result hidden">
+  
+     <p id="generated-codec"></p>
+     <div id="description" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ 
+
+    
+ <div class="flushimg">
+    
+     <img src="pilotlights/flush/white.png" id="whitec" class="hidden" alt="White">
+     <img src="pilotlights/flush/black.png" id="blackc" class="hidden" alt="Black">
+     <img src="pilotlights/flush/green.png" id="greenc" class="hidden" alt="Green">
+     <img src="pilotlights/flush/red.png" id="redc" class="hidden" alt="Red">
+     <img src="pilotlights/flush/blue.png" id="bluec" class="hidden" alt="Blue">
+     <img src="pilotlights/flush/yellow.png" id="yellowc" class="hidden" alt="Yellow">
+
+    </div>
+
+ 
+ 
+ <script>
+  
+  document.querySelectorAll('.option-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const color = this.getAttribute('data-colorc');
+            const productCode = this.getAttribute('data-codec');
+
+            // Hide all images
+            document.querySelectorAll('.flushimg img').forEach(img => img.classList.add('hidden'));
+
+            // Show the selected image
+            const selectedImage = document.getElementById(color);
+            if (selectedImage) {
+                selectedImage.classList.remove('hidden');
+            }
+
+            // Display the product code
+            const productInfo = document.getElementById('generated-codec');
+            productInfo.textContent = "Product Code: " + productCode;
+            document.getElementById("resultc").classList.remove("hidden"); // Make result visible
+        //    document.getElementById('description').classList.remove("hidden");
+        });
+    });
+ </script>
+ 
+    <div class="shimg">
+    
+    <img src="pilotlights/flush/white.png" id="whitecs" class="hidden" alt="White">
+    <img src="pilotlights/flush/black.png" id="blackcs" class="hidden" alt="Black">
+    <img src="pilotlights/flush/green.png" id="greencs" class="hidden" alt="Green">
+    <img src="pilotlights/flush/red.png" id="redcs" class="hidden" alt="Red">
+    <img src="pilotlights/flush/blue.png" id="bluecs" class="hidden" alt="Blue">
+    <img src="pilotlights/flush/yellow.png" id="yellowcs" class="hidden" alt="Yellow">
+
+   </div>
+<script>
+//  second
+document.querySelectorAll('.integraledwbc').forEach(button => {
+        button.addEventListener('click', function () {
+            const color = this.getAttribute('bdata-colorc');
+            const productCode = this.getAttribute('bdata-codec');
+
+            // Hide all images
+            document.querySelectorAll('.shimg img').forEach(img => img.classList.add('hidden'));
+
+            // Show the selected image
+            const selectedImage = document.getElementById(color);
+            if (selectedImage) {
+                selectedImage.classList.remove('hidden');
+            }
+
+            // Display the product code
+            const productInfo = document.getElementById('generated-codec');
+            productInfo.textContent = "Product Code: " + productCode;
+            document.getElementById("resultc").classList.remove("hidden"); // Make result visible
+        });
+    });
+
+</script>
+ 
+ 
+ 
+ <div class="fhimg">
+ 
+ <img src="pilotlights/flush/white.png" id="whitecf" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackcf" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greencf" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redcf" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluecf" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowcf" class="hidden" alt="Yellow">
+
+</div>
+<script>
+    // fourth
+    
+document.querySelectorAll('.fourthotn').forEach(button => {
+        button.addEventListener('click', function () {
+            const color = this.getAttribute('ddata-colorc');
+            const productCode = this.getAttribute('ddata-codec');
+
+            // Hide all images
+            document.querySelectorAll('.fhimg img').forEach(img => img.classList.add('hidden'));
+
+            // Show the selected image
+            const selectedImage = document.getElementById(color);
+            if (selectedImage) {
+                selectedImage.classList.remove('hidden');
+            }
+
+            // Display the product code
+            const productInfo = document.getElementById('generated-codec');
+            productInfo.textContent = "Product Code: " + productCode;
+            document.getElementById("resultc").classList.remove("hidden"); // Make result visible
+        });
+    });
+
+</script>
+ 
+ <div class="fivehimg">
+ 
+ <img src="pilotlights/flush/white.png" id="whitecv" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackcv" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greencv" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redcv" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluecv" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowcv" class="hidden" alt="Yellow">
+
+</div>
+<script>
+        //fifth
+    
+document.querySelectorAll('.fivelab').forEach(button => {
+        button.addEventListener('click', function () {
+            const color = this.getAttribute('edata-colorc');
+            const productCode = this.getAttribute('edata-codec');
+
+            // Hide all images
+            document.querySelectorAll('.fivehimg img').forEach(img => img.classList.add('hidden'));
+
+            // Show the selected image
+            const selectedImage = document.getElementById(color);
+            if (selectedImage) {
+                selectedImage.classList.remove('hidden');
+            }
+
+            // Display the product code
+            const productInfo = document.getElementById('generated-codec');
+            productInfo.textContent = "Product Code: " + productCode;
+            document.getElementById("resultc").classList.remove("hidden"); // Make result visible
+        });
+    });   
+    
+</script>
+ 
+ <div class="sixshimg">
+ 
+ <img src="pilotlights/flush/white.png" id="whitecx" class="hidden" alt="White">
+ <img src="pilotlights/flush/black.png" id="blackcx" class="hidden" alt="Black">
+ <img src="pilotlights/flush/green.png" id="greencx" class="hidden" alt="Green">
+ <img src="pilotlights/flush/red.png" id="redcx" class="hidden" alt="Red">
+ <img src="pilotlights/flush/blue.png" id="bluecx" class="hidden" alt="Blue">
+ <img src="pilotlights/flush/yellow.png" id="yellowcx" class="hidden" alt="Yellow">
+
+</div>
+<script>
+    // six
+    
+    document.querySelectorAll('.sixsoption').forEach(button => {
+            button.addEventListener('click', function () {
+                const color = this.getAttribute('fdata-colorc');
+                const productCode = this.getAttribute('fdata-codec');
+    
+                // Hide all images
+                document.querySelectorAll('.sixshimg img').forEach(img => img.classList.add('hidden'));
+    
+                // Show the selected image
+                const selectedImage = document.getElementById(color);
+                if (selectedImage) {
+                    selectedImage.classList.remove('hidden');
+                }
+    
+                // Display the product code
+                const productInfo = document.getElementById('generated-codec');
+                productInfo.textContent = "Product Code: " + productCode;
+                document.getElementById("resultc").classList.remove("hidden"); // Make result visible
+            });
+        });  
+ 
+ </script>
+    
+ </div>
+
+
+   
+     
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
